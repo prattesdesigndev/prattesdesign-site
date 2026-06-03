@@ -16,6 +16,11 @@
 /*.png
 /*.jpg
 
+# --- Arquivos de trabalho (nao vao pro site publicado) ---
+/index_111.original.html
+/*.ps1
+/.claude/
+
 # --- Sistema operacional ---
 Thumbs.db
 ehthumbs.db
