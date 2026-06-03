@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"C:/Users/Vinicius/Downloads/Site PD CLaude Code/.claude\")",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(where node *)",
+      "Bash(where py *)",
+      "Bash(where npx *)",
+      "PowerShell(Get-Command node, py, npx, npm -ErrorAction SilentlyContinue)",
+      "PowerShell($cmds = @\\('node','py','python3','npx','npm'\\); foreach\\($c in $cmds\\){ $g = Get-Command $c -ErrorAction SilentlyContinue; if\\($g\\){ \"$c => $\\($g.Source\\)\" } else { \"$c => not found\" } })",
+      "Bash(stat -c '%s' \"C:/Users/Vinicius/Downloads/Site PD CLaude Code/index_111.html\" 2>/dev/null; du -h \"C:/Users/Vinicius/Downloads/Site PD CLaude Code/index_111.html\" 2>/dev/null)",
+      "Bash(awk -F: '{print $1}')",
+      "Bash(awk 'NR==9||NR==10||NR==147||NR==163||NR==2844||NR==2941||NR==2969||NR==3017||NR==3032||NR==3047||NR==3104||NR==3118||NR==3132||NR==3146 {print NR\": \"substr\\($0,1,120\\)}' \"C:/Users/Vinicius/Downloads/Site PD CLaude Code/index_111.html\")",
+      "PowerShell(Add-Type -AssemblyName PresentationCore; $encoders = [System.Windows.Media.Imaging.BitmapEncoder]::WebpBitmapEncoder; \"Encoder type: $encoders\")"
+    ]
+  }
+}

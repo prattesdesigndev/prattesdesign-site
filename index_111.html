@@ -1,0 +1,4576 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Prattes Design — Design estratégico para marcas que querem vender. Transformamos a comunicação visual de empresas em presença profissional, autoridade e percepção de valor." />
+  <title>Prattes Design — Design estratégico para marcas que querem vender</title>
+
+  <!-- ============================================================
+       SEO / SOCIAL — quando o link é compartilhado no WhatsApp/LinkedIn/etc,
+       essas tags geram a preview rica (imagem + título + descrição).
+       IMPORTANTE: og:url e og:image precisam ser URLs ABSOLUTAS.
+       Troque "https://prattesdesign.com.br" pela sua URL definitiva
+       quando o site for publicado.
+       ============================================================ -->
+  <link rel="canonical" href="https://prattesdesign.com.br/" />
+
+  <!-- OpenGraph (Facebook, WhatsApp, LinkedIn, Instagram, Slack, Discord) -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:site_name"   content="Prattes Design" />
+  <meta property="og:locale"      content="pt_BR" />
+  <meta property="og:url"         content="https://prattesdesign.com.br/" />
+  <meta property="og:title"       content="Prattes Design — Design estratégico para marcas que querem vender" />
+  <meta property="og:description" content="Transformamos a comunicação visual de empresas em presença profissional, autoridade e percepção de valor — com design, conteúdo, campanhas e audiovisual feitos com método personalizado." />
+  <meta property="og:image"        content="https://prattesdesign.com.br/assets/img/og-image.jpg" />
+  <meta property="og:image:type"   content="image/jpeg" />
+  <meta property="og:image:width"  content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt"    content="Prattes Design — Solicite seu orçamento. Posts, carrosséis, thumbnails, banners e criativos estratégicos para destacar sua marca." />
+
+  <!-- Twitter / X (formato próprio, mas reutiliza campos do OG) -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Prattes Design — Design estratégico para marcas que querem vender" />
+  <meta name="twitter:description" content="Transformamos a comunicação visual em presença profissional, autoridade e percepção de valor." />
+  <meta name="twitter:image"       content="https://prattesdesign.com.br/assets/img/og-image.jpg" />
+  <meta name="twitter:image:alt"   content="Prattes Design — Design estratégico para marcas que querem vender" />
+
+  <!-- JSON-LD: dados estruturados pro Google entender quem é a empresa.
+       Aparece no Knowledge Panel, conecta site oficial aos perfis sociais. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Prattes Design",
+    "alternateName": "Prattes Design Studio",
+    "url": "https://prattesdesign.com.br/",
+    "logo": "https://prattesdesign.com.br/assets/img/og-image.jpg",
+    "description": "Design estratégico para marcas que querem vender. Branding, social media, audiovisual e campanhas com método personalizado.",
+    "email": "prattesdesign@gmail.com",
+    "sameAs": [
+      "https://instagram.com/prattesdesign",
+      "https://linkedin.com/company/prattes-design",
+      "https://www.behance.net/Prattes-design"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+55-11-94082-3616",
+      "contactType": "customer service",
+      "areaServed": "BR",
+      "availableLanguage": ["Portuguese"]
+    }
+  }
+  </script>
+  <!-- Favicon (logo da marca embutido em base64 — funciona offline / sem dependência de arquivo) -->
+  <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAABCGlDQ1BJQ0MgUHJvZmlsZQAAeJxjYGA8wQAELAYMDLl5JUVB7k4KEZFRCuwPGBiBEAwSk4sLGHADoKpv1yBqL+viUYcLcKakFicD6Q9ArFIEtBxopAiQLZIOYWuA2EkQtg2IXV5SUAJkB4DYRSFBzkB2CpCtkY7ETkJiJxcUgdT3ANk2uTmlyQh3M/Ck5oUGA2kOIJZhKGYIYnBncAL5H6IkfxEDg8VXBgbmCQixpJkMDNtbGRgkbiHEVBYwMPC3MDBsO48QQ4RJQWJRIliIBYiZ0tIYGD4tZ2DgjWRgEL7AwMAVDQsIHG5TALvNnSEfCNMZchhSgSKeDHkMyQx6QJYRgwGDIYMZAKbWPz9HbOBQAAACtklEQVR42u2VX2iNYRzHP7/nfc7Z0RG11S4k/6bkRnFBuVJcixuXVi4oiyURNX8nrKzQSS5oLsaWfzdIKBbZooSIpmZItticOds5+/e+z8/F+7KdmW2SK/vdve/zfd7f83u+f14REf5lGf5xTTaYbPD3ZfO6GSJXKAojHOIcqgAimPyDqeIcnkEEpzg3tCTDjRbuH6NC7KgwkaH3w08WTeAZ/IDStaxZjevn3QeaW1i1kiCLCBhyvZRX0pNFIJHgxB6mJnEBzmGSNDRw5iJbS1m2ghtXuXAN6xG4nyOIxKyAnDksmkPTtDVSf1xU0U60C02jOSrLBQRk9ybRLNqFZtA0qlxOCci9WlGl5qiAxGz4YcnjoDtL0E/jLcoPSraXU/WCA6W4iHPVuq1MU+dlYIBdW7XvIxu2S3sHIoilrQ0gncHvpjs7Jslegs6v8vQVwJvWoaWli2RHpVbtYNBn2nxSh6Tu+i+KFKwdyX/ekwAageIWa7GWWAxrOXya/rcsmMfCEvz3HEhhPeKxCBOP/VYC9lc9hJpz8oMl8Dy6MmzZL09eEgQsXyIdaazHoD++ncwEVRjNBzouYNwJfvIR7jCCcxRO5+QBffpCgoCli/XSTfnWTcziNMIYRcyfTDAwiO/j+wwM4gdUbKZgLq9baG4lNoeKzfhBHsY5fB8EHSMqQlB4qIUlzJiB+qhSXMim9drTys4qFNatYeN6bXom7V8QQQ2fPzMlQVEhQR/qRlp8yGg1R0WVe7UCUhcaLY1m0C40x96yyGj7yiI/6je0E1WupKStKfLj2SOjGS28ljsPiZ+TRw0Atx8QxMVlMQbjkctRXRPd4bEaZs2UZBIcqnhJ7jby/pPMfo4p4P7jPKpHD7vhyTVxmY2AjdLAGIygSuCGRffE4lp+6FTHiOvJX+Zkg/+0wXcTjkOueE+w/wAAAABJRU5ErkJggg==">
+  <link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAABCGlDQ1BJQ0MgUHJvZmlsZQAAeJxjYGA8wQAELAYMDLl5JUVB7k4KEZFRCuwPGBiBEAwSk4sLGHADoKpv1yBqL+viUYcLcKakFicD6Q9ArFIEtBxopAiQLZIOYWuA2EkQtg2IXV5SUAJkB4DYRSFBzkB2CpCtkY7ETkJiJxcUgdT3ANk2uTmlyQh3M/Ck5oUGA2kOIJZhKGYIYnBncAL5H6IkfxEDg8VXBgbmCQixpJkMDNtbGRgkbiHEVBYwMPC3MDBsO48QQ4RJQWJRIliIBYiZ0tIYGD4tZ2DgjWRgEL7AwMAVDQsIHG5TALvNnSEfCNMZchhSgSKeDHkMyQx6QJYRgwGDIYMZAKbWPz9HbOBQAAASL0lEQVR42u1da5RU1ZX+9j63GtqGpgWMie93dJg48RljDGZmYoyji2TQ+EpmqZFExFEJLwGjYFChG4QYFTVqUDMOkYz4mPgadY06Lmd0GZ/xOajxMRgFtWno9z1nz49zu7uq697q6u7bVUWzv3XXoutSdc/jfmefvfc5ex8iIigUcWDtAoWSQ6HkUCg5FEoOhZJDoeRQKDkUSg6FkkOh5FAolBwKJYdCyaFQciiUHAolh0LJoVByKJQcCiWHQqHkUCg5FEoOhZJDoeRQKDkUSg6FkkOh5FAoORQKJYdCyaFQciiUHAolh0LJoVByKJQcCiWHQsmhUHIoFEoOhZJDoeRQKDkUSg6FkkOh5FAoORRKDoWSQ6FQciiUHIpBIEj3cQM7h1RksE9IfrR/aE4RijKQgxnWDopSBDg3BK0UGAORdCjCXFQlKeefYvuhwJOJwFyoCQSABvgKEkpMb6iKoKaaqkYALmfcQqI/shvm//Y3WlpEsp7QfT//+0k3o59Id2kEybpPsKGkIpaiUqhbFlG8pOp9k7o7I+tVxtwpUMOuxlJ21+aXVZhAZSCHlxmzpvD0qZKxwlT4jVL3HWvF1GLt3XTeQgEw5WS+bL4LN4E5m1uUQyb/h0g+h6Lv5HwkJ6AA736As2bj441CgBtQ3xFABGJatYQO+qqzbWDKKTGLnZ6h1F3PXnXLawusA9fQXXfTslucMb3lh6fi+O1p8UXYZ3dI2EN8AQkgDgLqZLltNd35gDM8wDamP60wwVrstCM1zHFULehIlqWEXNYDFhiD/feKPh2wt+y0h2ADkMkfjn1K8GSlw2K/Q3F1ozn5QgkCYECC1xh0hph2Gv3oJxafZ6nyVFjfKa6qDqiVoIOX3RJXNKMzxOUz6OzzLTYCJq8UL4YCHHcUvfB39Na7ks+wMukcBAC1o2AtuCWSoUXCWgSdaGmLZGxbB1w7wg4Y119Z31dBH+IHk93Rd/ATz7og6PfEzATrMH4sLfyZhBshHeBBCFyJ7QfCpi1SYELZaxcJP4XdDGPiHkFwFlW1sttO9Na76ej1qSmkzkUak5N+kIMIRD0dbQice6d4dvZtEJFcNVe+dhJJ/+dkYtgQC/+ZdtjNdm5EkLKRBwgMR5NpApnIWgoMwDCc2A0ChGHl+Tn8ax6wJjskdmzupBA24ZBvuDMnk7UITH9+ywhDHLg/n3OGs40wAcqCYjqHUu3D9MhR8VY7GbgWLJopdbVkXX87kZbPlaBaxA5hS6XQZCpEUowEStGjUxEe0hJIjkhvaMWX9nbzziHnEmV4jMixmPwd+vtjJdwEY7DtYNtynxsDuwkXTHH77cnW9s0PIohD9UhquEikQ4aUu1mumcEIZ/KeAkglkcPrHFKENupc78v2OM0o/3/7fUlizxBBQowcI/WziqqqYViHn51Je3/F2eZCCqN3vw7yKuycoJLP3KVWrohhqrN63wI12K7rznbV4BqMaEmoV5GjQSAdEInvTWMQNuL733PfvoMffbqQWcuM0GLXL9Hc85xrApvE4ph7OWb6WWGACcigekSac3QFkaMoXjNaW+nN16JVAAKsQ6YWTz8f+TmeewWvvcC2SYwhigSpdH85u4job4pGv/8YfZOwx87gjLjO5FqJLJsrh04mEaGEl+gF4eKZNPoLLvw03kgRARlYSxs+8q5mya5efoW7GtVdbf9BrEUg+OOfGHC0DUoO52Cq8dZrOGgS5a1BON/y29a629b28uhT9rIccjpXuvpMuv6LvEv7iIPo/t+46pECG9OnhhFuxt8c4ab8wNywWjIBQhsnYEJ84xA+/WRnP080X0XAI+i0n/KDT0gQwDnKf5EJtMhuS/TPxs8dUc8km5aHrSIkBxW9Mk65fvTuHzIj20MlfRt4vXpD/Lt/8lmpv44XXWbDjfHvlQzcFiycLmsepMYmya+5CJhp+TwhTvSZWYugDv9+L//+QUnlpRSWDUzSRyF+0A1XU7bXa2B/UcLF8ReAwGD5rfLOq2xq4pcYmGDbsOOe7pJpMWZtYGAtzvhHOvybLmyKN19FQAHammh2A4gkCBLrU/y1rZuy/VKXpPBVQOcntLTKvAaiEYklmgC2EdPOcgfsk2PWesFeV0uXzxTXAjKJYsOMwTU385vvOGNgbQrWSjqOtPQ00jRN2cqBd5CvedA98agJxsTbIwSIRdUoWTobkuXC8Ht5Lp5KO+3jbGv8Ko8TmGqsX8dX3CBF7v1Jo4dpuEuO4t05aWBWPWw7ESd7Pzfh+BPcdydSaGFMtDFl/73o/CnOJvtDxYK3w8XLaNNmMVwpexApbVM2VclRUcLDIQjw3CvuttVk6gqtVYqTZRdJJkPeNSKCpRfRiNEiYbw4tBbBGDzzJN9+j3jneonePUlJB1bZdA4qUVlMuOSXaPwLmwTlwzDsZkw4zE09laxFGOK4iXzCCS5sTBQbxJCQZiwm54Qqbb1RKlZyVBicgzFY/4ksvpZ4NFzCEPdm7YLpsv0YAuiqi0Vs4lu3IUwd7ljDTz8/kE1Dg5s1tg2do5STi2H86nb535cKmbWuDeN2c3PPoWk/pAMOTlxGEQFXoekTnr+8ZwPpMEbJ93NISekvAmK0tcucBqKqxNfpt3qc9F356alwbYmNcRZciyXX0QcfuVQ2afZnSBVrrAy3/RwlMGvvecQ99jAnmbViwTW4ZAVNWwDOUOIkVYN1L/MvbxW/WjvsUTpy+PgRVz5ZPKuewjYi03tqsw5BLV54iu98QJ5+3j1wH8VySARUhTn11NomxJU7p6gpOxCz9sXX3S2/ZVMHG8ZMdjMWk7VChFkN1LGlN4e8+frIQ3z3I+Kd62VwY9DwlRxl0TmynBlgxoJr5LMPc8xaGyKow5q7+PFnXBDAGLy+zq1clcMhAcigs5VmLaGSq9T9N2VRmZKjgvV3JzCMjzfK5b/qMWtFQBk0f0Zzl0XuL78It2ilfPJnNiOjrVnefL3xVn75TRcE5dI2ZPhLjjLSxzoYg5X/Kq8/z2YUnIsWz5bdwO9+GFkfIjCMzxplwQriURALJzAjseE9vuxaYe5z/0DZQahcnaOvmpVRtHjveHuHzKknCsg5BNvhz6/zspvFZC2eWQtjcPPv5aX/4WA0bCd4FBasoI2fS1oxqANzDhEVNWfI1is5yjtne7P2D//pHnqAM2NAGcxtoC0tOdaHj6EPQ5m1hCCUqcWL/803rRFTJj10OJiy3Xs+i+BGmTUTIsxYAhA9+TjfeX/MW/ccevRpWXsfUS1Nv4LCUIjKXG8qbuhl57YYJAJsY/Cax+vr3O9+x7ffK0Txip4ARFJ/E1WP5CeedRUhNqjUtlLpFdJKcYYQIRP0oSB3hiX0kafVwboqO2D4qOgJ+/Ipp7i554CIYnvTW7ZzzsbxJ7uJh7HXUsusAVCpp7VSSw5XEa4QWjFP4OTrR7kfTooJuvdxCUcfzqecKLJZVswXY2hrWYOtLMnRE4FR8cLDb9z6/jF0zHHS2QTpwJWzZHRNTtA9ASIwhpbPEzLSuQkHH+nOOrHfiRvS10eH+R5SinSOsrCoV1Q0M8IW7PplN3tKTnSC1z3PPokOPtKFTTAZuBYsmiHbjxlA4gY1ZX3XV/ziv19nn34G7XtgtJ3HB93POMftuWsUneDjEsbW0S9mRHEJPnHDF/dy86f2I3HDUBkrfcpw0f0cA2gnw1rs8kXOjoomgnSiZqwsmRn5T32cwaXTaMc9e+ISPIfO/7H78l5FJW4op5+jQiUHgCLUaZ/+sSzDzgmunIHaHcV19IxCH9p08olu4mEchrAWE/blc3+ck97JJ24YMUYaZheVuKF8WgkAUsnRfz00xNcP5h+dEpPUqzuXHDOJ4Kq5UlXTO72TT9wwaZI75igOy2XWDntTtiwGoQiYaPk8oUDyl1WNQbgZh050k79DRx/Ox54giXEJPsIloMqVH7L15ucoBwKDzhBnTKYjJtqkNBvEcK24cibaO+AS0jv5xA0Hfs395BSz8o74xA1DO46JSuxgLovkKN2489bHmNF0RcGoaLHgaqz+A37zb+CRiZs2uhM3jNt+mzBrh7n73Fsf86fSzvsWiormanz0NjfcJFffJu/8qY/EDTvs7i6dVgazlorTObbi/RxSwnVFb77utydfUERU9M+XUnOLOCdz6gtFuHjrZuqZbsK+bG1iMmGVHHmSo8KEBwEitHQORtYWjIquxbP/xbfeLcYgMLjrIff4o9x34oY5FbTCPEQq/7Blvl9GOfabNGmSK5BclgjiaGZuVPTMJdRH4oZGHHe8+4dvUSnNWtq6JUfhCS86W6QUbfQL7lUZumqeSPK2TxvCbI/Va/ipP0ZR0T7C5flX3ao7uEDiBiJIKEsvkqquxA3D0pQdnpLDMKzFuafThEOd3RyvGfio6M2f0LzlOQnjRMCMS65G4/rExA3MsFvwV4e4c0+nEmgeIuVR+UsdSN0nr31WwsFcfoFtx/F06YXObU5MLuujoutX8vvrJciKinYOhvGXDe6Kgokb2MBtwSUXyBfGkZNo0S7xQqFr+OsclJJGOvj01tbBOfziQhq7s9j2+AHno6LffoWXr4qJivaJG675F3nzxSjCJd6D0oZxu7rLziefLa5wxu2YC3C5E3HPnpKYOstwT29NfcR9iGD8WKK8U9CQe2BggcMAmRBaHHYgnX26s5sST82JoqIbqLXNBUFv8SACNmhvlzn1fO9v+zBrp/yTe+gpfuhJ8T+UyFonyfH6ITuvrmQrYVmFSlfiOud6yWIBSEq+9JCq+5zQv0O8suth0Bli/rk8e3qXcdGlusac9VeQKCI0rs6xiCRUxkdFP/awWfuwS4qK9vu+7nvMPfIwH3NsvL3j01kbkXtudO99EImfngP/ep9GGNMKTxp/AKAZLatu52U3OwALzueTJrvOJnRnoxNgvz0g7X143qQy11ZSmREPOkDqxokQyPRnEZLyVPYQYpEYc2AQttLMJUU9e1Y9PTeR2MQzjQjOAiS779GfUUF5VpwFxuLIr0ZNPuoQ+euDBI3ZZ/0J2ksdjFlZC29tHZBOdIYIZKjqY0NkxmPldfzSG30k9fJm7ctvuJtu52nnJR7t5guy7YNyXIcWmRFobo0+NrfANSNszhFXRXrrt2ZTtmDVmVKwVgqcNuejoje+zwuvKSoq2iduWHitfPpBT9B9Us0Hn966u9psKiL5dYrWSlE52ZN43RMrPKTMtOBRWLiCNnxWVFS0T9yw4VNZdHUUdF+xztDuY7IrTHJsJSvX1iEYjZef4RvvFGOKTbPhwyevXy2vPsdm1NAm53AVFhpTlnBIGlLFpbB8m7m4KypaiqwwiNDRKbPriUypgqlp2JFDijz8tyxiwyKow9p7+ji6K/G3Bg8+IQ/cz0HdEEZUp9I5lXgYTxCAAGvjcixQJJ9hYQIpwCLv34zdZEWD63QxaP2c5iztx4lBeTO6zG6gb/8tEYl1RdSnP14f6XKb9vJYFF9VAZxEGb0riBy+Ae+vB0KqGi8I41P8BBYYh3c+oAKe4NE1ZEaL6cy27wcxLrq/bIHxWHopv/3eAHNS+0zZr61z16/iC+dZbEiuYQ6hiquwwFhgJEZWRTeqR4CqkKmKK0WSi6uCtKJpS2oCJAVy+JWqt96VU8/jM06TjCOCeNOLID5ltwAU0Lr38PPlEn+MmQDA3Y/QDruwaxbDvc/Qy/5I3SepUU4piDsY0AlMFd7+D17860GdjeKbeek1sssu5isHiHR481J617BLyvlsGln1obzmRNUmIHTINOOVtyI2vfEOTVhP0e61rtTF2aZc/iqME4QBrbie/u/j1LIrU1pHvBDlrwhkE5i6PxYosCvkSfLmEylCbZPEm11zyeDb6sWkMZRTA8r5m2JV7Kz7OccDZv28uVW62b9dNfV+YP75gdmtZXR0oLklzfU5SvH8H2P62CPqCVRgHuX+ZgYuOsWRf7Kk4XglGiqdNPtVDKyq6WZkJ9qm4sZTtzRT7bxsQgzstaRrDCo5FBXjBFMoORRKDoWSQ6HkUCiUHAolh0LJoVByKJQcCiWHQsmhUHIolBwKJYdCoeRQKDkUSg6FkkOh5FAoORRKDoWSQ6HkUCg5FEoOhULJoVByKJQcCiWHQsmhUHIolBwKJYdCyaFQcigUSg6FkkOh5FAoORRKDoWSQ6HkUCg5FEoOhZJDoVByKJQcCiWHQsmhUHIolBwKJYdCyaEYXvh/hnZGnz46fMsAAAAASUVORK5CYII=">
+  <meta name="theme-color" content="#FFDA00">
+
+  <!-- Fontes: Comfortaa via Google. LEMON MILK não está no Google Fonts; carregamos Bebas Neue como fallback equivalente.
+       Para produção: adicione os arquivos LEMON MILK via @font-face na pasta /assets/fonts/. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sora:wght@400;600;700;800&family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ============================================
+       PRATTES DESIGN — DESIGN TOKENS
+       ============================================ */
+    :root {
+      --pd-yellow: #FFDA00;
+      --pd-yellow-soft: #FFE45A;
+      --pd-black: #111111;
+      --pd-black-deep: #0a0a0a;
+      --pd-graphite: #1a1a1a;
+      --pd-graphite-2: #242424;
+      --pd-line: #2a2a2a;
+      --pd-text: #ffffff;
+      --pd-text-dim: #b8b8b8;
+      --pd-text-mute: #7a7a7a;
+
+      --font-display: 'Sora', 'Inter', system-ui, sans-serif;
+      --font-body: 'Comfortaa', 'Quicksand', system-ui, sans-serif;
+
+      --container: 1280px;
+      --radius-sm: 6px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+      /* Cursor custom [X] da Prattes Design — definido aqui para reuso (era duplicado) */
+      --pd-cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABmJLR0QA/wD/AP+gvaeTAAADkElEQVRYhb3XW4iUZRgH8N8zq9iWQeGm0JFkxl0pEGw70LmIICuji0iiG0ujC8EIIoSIii6qy+gERRSdKMrMjA50IITqopRO6Mys0gk6uFjk2kXbztNFq83MfjPOaPTAC8P/ed///z/v937P+3yhS+R2xypZiqHpsaDp9xDmT49NKq6PMNWNryhmdc2W3ILbeuBZYcwe3NSvgVLXbBrtmSmtzpo7+jUQHflSqNuNo/rgS2FVVDzZ64LOOzBm4QHE/5C+xe9NWEiPZdVlvRoIyDSg7iQcgyFpCCNKErswrmHcgF+EXQaNx7H+gKw7RdqMo5t4JzRcFCM+7c1A1TLhjbbcA7HI7b38i6w6T3gHhzXB46acE4vVuq0tTds4rcDaZ72IQwzbLFxLy2s4ZMCbudOCAxvIAgN6NwBRsRFr2uCFpmzKr83tbiBmvG6/KtvZjwGIRR7D/S1gGjXbi/lBcc0p5Zj5OK6VydYI2a8BULFOerYNXeZ4dxcaMFVQbPLAp7dTREh73IC3m+BvNDxTbOAQD2ChiVGTGq7BFuFL6dwYtr1o7ixh6YzNDlsOxQDEiD25w8Um/BVL7N2H5w4nmnRUjPgCImu+wwlNa/eqOPKgz0CXyJoz8TrmKrkkyj4q8a+76ThC3dX/uXjdcrzvn2o7qGFjbjdcEq7Az23zn82qc/8z8ZqbpfU4vAmep2R9KSp2SFdq3YlB4bWsWXxIwimy5l48ioGCKZv2X8dZczk2aG1SflBydpR937f4B2Y53iPS6qK0dE8Mu6ulH8iqVcLjbZO/Mtt5cbLfehb/3BEGvYRlBek/sTIWeZ62fiCGPSFnVKxTTXo16+b0JL7TAoM+7CA+ISzfJz7DwLSJu4SH2+ALpacyu7dwWbPQXzZTeLn9KJwflZYK2YGwbK2woQ1doe6+juJVp+NjVArS2ww4Kyq2tic694T/PMf3cUZLouH09k4n6y6VXsaRBVSfSFfGsPEinY5bGkvslS5HdRqaktYIpeaeL6tWS290EH/FbBd1EqfLDuwXqFmI96RbhQm8gjnSMiWjssNjCQ8pWxuh0Y3/gAaajFyHp/1bJyYxu2iqsC4qbY1Jh+j+ZdQcJbs1Wi6oIvE/hRujMqMh6ULbY0TZW8JKOt6SE0qu6ke8LwMQFc/hzhmJ9JNwQZS91Q/fQUfWPJg1OT3qOab8vwjvN5AGsuaFrHk3t5l3KFx/AwLtGjKB+z3zAAAAAElFTkSuQmCC');
+    }
+
+    /* No mobile, troca a fonte de display por Sora (LEMON MILK não está
+       instalada em dispositivos móveis e a renderização cai pra fallback).
+       Sora carrega via Google Fonts e fica consistente em qualquer device. */
+    /* Pesos da fonte de display (Sora) — aplicados em todas as larguras.
+       A Sora precisa do peso explícito para ter a mesma presença da antiga LEMON MILK/Bebas. */
+    .display, .h-xl, .h-lg, .h-md, .h-sm,
+    h1, h2, h3,
+    .pain-left h2,
+    .scrolly-title,
+    .footer-highlight-title,
+    .legal-hero h1 {
+      font-weight: 800 !important;
+    }
+    .btn,
+    .legal-show-all,
+    .badge,
+    .eyebrow {
+      font-weight: 700 !important;
+    }
+    /* <br class="br-mobile"> só quebra a linha em telas mobile */
+    .br-mobile { display: none; }
+    @media (max-width: 768px) {
+      .br-mobile { display: inline; }
+    }
+
+    /* Mobile: ajustes pra esses dois títulos longos não quebrarem feio.
+       - "Pronto para sair / do amador?" — fonte menor pra "Pronto para sair" caber numa linha (a quebra antes de "do" já existe via <br/> no HTML)
+       - "QUER PROFISSIONALIZAR SUA MARCA?" — permite quebra em 2 linhas pra não cortar na direita;
+         container vira flex (em vez de inline-flex) pra centralizar de verdade. */
+    @media (max-width: 768px) {
+      .h-xl {
+        font-size: clamp(28px, 8.4vw, 42px) !important;
+      }
+      .footer-highlight {
+        display: flex !important;
+        width: auto !important;
+        max-width: 100% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        box-sizing: border-box;
+        text-align: center;
+      }
+      .footer-highlight-title {
+        font-size: clamp(20px, 6vw, 30px) !important;
+        letter-spacing: 0 !important;
+        line-height: 1.2 !important;
+        white-space: normal !important;        /* permite quebra de linha — antes era nowrap, cortava na direita */
+        display: block !important;
+        text-align: center;
+        max-width: 100%;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+      }
+      .footer-highlight-eyebrow {
+        text-align: center;
+        max-width: 100%;
+      }
+    }
+
+    /* ============================================
+       RESET
+       ============================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-body);
+      background: var(--pd-black);
+      color: var(--pd-text);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+    ul { list-style: none; }
+
+    /* Evita "viúvas" (palavra sozinha na última linha) em parágrafos e títulos.
+       Suporte: Chrome 117+, Safari 17.5+, Firefox 121+ (silenciosamente ignorado em browsers antigos). */
+    p, li {
+      text-wrap: pretty;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      text-wrap: balance;
+    }
+
+    /* ============================================
+       CURSOR CUSTOM — ícone [X] da Prattes Design
+       PNG 32x32 embutido em base64, hotspot em (7,5) — no "pé interno"
+       do bracket superior esquerdo, onde o clique deve registrar.
+       Fallback automático para 'auto'/'pointer'/'text' onde fizer sentido.
+       Em dispositivos touch o navegador ignora a regra naturalmente.
+       ============================================ */
+    html,
+    body {
+      cursor: var(--pd-cursor) 7 5, auto;
+    }
+    /* mantém o cursor custom em elementos clicáveis, com fallback "pointer"
+       (se o PNG falhar, vira mãozinha — feedback de clicabilidade) */
+    a,
+    button,
+    .btn,
+    [role="button"],
+    label[for],
+    summary,
+    input[type="submit"],
+    input[type="button"],
+    input[type="reset"],
+    input[type="checkbox"],
+    input[type="radio"],
+    select {
+      cursor: var(--pd-cursor) 7 5, pointer;
+    }
+    /* I-beam (cursor de texto) preservado em campos editáveis — UX importante */
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="number"],
+    input[type="search"],
+    input[type="password"],
+    input[type="url"],
+    input:not([type]),
+    textarea,
+    [contenteditable="true"] {
+      cursor: text;
+    }
+
+    /* ============================================
+       CLICK RING — feedback visual de clique
+       Anel amarelo que aparece no ponto clicado e converge,
+       encolhendo até sumir. Gerado dinamicamente via JS.
+       ============================================ */
+    .pd-click-ring {
+      position: fixed;
+      pointer-events: none;       /* nunca bloqueia clique nem hover */
+      z-index: 9999;              /* acima de tudo */
+      width: 56px;
+      height: 56px;
+      margin-left: -28px;         /* metade do width  → centro no ponto do clique */
+      margin-top: -28px;          /* metade do height → centro no ponto do clique */
+      border-radius: 50%;
+      border: 2px solid var(--pd-yellow);
+      background: transparent;
+      opacity: 0.75;
+      will-change: transform, opacity;
+      animation: pd-click-ring-shrink 420ms cubic-bezier(0.33, 1, 0.68, 1) forwards;
+    }
+    @keyframes pd-click-ring-shrink {
+      0%   { transform: scale(1);    opacity: 0.75; }
+      60%  { opacity: 0.55; }
+      100% { transform: scale(0);    opacity: 0;    }
+    }
+    /* respeita preferência de movimento reduzido */
+    @media (prefers-reduced-motion: reduce) {
+      .pd-click-ring { animation-duration: 0.01ms; }
+    }
+
+    /* Padrão de fundo geométrico inspirado no [X] da marca */
+    .pattern-bg {
+      position: relative;
+      isolation: isolate;
+    }
+    .pattern-bg::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(135deg, transparent 49%, rgba(255, 218, 0, 0.018) 49%, rgba(255, 218, 0, 0.018) 51%, transparent 51%),
+        linear-gradient(45deg, transparent 49%, rgba(255, 218, 0, 0.018) 49%, rgba(255, 218, 0, 0.018) 51%, transparent 51%);
+      background-size: 60px 60px;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container);
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    /* ============================================
+       TYPOGRAPHY
+       ============================================ */
+    .display {
+      font-family: var(--font-display);
+      font-weight: 400;
+      line-height: 0.95;
+      letter-spacing: 0.005em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow {
+      font-family: var(--font-display);
+      font-size: 13px;
+      letter-spacing: 0.28em;
+      color: var(--pd-yellow);
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 32px; height: 2px;
+      background: var(--pd-yellow);
+    }
+
+    /* Line-height por escala — o .display herda 0.95 (extra-tight), mas
+       headlines com mais de uma linha precisam de mais respiro vertical
+       pra acentos PT-BR (Ç, Ó, Á, Ã) não tocarem na linha de cima. */
+    .h-xl { font-size: clamp(48px, 7.5vw, 108px); line-height: 1.02; }
+    .h-lg { font-size: clamp(36px, 4.2vw, 56px);  line-height: 1.14; }
+    .h-md { font-size: clamp(28px, 3vw, 44px);    line-height: 1.18; }
+    .h-sm { font-size: clamp(20px, 1.6vw, 28px);  line-height: 1.25; }
+
+    .lead { font-size: clamp(15px, 1.1vw, 18px); color: var(--pd-text-dim); max-width: 60ch; }
+
+    .hl { color: var(--pd-yellow); }
+    .hl-bg {
+      background: var(--pd-yellow);
+      color: var(--pd-black);
+      padding: 0 10px;
+      border-radius: 4px;
+      box-decoration-break: clone;
+      -webkit-box-decoration-break: clone;
+    }
+
+    /* ============================================
+       BUTTONS
+       ============================================ */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 26px;
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      border-radius: 999px;
+      transition: all 280ms var(--ease);
+      white-space: nowrap;
+    }
+    .btn-primary {
+      background: var(--pd-yellow);
+      color: var(--pd-black);
+    }
+    .btn-primary:hover {
+      background: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(255, 218, 0, 0.35);
+    }
+    .btn-ghost {
+      background: transparent;
+      color: var(--pd-text);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+    .btn-ghost:hover {
+      border-color: var(--pd-yellow);
+      color: var(--pd-yellow);
+    }
+    .btn-arrow::after {
+      content: "→";
+      transition: transform 280ms var(--ease);
+    }
+    .btn-arrow:hover::after { transform: translateX(4px); }
+
+    /* ============================================
+       HEADER / NAV
+       ============================================ */
+    .header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 18px 0;
+      background: rgba(17, 17, 17, 0.78);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--pd-line);
+      transition: padding 240ms var(--ease);
+    }
+    .header.scrolled { padding: 12px 0; }
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+    }
+    /* Logo inline SVG — símbolo [X] amarelo + texto branco fixo (sem trocar). */
+    .nav-logo {
+      display: block;
+      height: 52px;
+      width: auto;
+      color: var(--pd-text); /* texto branco sempre */
+      flex-shrink: 0;
+    }
+    .nav-logo-svg {
+      display: block;
+      height: 100%;
+      width: auto;        /* aspect-ratio preservado (~1.45:1) */
+    }
+    .nav-menu {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+    }
+    .nav-menu a {
+      padding: 10px 16px;
+      font-size: 14px;
+      font-weight: 400; /* fino no estado padrão */
+      color: var(--pd-text); /* branco */
+      transition: color 200ms var(--ease), font-weight 200ms var(--ease);
+      position: relative;
+    }
+    /* Underline amarelo — aparece SÓ ao passar mouse ou clicar */
+    .nav-menu a::after {
+      content: "";
+      position: absolute;
+      bottom: 4px;
+      left: 16px; right: 16px;
+      height: 2px;
+      background: var(--pd-yellow);
+      transform: scaleX(0);
+      transform-origin: center;
+      transition: transform 240ms var(--ease);
+    }
+    .nav-menu a:hover {
+      font-weight: 700; /* peso forte no hover */
+    }
+    .nav-menu a:hover::after {
+      transform: scaleX(1); /* underline aparece */
+    }
+
+    .nav-burger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      padding: 10px;
+    }
+    .nav-burger span {
+      display: block;
+      width: 24px; height: 2px;
+      background: var(--pd-text);
+      transition: transform 240ms var(--ease);
+    }
+
+    @media (max-width: 960px) {
+      .nav-menu { display: none; }
+      .nav-burger { display: flex; }
+      .nav-cta { display: none; }
+    }
+
+    /* ============================================
+       HERO  (texto à esquerda · galeria com auto-scroll contínuo à direita)
+       ============================================ */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      padding: 120px 0 60px;
+      background: var(--pd-black);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      isolation: isolate;
+    }
+
+    /* GRID DE FUNDO — linhas finas formando quadrados sutis, cobertura total */
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+      background-size: 110px 110px;
+      background-position: -1px -1px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* glow amarelo suave no canto superior direito */
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: -15%; right: -10%;
+      width: 55%; height: 75%;
+      background: radial-gradient(ellipse at center, rgba(255, 218, 0, 0.07), transparent 65%);
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      /* Mais espaço pra coluna esquerda (texto) — evita que "DESIGN ESTRATÉGICO"
+         quebre em duas linhas em 1920px. Galeria à direita continua imponente
+         por causa do height 78vh. */
+      grid-template-columns: 1.15fr 1fr;
+      gap: 50px;
+      align-items: center;
+      width: 100%;
+    }
+    .hero-content { max-width: 720px; }
+
+    .hero-headline {
+      margin-top: 24px;
+      /* Cap calibrado: a "DESIGN ESTRATÉGICO" (texto mais longo) cabe na coluna
+         esquerda em viewports 1280px+. Acima desse cap começa a quebrar feio
+         em telas wide com a fonte de display condensada. */
+      font-size: clamp(32px, 3.6vw, 52px);
+      line-height: 1.08;
+      /* text-wrap: balance equilibra linhas automaticamente em browsers modernos */
+      text-wrap: balance;
+    }
+    .hero-headline .line { display: block; }
+    .hero-headline strong {
+      font-weight: 700;
+      -webkit-text-stroke: 0.5px currentColor;
+              text-stroke: 0.5px currentColor;
+    }
+
+    .hero-sub {
+      margin-top: 28px;
+      font-size: clamp(15px, 1.1vw, 18px);
+      color: var(--pd-text-dim);
+      max-width: 56ch;
+      line-height: 1.6;
+      /* Evita "viúvas" — palavra sozinha na última linha. Suporte: Chrome 117+,
+         Safari 17.5+, Firefox 121+. Browsers antigos ignoram e ficam como antes. */
+      text-wrap: pretty;
+    }
+    .hero-sub strong { color: var(--pd-text); font-weight: 700; }
+    .hero-actions {
+      margin-top: 36px;
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .hero-actions .btn { padding: 16px 28px; font-size: 14px; }
+
+    /* ---------- GALERIA AUTO-SCROLL (2 COLUNAS, CONTÍNUO) ---------- */
+    .hero-gallery {
+      position: relative;
+      height: 78vh;
+      max-height: 720px;
+      min-height: 520px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      overflow: hidden;
+    }
+    /* máscara de fade nas bordas superior e inferior — curva multi-stop
+       aproxima um ease-out, ficando perceptivelmente mais suave que
+       um linear cru de preto → transparente */
+    .hero-gallery::before,
+    .hero-gallery::after {
+      content: "";
+      position: absolute;
+      left: 0; right: 0;
+      height: 60px;
+      pointer-events: none;
+      z-index: 4;
+    }
+    .hero-gallery::before {
+      top: 0;
+      background: linear-gradient(
+        to bottom,
+        var(--pd-black) 0%,
+        rgba(17, 17, 17, 0.75) 35%,
+        rgba(17, 17, 17, 0.3) 70%,
+        transparent 100%
+      );
+    }
+    .hero-gallery::after {
+      bottom: 0;
+      background: linear-gradient(
+        to top,
+        var(--pd-black) 0%,
+        rgba(17, 17, 17, 0.75) 35%,
+        rgba(17, 17, 17, 0.3) 70%,
+        transparent 100%
+      );
+    }
+
+    .gallery-col {
+      position: relative;
+      overflow: hidden;
+    }
+    /* o "trilho" interno que faz o loop infinito.
+       cards são duplicados no HTML; o trilho anima de 0 a -50%
+       — quando chega ao fim do primeiro conjunto, a 2ª cópia continua
+       perfeitamente do início → loop sem cortes */
+    .gallery-track {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      will-change: transform;
+      /* animation-name é definido por coluna abaixo (cada uma com sua direção) */
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-direction: normal;
+      /* Por default, pausada — evita "salto" inicial quando imagens/fontes
+         terminam de carregar e fazem layout shift no meio da animação.
+         O JS adiciona .pd-loaded no <body> em window.load → libera animação. */
+      animation-play-state: paused;
+    }
+    body.pd-loaded .gallery-track {
+      animation-play-state: running;
+    }
+    /* velocidades diferentes por coluna = efeito parallax sem JS */
+    /* coluna 1 SOBE (38s, mais rápida); coluna 2 DESCE (52s, mais lenta) — direções opostas criam ritmo visual */
+    .gallery-col[data-col="1"] .gallery-track {
+      animation-name: pd-marquee-up;
+      animation-duration: 38s;
+    }
+    .gallery-col[data-col="2"] .gallery-track {
+      animation-name: pd-marquee-down;
+      animation-duration: 52s;
+    }
+
+    /* coluna 1: cards sobem (0 → -50%) — segundo conjunto duplicado emenda no início → loop seamless */
+    @keyframes pd-marquee-up {
+      0%   { transform: translate3d(0, 0, 0); }
+      100% { transform: translate3d(0, -50%, 0); }
+    }
+    /* coluna 2: cards descem — começa em -50% e vai pra 0, dando sensação de movimento descendente */
+    @keyframes pd-marquee-down {
+      0%   { transform: translate3d(0, -50%, 0); }
+      100% { transform: translate3d(0, 0, 0); }
+    }
+
+    /* (regra antiga ":hover .gallery-track {paused}" removida — agora pausa só com click/touch via JS) */
+
+    /* respeita acessibilidade: usuários com motion reduzido não veem animação */
+    @media (prefers-reduced-motion: reduce) {
+      .gallery-track { animation: none !important; }
+    }
+
+    /* ---------- CARDS ---------- */
+    .gcard {
+      position: relative;
+      flex-shrink: 0;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      background: var(--pd-graphite);
+      border: 1px solid var(--pd-line);
+      transition: border-color 240ms var(--ease);
+    }
+    .gcard:hover { border-color: var(--pd-yellow); }
+    .gcard img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    /* alturas dos cards — proporções inspiradas no SDA (mais portrait, maiores) */
+    .gcard.h-tall    { aspect-ratio: 3 / 4.4; }
+    .gcard.h-portrait{ aspect-ratio: 3 / 3.8; }
+    .gcard.h-square  { aspect-ratio: 1 / 1; }
+    .gcard.h-wide    { aspect-ratio: 4 / 3.2; }
+
+    /* placeholder de marca quando não há foto real */
+    .gcard.placeholder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--pd-graphite-2) 0%, var(--pd-black) 100%);
+      isolation: isolate;
+    }
+    .gcard.placeholder::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(45deg, transparent 48%, rgba(255, 218, 0, 0.07) 48%, rgba(255, 218, 0, 0.07) 52%, transparent 52%);
+      background-size: 30px 30px;
+      z-index: -1;
+    }
+    .gcard.placeholder.yellow { background: var(--pd-yellow); }
+    .gcard.placeholder.yellow .ph-mark { color: var(--pd-black); }
+    .gcard.placeholder.yellow .ph-label { color: rgba(0,0,0,0.75); }
+    .gcard.placeholder.yellow::before { display: none; }
+
+    .ph-mark {
+      font-family: var(--font-display);
+      font-size: clamp(56px, 7vw, 110px);
+      color: rgba(255, 218, 0, 0.55);
+      letter-spacing: -0.02em;
+      line-height: 1;
+    }
+    .ph-label {
+      position: absolute;
+      bottom: 20px; left: 22px;
+      font-family: var(--font-display);
+      font-size: 13px;
+      letter-spacing: 0.18em;
+      color: var(--pd-text-dim);
+    }
+    .ph-tag {
+      position: absolute;
+      top: 18px; right: 18px;
+      padding: 5px 11px;
+      background: var(--pd-yellow);
+      color: var(--pd-black);
+      font-family: var(--font-display);
+      font-size: 10px;
+      letter-spacing: 0.16em;
+      border-radius: 4px;
+    }
+
+    .gcard.real::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(17, 17, 17, 0.6) 0%, transparent 50%);
+      pointer-events: none;
+    }
+    .gcard.real .ph-label { color: var(--pd-yellow); z-index: 2; }
+
+    /* ---------- responsivo ---------- */
+    @media (max-width: 1100px) {
+      .hero-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+      /* Cap mais conservador no range notebook (1024-1100px) — coluna estreita
+         exige fonte menor pra não quebrar "DESIGN ESTRATÉGICO". */
+      .hero-headline { font-size: clamp(28px, 3.4vw, 42px); }
+      .hero-sub { font-size: clamp(14px, 1vw, 17px); }
+    }
+    @media (max-width: 900px) {
+      .hero { min-height: auto; padding: 120px 0 60px; }
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .hero-headline { font-size: clamp(28px, 5.6vw, 46px); }
+      .hero-gallery { height: 60vh; max-height: 540px; min-height: 420px; }
+    }
+    @media (max-width: 540px) {
+      .hero-headline { font-size: clamp(26px, 7.8vw, 36px); }
+      .hero-gallery { height: 55vh; min-height: 380px; }
+    }
+
+    /* ============================================
+       SECTION GENERIC
+       ============================================ */
+    section {
+      padding: 110px 0;
+      position: relative;
+    }
+    .section-header {
+      text-align: center;
+      /* max-width maior pra section headers longos (ex.: "PRINCIPAIS SERVIÇOS
+         QUE TRAZEM RESULTADOS") respirarem melhor em 2 linhas no desktop. */
+      max-width: 920px;
+      margin: 0 auto 64px;
+    }
+    .section-header .eyebrow { justify-content: center; margin-bottom: 18px; }
+    .section-header .eyebrow::before { display: none; }
+    .section-header h2 { text-wrap: balance; }
+    .section-header .lead { margin: 24px auto 0; max-width: 720px; }
+
+    /* ============================================
+       LOGO STRIP — Marcas que confiam (SEÇÃO BRANCA)
+       — sem grid de fundo (só no hero)
+       — cantos arredondados sobrepondo o hero
+       — carrossel horizontal infinito
+       ============================================ */
+
+    /* ----- Carrossel horizontal infinito ----- */
+
+    @keyframes pd-carousel-x {
+      from { transform: translate3d(-50%, 0, 0); }
+      to   { transform: translate3d(0, 0, 0); }
+    }
+    /* pausa ao passar o mouse */
+
+    /* respeita acessibilidade */
+    @media (prefers-reduced-motion: reduce) {
+  
+    }
+
+    @media (max-width: 700px) {
+
+    }
+
+    /* ============================================
+       PAIN POINTS — Sua empresa enfrenta esses desafios?
+       ============================================ */
+    .pain {
+      background: var(--pd-black);
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+    }
+    /* Grid de fundo idêntico ao hero — linhas finas em quadrados sutis */
+    .pain::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+      background-size: 110px 110px;
+      background-position: -1px -1px;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .pain > .container { position: relative; z-index: 1; }
+    .pain-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.4fr;
+      gap: 80px;
+      align-items: stretch; /* colunas com mesma altura → permite empurrar o ícone pro fundo */
+    }
+    @media (max-width: 900px) {
+      .pain-grid {
+        grid-template-columns: minmax(0, 1fr);  /* minmax(0, 1fr) é o fix clássico pra grid não estourar viewport no iOS */
+        gap: 50px;
+      }
+    }
+
+    /* A coluna esquerda vira flex column, pra que o ícone possa flutuar pro fundo
+       (margin-top: auto) e ficar visualmente alinhado com o pain-cta da direita */
+    .pain-left {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .pain-left .badge {
+      display: inline-block;
+      align-self: flex-start; /* badge não estica horizontalmente */
+      padding: 8px 16px;
+      background: var(--pd-yellow);
+      color: var(--pd-black);
+      font-family: var(--font-display);
+      font-size: 12px;
+      letter-spacing: 0.22em;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+    .pain-left h2 {
+      margin-bottom: 24px;
+    }
+
+    /* Ícone "Curiosidade" — empurrado pro fundo da coluna esquerda
+       pra alinhar visualmente com o CTA box da coluna direita */
+    .pain-curiosity {
+      display: block;
+      margin-top: auto;       /* empurra pro fundo da coluna flex */
+      padding-top: 40px;       /* respiro mínimo do texto acima */
+      width: clamp(280px, 28vw, 380px);
+      height: auto;
+      filter: drop-shadow(0 22px 48px rgba(255, 218, 0, 0.18))
+              drop-shadow(0 6px 14px rgba(0, 0, 0, 0.55));
+      animation: pd-curiosity-float 2.4s ease-in-out infinite;
+      will-change: transform;
+    }
+    @keyframes pd-curiosity-float {
+      0%, 100% { transform: translateY(0); }
+      50%      { transform: translateY(-16px); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .pain-curiosity { animation: none; }
+    }
+    /* Em mobile (quando .pain-grid vira 1 coluna), reseta o flex-bottom e centraliza */
+    @media (max-width: 900px) {
+      .pain-curiosity {
+        margin-top: 24px;     /* sobrescreve margin-top: auto do desktop */
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 0;
+        width: clamp(220px, 55vw, 300px);
+      }
+    }
+
+    .pain-quotes {
+      display: grid;
+      gap: 18px;
+    }
+    .quote-card {
+      padding: 26px 28px;
+      background: var(--pd-graphite);
+      border: 1px solid var(--pd-line);
+      border-left: 3px solid var(--pd-yellow);
+      border-radius: var(--radius-md);
+      font-size: 18px;
+      line-height: 1.5;
+      transition: all 240ms var(--ease);
+    }
+    .quote-card:hover {
+      transform: translateX(4px);
+      border-left-width: 6px;
+    }
+    .quote-card::before {
+      content: "“";
+      font-family: var(--font-display);
+      font-size: 48px;
+      color: var(--pd-yellow);
+      line-height: 0.6;
+      margin-right: 8px;
+      vertical-align: -8px;
+    }
+    .pain-cta {
+      margin-top: 40px;
+      padding: 32px;
+      background: linear-gradient(135deg, var(--pd-graphite-2) 0%, var(--pd-graphite) 100%);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--pd-line);
+    }
+    .pain-cta p {
+      color: var(--pd-text-dim);
+      margin-bottom: 22px;
+      font-size: 16px;
+    }
+
+    /* ============================================
+       STAND OUT — Manifesto (SEÇÃO AMARELA)
+       ============================================ */
+    .standout {
+      /* Vinheta sutil — centro mais quente, bordas levemente mais escuras
+         cria profundidade e foco no conteúdo (princípio figura-fundo) */
+      background:
+        radial-gradient(ellipse 90% 70% at 50% 50%, #FFE233, var(--pd-yellow) 80%);
+      color: var(--pd-black);
+      padding: 160px 0;
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+    }
+    /* [X] gigante de fundo, em preto sutil */
+    /* grid de fundo sutil em preto, harmoniza com hero */
+    .standout > .container { position: relative; z-index: 2; }
+    .standout-content {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .standout .eyebrow {
+      color: var(--pd-black);
+    }
+    .standout .eyebrow::before {
+      background: var(--pd-black);
+    }
+    .standout h2 {
+      margin: 22px 0 28px;
+      color: var(--pd-black);
+      /* line-height generoso aqui é essencial:
+         o highlight preto tem padding vertical que precisa de espaço
+         para não invadir a linha acima/abaixo. 1.18 dá o respiro certo */
+      line-height: 1.18;
+    }
+    /* dentro da seção amarela, "hl" vira branco pra criar contraste no acento */
+    .standout .hl {
+      /* Tratamento "highlight de revista":
+         retângulo preto sólido como fundo do texto branco.
+         box-decoration-break: clone faz o fundo se aplicar a cada linha
+         separadamente quando o texto quebra. */
+      display: inline;
+      background: #000000;
+      color: #ffffff;
+      /* padding vertical pequeno (0.02em) — apenas o suficiente para o
+         retângulo respirar, sem invadir a linha acima/abaixo;
+         padding horizontal generoso (0.28em) para o efeito editorial */
+      padding: 0.02em 0.28em;
+      box-decoration-break: clone;
+      -webkit-box-decoration-break: clone;
+      /* remove qualquer sombra ou outline herdado */
+      text-shadow: none;
+      -webkit-text-stroke: 0;
+    }
+    .standout .lead {
+      color: rgba(0, 0, 0, 0.78);
+      font-weight: 500;
+    }
+
+    /* ============================================
+       SERVICES — Como te ajudamos
+       ============================================ */
+    .services {
+      background: var(--pd-black);
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+    }
+    /* ============================================
+       PARTÍCULAS AMARELAS (efeito "nevando") — genérico
+       Usado em .services, .cases e .community.
+       O elemento <canvas class="section-particles"> deve ser primeiro filho
+       da seção, e a seção precisa ter position: relative + overflow: hidden +
+       isolation: isolate. O .container irmão fica em z-index: 1.
+       ============================================ */
+    .section-particles {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    /* na .final-cta o canvas precisa ficar acima dos colchetes decorativos
+       (::before/::after em z-index 0) mas atrás do conteúdo (z-index 2) */
+    .final-cta .section-particles {
+      z-index: 1;
+    }
+    .services > .container,
+    .cases > .container,
+    .community > .container {
+      position: relative;
+      z-index: 1;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    @media (max-width: 900px) { .services-grid { grid-template-columns: 1fr; } }
+
+    .service-card {
+      background: var(--pd-graphite);
+      border: 1px solid var(--pd-line);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: all 320ms var(--ease);
+      display: flex;
+      flex-direction: column;
+    }
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    }
+    .service-image {
+      aspect-ratio: 4 / 3;
+      background: var(--pd-black);
+      position: relative;
+      overflow: hidden;
+    }
+    .service-image img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .service-card:hover .service-image img {
+      transform: scale(1.04);
+    }
+    .service-body { padding: 32px; flex: 1; display: flex; flex-direction: column; }
+    .service-body h3 { margin-bottom: 14px; }
+    .service-body p { color: var(--pd-text-dim); margin-bottom: 22px; font-size: 15px; }
+    .service-list {
+      margin-top: auto;
+      display: grid;
+      gap: 10px;
+      padding-top: 22px;
+      border-top: 1px solid var(--pd-line);
+    }
+    .service-list li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      color: var(--pd-text);
+    }
+    .service-list li::before {
+      content: "";
+      width: 6px; height: 6px;
+      background: var(--pd-yellow);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .services-footer { text-align: center; margin-top: 50px; }
+
+    /* ============================================
+       CTA BANNER
+       ============================================ */
+    .cta-banner {
+      padding: 80px 0;
+      background: var(--pd-black-deep);
+      border-top: 1px solid var(--pd-line);
+      border-bottom: 1px solid var(--pd-line);
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+    }
+    /*
+      Animação "brilho passando" — três camadas de gradientes em UM único
+      pseudo-element, todas movidas em sincronia via transform: translateX.
+      As três camadas:
+        1) Linha amarela animada na borda SUPERIOR (1px alta)
+        2) Linha amarela animada na borda INFERIOR (1px alta)
+        3) Brilho/reflexo amarelo difuso (cobre toda a altura)
+      Por estarem no mesmo elemento, animam SINCRONIZADAS automaticamente.
+    */
+    .cta-banner::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      background-image:
+        /* 1. Brilho na linha de cima */
+        linear-gradient(90deg, transparent 30%, rgba(255, 218, 0, 0.95) 50%, transparent 70%),
+        /* 2. Brilho na linha de baixo */
+        linear-gradient(90deg, transparent 30%, rgba(255, 218, 0, 0.95) 50%, transparent 70%),
+        /* 3. Reflexo amarelo principal (mais largo, mais sutil, leve diagonal pra parecer luz natural) */
+        linear-gradient(105deg, transparent 25%, rgba(255, 218, 0, 0.20) 48%, rgba(255, 218, 0, 0.28) 52%, transparent 75%);
+      background-size:
+        100% 1px,
+        100% 1px,
+        100% 100%;
+      background-position:
+        0 0,
+        0 100%,
+        0 0;
+      background-repeat: no-repeat;
+      transform: translateX(-100%);
+      animation: pd-banner-shine 5s ease-in-out infinite alternate;
+      will-change: transform;
+    }
+    @keyframes pd-banner-shine {
+      to { transform: translateX(100%); }
+    }
+    /* respeita acessibilidade */
+    @media (prefers-reduced-motion: reduce) {
+      .cta-banner::before { animation: none; transform: translateX(0); }
+    }
+    .cta-banner-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 28px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .cta-banner h3 {
+      font-size: clamp(24px, 2.8vw, 38px);
+    }
+    .cta-banner p { 
+      color: var(--pd-text-dim); 
+      margin-top: 8px; 
+      text-align: center;
+    }
+
+    /* === Formulário de diagnóstico (liquid glass) === */
+    .cta-banner-form {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      width: 100%;
+      max-width: 460px;
+      margin-top: 8px;
+    }
+    .cta-input {
+      width: 100%;
+      padding: 16px 22px;
+      font-family: var(--font-body);
+      font-size: 15px;
+      color: var(--pd-text);
+      background: rgba(255, 255, 255, 0.06);   /* branco com baixíssima opacidade */
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 999px;
+      backdrop-filter: blur(14px) saturate(140%);
+      -webkit-backdrop-filter: blur(14px) saturate(140%);
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.08),  /* highlight superior interno (vidro) */
+        0 4px 18px rgba(0, 0, 0, 0.25);            /* sombra externa sutil */
+      transition: all 220ms var(--ease);
+    }
+    .cta-input::placeholder {
+      color: rgba(255, 255, 255, 0.55);
+      letter-spacing: 0.01em;
+    }
+    .cta-input:hover {
+      background: rgba(255, 255, 255, 0.09);
+      border-color: rgba(255, 255, 255, 0.22);
+    }
+    .cta-input:focus {
+      outline: none;
+      background: rgba(255, 255, 255, 0.10);
+      border-color: rgba(255, 218, 0, 0.55); /* destaque amarelo no foco */
+      box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.12),
+        0 0 0 3px rgba(255, 218, 0, 0.12),
+        0 6px 24px rgba(0, 0, 0, 0.35);
+    }
+    /* Marca campos inválidos (apenas após interação) */
+    .cta-input:not(:placeholder-shown):invalid {
+      border-color: rgba(255, 100, 100, 0.5);
+    }
+    .cta-banner-submit {
+      margin-top: 6px;
+    }
+
+    /* ============================================
+       CASES
+       ============================================ */
+    .cases {
+      background: var(--pd-black);
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .cases-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    @media (max-width: 800px) { .cases-grid { grid-template-columns: 1fr; } }
+
+    .case-card {
+      position: relative;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      background: var(--pd-graphite);
+      border: 1px solid var(--pd-line);
+      aspect-ratio: 16 / 11;
+      cursor: pointer;
+      transition: all 320ms var(--ease);
+    }
+    .case-card:hover { /* border stays neutral; glow handles the highlight */ }
+    .case-cover {
+      position: absolute;
+      inset: 0;
+      background: var(--pd-black);
+      transition: transform 600ms var(--ease);
+      overflow: hidden;
+    }
+    .case-cover img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .case-card:hover .case-cover { transform: scale(1.04); }
+    .case-overlay {
+      position: absolute;
+      inset: 0;
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      /* Gradiente mais forte: preto sólido na base ATÉ acima do título, 
+         depois fade rápido pra transparente. Garante leitura limpa do texto 
+         independente da imagem de fundo. */
+      background: linear-gradient(to top, 
+        rgba(0, 0, 0, 0.96) 0%, 
+        rgba(0, 0, 0, 0.92) 30%, 
+        rgba(0, 0, 0, 0.85) 50%, 
+        rgba(0, 0, 0, 0.5) 70%,
+        rgba(0, 0, 0, 0.15) 88%,
+        transparent 100%);
+    }
+    .case-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+    .case-tag {
+      padding: 5px 12px;
+      background: rgba(255, 218, 0, 0.12);
+      border: 1px solid rgba(255, 218, 0, 0.4);
+      border-radius: 999px;
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--pd-yellow);
+    }
+    .case-overlay h3 { margin-bottom: 8px; font-size: 24px; line-height: 1.15; }
+    /* Diagramação em 2 linhas pros titles longos (case 01 e 03) */
+    .case-h3-line1 { display: block; }
+    .case-h3-line2 { display: block; color: var(--pd-yellow); font-weight: 400; }
+    .case-overlay p { color: var(--pd-text-dim); font-size: 14px; }
+
+    .cases-footer { text-align: center; margin-top: 50px; }
+
+    /* ============================================
+       TESTIMONIALS
+       ============================================ */
+    .testimonials {
+      background: var(--pd-black-deep);
+      overflow: hidden;
+    }
+    .testimonials-track {
+      display: flex;
+      gap: 24px;
+      overflow-x: auto;
+      padding: 8px 0 32px;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      /* fade nas bordas — cards saem/entram suavemente, "se misturando" com o fundo */
+      mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        black 5%,
+        black 95%,
+        transparent 100%
+      );
+      -webkit-mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        black 5%,
+        black 95%,
+        transparent 100%
+      );
+    }
+    .testimonials-track::-webkit-scrollbar { height: 8px; }
+    .testimonials-track::-webkit-scrollbar-thumb { background: var(--pd-line); border-radius: 4px; }
+    .testimonial-card {
+      flex: 0 0 420px;
+      max-width: 420px;
+      padding: 36px;
+      background: var(--pd-graphite);
+      border: 1px solid var(--pd-line);
+      border-radius: var(--radius-lg);
+      scroll-snap-align: start;
+      display: flex;
+      flex-direction: column;
+    }
+    .testimonial-quote {
+      font-size: 17px;
+      line-height: 1.6;
+      color: var(--pd-text);
+      flex: 1;
+      margin-bottom: 28px;
+      position: relative;
+    }
+    .testimonial-quote::before {
+      content: "“";
+      display: block;
+      font-family: var(--font-display);
+      font-size: 56px;
+      color: var(--pd-yellow);
+      line-height: 0.5;
+      margin-bottom: 14px;
+    }
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding-top: 22px;
+      border-top: 1px solid var(--pd-line);
+    }
+    .author-avatar {
+      width: 48px; height: 48px;
+      border-radius: 50%;
+      background: var(--pd-yellow);
+      color: var(--pd-black);
+      font-family: var(--font-display);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+    .author-name { font-weight: 700; font-size: 15px; }
+    .author-role { font-size: 13px; color: var(--pd-text-mute); }
+
+    /* ============================================
+       NEWSLETTER + COMUNIDADE
+       ============================================ */
+    .community {
+      background: var(--pd-black);
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .community-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    @media (max-width: 900px) { .community-grid { grid-template-columns: 1fr; } }
+
+    .newsletter-card {
+      padding: 50px;
+      background:
+        linear-gradient(135deg, rgba(255, 218, 0, 0.1), transparent 70%),
+        var(--pd-graphite);
+      border: 1px solid var(--pd-line);
+      border-radius: var(--radius-lg);
+    }
+    .newsletter-card .eyebrow { margin-bottom: 16px; }
+    .newsletter-card h3 { margin-bottom: 14px; }
+    .newsletter-card p { color: var(--pd-text-dim); margin-bottom: 28px; }
+    .newsletter-form {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .newsletter-form input {
+      flex: 1;
+      min-width: 220px;
+      padding: 16px 20px;
+      background: var(--pd-black);
+      border: 1px solid var(--pd-line);
+      border-radius: 999px;
+      color: var(--pd-text);
+      font-family: inherit;
+      font-size: 15px;
+      transition: border-color 200ms var(--ease);
+    }
+    .newsletter-form input:focus { outline: none; border-color: var(--pd-yellow); }
+    .newsletter-consent {
+      margin-top: 14px;
+      font-size: 12px;
+      color: var(--pd-text-mute);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .social-cards {
+      display: grid;
+      gap: 16px;
+    }
+    .social-card {
+      padding: 24px;
+      background: var(--pd-graphite);
+      border: 1px solid var(--pd-line);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      transition: all 240ms var(--ease);
+    }
+    .social-card:hover {
+      border-color: var(--pd-yellow);
+      transform: translateX(4px);
+    }
+    .social-icon {
+      width: 46px; height: 46px;
+      border-radius: 12px;
+      background: var(--pd-yellow);
+      color: var(--pd-black);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .social-icon svg { width: 22px; height: 22px; }
+    .social-card h4 { font-size: 17px; margin-bottom: 2px; }
+    .social-card p { font-size: 13px; color: var(--pd-text-mute); }
+    .social-card .arrow {
+      margin-left: auto;
+      color: var(--pd-text-mute);
+      transition: all 200ms var(--ease);
+    }
+    .social-card:hover .arrow { color: var(--pd-yellow); transform: translateX(4px); }
+
+    /* ============================================
+       FINAL CTA
+       ============================================ */
+    .final-cta {
+      padding: 160px 0;
+      /* Versão limpa: só preto profundo + grid pattern.
+         Removidos: brackets [ ] amarelos, partículas e glows radiais. */
+      background:
+        linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px) 0 0 / 110px 110px,
+        linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px) 0 0 / 110px 110px,
+        var(--pd-black-deep);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+    }
+    /* Canvas de partículas removido visualmente desta seção (mantido nas outras) */
+    .final-cta .section-particles { display: none; }
+    .final-cta-content { position: relative; z-index: 2; }
+    .final-cta .eyebrow { justify-content: center; margin-bottom: 24px; }
+    .final-cta .eyebrow::before { display: none; }
+    .final-cta h2 { margin-bottom: 24px; }
+    .final-cta p { max-width: 620px; margin: 0 auto 40px; color: var(--pd-text-dim); font-size: 18px; }
+
+    /* ============================================
+       FOOTER  (centralizado, minimalista)
+       ============================================ */
+    .footer {
+      background: var(--pd-black-deep);
+      padding: 80px 0 30px;
+      border-top: 1px solid var(--pd-line);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .footer::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 50%;
+      transform: translateX(-50%);
+      /* Linha responsiva: até 600px no desktop, 92vw em mobile.
+         Garante presença visual proporcional em qualquer breakpoint. */
+      width: min(600px, 92vw);
+      height: 1px;
+      background: linear-gradient(to right, transparent, var(--pd-yellow), transparent);
+      opacity: 0.5;
+    }
+    @media (max-width: 700px) {
+      /* Aumenta a opacidade no mobile pra compensar o gradient mais curto */
+      .footer::before { opacity: 0.75; }
+    }
+
+    .footer-highlight {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      padding: 0 60px 28px;
+      margin: 0 auto 50px;
+      border-bottom: 1px solid var(--pd-line);
+    }
+    .footer-highlight-eyebrow {
+      font-family: var(--font-display);
+      font-size: 11px;
+      letter-spacing: 0.32em;
+      color: var(--pd-text-mute);
+    }
+    .footer-highlight-title {
+      font-family: var(--font-display);
+      font-size: clamp(28px, 3vw, 40px);
+      color: var(--pd-yellow);
+      letter-spacing: 0.02em;
+    }
+
+    /* Linha única com TODOS os ícones (contato + redes sociais) */
+    .footer-socials {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 50px;
+    }
+    .footer-socials a {
+      width: 46px; height: 46px;
+      border-radius: 50%;
+      background: var(--pd-graphite);
+      border: 1px solid var(--pd-line);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--pd-text-dim);
+      transition: all 240ms var(--ease);
+    }
+    .footer-socials a:hover {
+      background: var(--pd-yellow);
+      color: var(--pd-black);
+      border-color: var(--pd-yellow);
+      transform: translateY(-3px);
+    }
+    .footer-socials svg { width: 20px; height: 20px; }
+
+    .footer-bottom {
+      padding-top: 30px;
+      border-top: 1px solid var(--pd-line);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+      color: var(--pd-text-mute);
+      font-size: 12px;
+    }
+    .footer-bottom a {
+      color: var(--pd-text-mute);
+      transition: color 200ms var(--ease);
+    }
+    .footer-bottom a:hover { color: var(--pd-yellow); }
+    .footer-bottom .sep {
+      width: 4px; height: 4px;
+      background: var(--pd-line);
+      border-radius: 50%;
+    }
+
+    /* Reveal animations */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 700ms var(--ease), transform 700ms var(--ease);
+    }
+    .reveal.in { opacity: 1; transform: translateY(0); }
+
+      /* ============================================
+       SCROLLY CAROUSELS
+       Duas linhas horizontais que transladam conforme o usuário 
+       faz scroll vertical na página. JS calcula progresso da seção
+       no viewport e aplica translateX nos tracks. Linha 1 vai pra
+       esquerda; linha 2 vai pra direita (sentidos opostos pra ritmo).
+       ============================================ */
+    .scrolly-carousels {
+      background: #ffffff;
+      padding: 70px 0 80px;
+      border-radius: 60px 60px 0 0;
+      margin-top: -60px;
+      position: relative;
+      z-index: 2;
+      overflow: hidden;
+    }
+    .scrolly-title {
+      text-align: center;
+      font-family: var(--font-display, sans-serif);
+      font-size: 13px;
+      letter-spacing: 0.32em;
+      color: #666;
+      margin: 0 0 36px;
+      font-weight: 500;
+    }
+    /* Mobile: letter-spacing menor + tamanho reduzido pro título caber em 2 linhas
+       em vez de 3 (com o <br class="br-mobile"> forçando quebra após "CARROSSÉIS"). */
+    @media (max-width: 700px) {
+      .scrolly-title {
+        font-size: 11px;
+        letter-spacing: 0.18em;
+        margin-bottom: 24px;
+        padding: 0 12px;
+      }
+    }
+    .scrolly-row {
+      overflow: hidden;
+      margin-bottom: 22px;
+      /* máscara nas bordas pra fade-out suave */
+      /* Curva ease-in/ease-out com vários stops pra fade suave nas laterais.
+         Antes: corte de 4% (parecia uma linha). Agora: 14% com 4 stops 
+         intermediários — opacidade cresce gradativamente 0→0.2→0.55→0.85→1, 
+         imitando a curva ease-out de uma transição CSS. */
+      mask-image: linear-gradient(to right,
+        rgba(0, 0, 0, 0)    0%,
+        rgba(0, 0, 0, 0.2)  4%,
+        rgba(0, 0, 0, 0.55) 8%,
+        rgba(0, 0, 0, 0.85) 12%,
+        rgba(0, 0, 0, 1)    16%,
+        rgba(0, 0, 0, 1)    84%,
+        rgba(0, 0, 0, 0.85) 88%,
+        rgba(0, 0, 0, 0.55) 92%,
+        rgba(0, 0, 0, 0.2)  96%,
+        rgba(0, 0, 0, 0)    100%
+      );
+      -webkit-mask-image: linear-gradient(to right,
+        rgba(0, 0, 0, 0)    0%,
+        rgba(0, 0, 0, 0.2)  4%,
+        rgba(0, 0, 0, 0.55) 8%,
+        rgba(0, 0, 0, 0.85) 12%,
+        rgba(0, 0, 0, 1)    16%,
+        rgba(0, 0, 0, 1)    84%,
+        rgba(0, 0, 0, 0.85) 88%,
+        rgba(0, 0, 0, 0.55) 92%,
+        rgba(0, 0, 0, 0.2)  96%,
+        rgba(0, 0, 0, 0)    100%
+      );
+    }
+    .scrolly-row:last-child { margin-bottom: 0; }
+    .scrolly-track {
+      display: flex;
+      gap: 22px;
+      width: max-content;
+      will-change: transform;
+      padding: 0 22px;
+      /* Marquee infinito CSS — todas as imagens passam continuamente
+         pela viewport. As <img> são duplicadas no HTML; animamos
+         de 0 → -50% (linha 1) ou -50% → 0 (linha 2 espelhada).
+         Como exatamente metade do track é uma cópia idêntica, o loop
+         é seamless: quando termina o 1º bloco, o 2º está alinhado no início.
+         Animação pausa por default; o JS adiciona .pd-loaded em window.load
+         (mesma técnica da galeria do hero) pra evitar layout shift inicial. */
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-play-state: paused;
+    }
+    body.pd-loaded .scrolly-track { animation-play-state: running; }
+    .scrolly-track[data-direction="-1"] { animation-name: pd-scrolly-left;  }
+    .scrolly-track[data-direction="1"]  { animation-name: pd-scrolly-right; }
+    /* Durações distintas por linha — evita que linhas com mesma direção
+       pareçam sincronizadas. Cada uma roda no seu próprio ritmo. */
+    /* Velocidades por linha — calibradas pra ritmo natural sem prender atenção.
+       Cada linha tem seu próprio tempo pra evitar sincronização visual entre linhas
+       com mesma direção. Reduzidas ~17% em relação à versão anterior.
+       NOTA: usamos nth-child começando em 2 porque o 1º filho do .scrolly-carousels
+       é o <div class="container"> com o título — não é uma .scrolly-row. */
+    .scrolly-row:nth-child(2) .scrolly-track { animation-duration: 42s; } /* Laço Rosa — ← */
+    .scrolly-row:nth-child(3) .scrolly-track { animation-duration: 50s; } /* Ótica Marília — → */
+    .scrolly-row:nth-child(4) .scrolly-track { animation-duration: 58s; } /* Kraken — ← */
+    .scrolly-row:nth-child(5) .scrolly-track { animation-duration: 46s; } /* Outlet da Val — → */
+    .scrolly-row:nth-child(6) .scrolly-track { animation-duration: 54s; } /* CYEX Academy — ← */
+    .scrolly-row:nth-child(7) .scrolly-track { animation-duration: 62s; } /* Prattes 1-3 — → */
+    .scrolly-row:nth-child(8) .scrolly-track { animation-duration: 35s; } /* Prattes 4-5 — ← */
+    @keyframes pd-scrolly-left  { from { transform: translate3d(0, 0, 0); }    to { transform: translate3d(-50%, 0, 0); } }
+    @keyframes pd-scrolly-right { from { transform: translate3d(-50%, 0, 0); } to { transform: translate3d(0, 0, 0); } }
+    /* Pausa no hover — dá tempo de ler uma imagem específica */
+    .scrolly-row:hover .scrolly-track { animation-play-state: paused; }
+
+    .scrolly-track img {
+      height: 280px;
+      width: auto;
+      display: block;
+      border-radius: 14px;
+      flex-shrink: 0;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    }
+    @media (max-width: 768px) {
+      .scrolly-carousels { padding: 50px 0 60px; }
+      .scrolly-track img { height: 180px; border-radius: 10px; }
+      .scrolly-track { gap: 14px; padding: 0 14px; }
+      .scrolly-row { margin-bottom: 14px; }
+      /* Mobile: reduz mais 20% pra compensar imagens menores (180px vs 280px no desktop).
+         Usa nth-child(N+1) igual ao desktop (offset por causa do .container). */
+      .scrolly-row:nth-child(2) .scrolly-track { animation-duration: 34s; }
+      .scrolly-row:nth-child(3) .scrolly-track { animation-duration: 40s; }
+      .scrolly-row:nth-child(4) .scrolly-track { animation-duration: 46s; }
+      .scrolly-row:nth-child(5) .scrolly-track { animation-duration: 37s; }
+      .scrolly-row:nth-child(6) .scrolly-track { animation-duration: 43s; }
+      .scrolly-row:nth-child(7) .scrolly-track { animation-duration: 50s; }
+      .scrolly-row:nth-child(8) .scrolly-track { animation-duration: 28s; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .scrolly-track { animation: none !important; transform: none !important; }
+    }
+  
+    /* ============================================
+       HOVER ANIMATIONS — service-card e case-card
+       Efeito duplo:
+       1) Zoom + lift suave (escala 1.03)
+       2) Glow amarelo PULSANDO nas bordas (box-shadow projetado pra fora)
+       Transições bidirecionais: entra suave no hover, volta suave no leave.
+       ============================================ */
+    
+    .service-card,
+    .case-card {
+      position: relative;
+      transition: transform 380ms cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+                  box-shadow 380ms ease;
+      isolation: isolate;
+    }
+    
+    /* Glow amarelo NAS BORDAS — projetado pra fora via box-shadow.
+       Sem hairline sólido: só halo difuso em 2 camadas. */
+    .service-card::before,
+    .case-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background: transparent;
+      box-shadow:
+        0 0 18px 2px rgba(255, 218, 0, 0),
+        0 0 38px 6px rgba(255, 218, 0, 0);
+      opacity: 0;
+      z-index: -2;
+      transition: opacity 380ms ease;
+      pointer-events: none;
+    }
+    
+    /* Pulse das bordas — anima as 2 camadas de halo respirando */
+    @keyframes pd-card-pulse {
+      0%, 100% {
+        box-shadow:
+          0 0 18px 2px rgba(255, 218, 0, 0.30),
+          0 0 38px 6px rgba(255, 218, 0, 0.14);
+      }
+      50% {
+        box-shadow:
+          0 0 28px 6px rgba(255, 218, 0, 0.55),
+          0 0 60px 14px rgba(255, 218, 0, 0.28);
+      }
+    }
+    
+    /* Hover state — zoom out (scale 1.03) + glow ligado */
+    .service-card:hover,
+    .case-card:hover {
+      transform: translateY(-6px) scale(1.03);
+    }
+    
+    .service-card:hover::before,
+    .case-card:hover::before {
+      opacity: 1;
+      animation: pd-card-pulse 2.4s ease-in-out infinite;
+    }
+    
+    /* Respeita prefers-reduced-motion */
+    @media (prefers-reduced-motion: reduce) {
+      .service-card,
+      .case-card { transition: none; }
+      .service-card::before,
+      .case-card::before { animation: none; }
+      .service-card:hover,
+      .case-card:hover { transform: none; }
+    }
+
+  
+    /* ============================================================
+       MOBILE OVERRIDES — adicionado em revisão de responsividade
+       Não altera nenhuma regra existente; só sobrepõe no breakpoint.
+       Ordem: hamburger CSS (universal), depois @media tablet/mobile.
+       ============================================================ */
+    
+    /* Input checkbox invisível — controla open/close do menu via :checked */
+    .pd-nav-toggle-input {
+      display: none;
+    }
+    
+    /* Overlay escondido em desktop */
+    .pd-nav-overlay {
+      display: none;
+    }
+    
+    /* Hambúrguer escondido em desktop; aparece no mobile */
+    .pd-hamburger {
+      display: none;
+      width: 36px;
+      height: 30px;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+      z-index: 100;
+      padding: 4px;
+      box-sizing: border-box;
+    }
+    .pd-hamburger span {
+      display: block;
+      width: 100%;
+      height: 3px;
+      background: var(--pd-yellow);
+      border-radius: 2px;
+      transition: transform 280ms ease, opacity 280ms ease;
+      transform-origin: center;
+    }
+    /* Animação X quando aberto (input está no body, hamburger dentro do header>nav) */
+    .pd-nav-toggle-input:checked ~ header .pd-hamburger span:nth-child(1) {
+      transform: translateY(11px) rotate(45deg);
+    }
+    .pd-nav-toggle-input:checked ~ header .pd-hamburger span:nth-child(2) {
+      opacity: 0;
+    }
+    .pd-nav-toggle-input:checked ~ header .pd-hamburger span:nth-child(3) {
+      transform: translateY(-11px) rotate(-45deg);
+    }
+    
+    /* TABLET — ≤960px (mesmo breakpoint onde nav original some) */
+    @media (max-width: 960px) {
+      /* Mostra o hamburger e habilita o overlay */
+      .pd-hamburger {
+        display: flex;
+      }
+      .pd-nav-overlay {
+        display: block;
+      }
+      
+      /* Reverte o "display: none" original e transforma em painel deslizante */
+      .nav-menu {
+        display: flex !important;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: min(82vw, 340px);
+        height: 100vh;
+        background: var(--pd-black-deep);
+        border-left: 1px solid var(--pd-line);
+        padding: 104px 0 32px;     /* sem padding lateral — itens vão ocupar largura total */
+        gap: 0;                    /* gap zero — espaço entre itens vem do padding interno */
+        align-items: stretch;
+        transform: translateX(100%);
+        transition: transform 320ms cubic-bezier(0.4, 0, 0.2, 1);
+        z-index: 90;
+        overflow-y: auto;
+        box-shadow: -10px 0 40px rgba(0, 0, 0, 0.6);
+      }
+      
+      /* Itens do menu mobile: hit-target alto, padding generoso à esquerda,
+         divisor sutil só ENTRE itens (não no último), barra amarela no ativo */
+      .nav-menu li { width: 100%; list-style: none; margin: 0; }
+      .nav-menu a {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 23px;
+        font-weight: 600;
+        width: 100%;
+        padding: 24px 34px;
+        margin: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+        color: var(--pd-text);
+        letter-spacing: 0.01em;
+        transition: color 200ms ease, background 200ms ease, padding-left 200ms ease;
+      }
+      
+      /* Divisor sutil ENTRE itens — não no primeiro nem no último */
+      .nav-menu a:first-child {
+        border-top: 1px solid rgba(255, 255, 255, 0.07);
+      }
+      
+      .nav-menu a:hover {
+        color: var(--pd-text);
+        background: rgba(255, 218, 0, 0.04);
+        padding-left: 40px;
+      }
+      
+      /* Anula o ::after horizontal do desktop e cria barra vertical à esquerda */
+      .nav-menu a.active::after {
+        display: none;                /* mobile: ativo é só o texto amarelo (igual aos demais menus) */
+      }
+      .nav-menu a.active {
+        color: var(--pd-yellow);
+        font-weight: 600;
+      }
+      
+      /* CTA "Fale com a gente" do header — SOMENTE desktop, fica oculto em mobile */
+      .nav-cta {
+        display: none !important;
+      }
+      
+      /* Quando :checked, desliza pra dentro (atravessa <header><nav>) */
+      .pd-nav-toggle-input:checked ~ header .nav-menu,
+      .pd-nav-toggle-input:checked ~ .nav-menu {
+        transform: translateX(0);
+      }
+      
+      /* Overlay dedicado — invisível por padrão, aparece quando :checked */
+      .pd-nav-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.75);
+        z-index: 80;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 320ms ease;
+      }
+      .pd-nav-toggle-input:checked ~ .pd-nav-overlay {
+        opacity: 1;
+        pointer-events: auto;
+      }
+      
+      /* Hambúrguer sempre em cima */
+      .pd-hamburger {
+        z-index: 100;
+      }
+      
+      /* Body lock visual quando menu aberto (impede scroll-bleed estético) */
+      .pd-nav-toggle-input:checked ~ * {
+        /* nada — só pra documentar intenção */
+      }
+    }
+    
+    /* MOBILE — ≤700px: aperta paddings e refluxos */
+    @media (max-width: 700px) {
+      .container { padding: 0 24px; }    /* margem lateral aumentada para evitar conteúdo grudado nas bordas */
+      
+
+      /* LOGO mobile — ajustado para o SVG inline (símbolo [X] + texto PRATTES DESIGN) */
+      .nav-logo {
+        height: 42px !important;
+        width: auto !important;
+      }
+      
+      /* HERO mobile — top respirado pra não encavalar a nav, bottom enxuto pra
+         encostar próximo da seção branca (.scrolly-carousels) sem deixar buraco. */
+      .hero {
+        padding: 130px 0 60px !important;            /* top: 130px (nav 70 + 60 respiro) | bottom: 60px (a scrolly tem margin-top -30 + border-radius 36px) */
+      }
+      .hero-content { max-width: none; }
+      .hero-eyebrow { margin-bottom: 4px; }
+      .hero-headline { 
+        font-size: clamp(30px, 8vw, 42px) !important; 
+        line-height: 1.08 !important;
+        margin-top: 12px !important;
+      }
+      .hero-sub { 
+        font-size: 15px; 
+        line-height: 1.55;
+        margin-top: 22px;                            /* gap entre título e parágrafo */
+      }
+      .hero-actions { 
+        gap: 12px; 
+        margin-top: 32px !important;                 /* gap entre parágrafo e botões */
+        flex-direction: column;                      /* botões empilhados, full-width */
+      }
+      .hero-actions .btn { 
+        width: 100%; 
+        justify-content: center;
+        padding: 16px 24px;                          /* hit target maior */
+      }
+      
+      /* Galeria do hero — visível em mobile com layout adaptado */
+      .hero-grid { grid-template-columns: 1fr !important; gap: 40px; }
+      .hero-gallery {
+        display: grid !important;
+        height: 60vh !important;
+        max-height: 520px !important;
+        min-height: 380px !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 12px !important;
+        margin-top: 20px;
+      }
+      /* Cards menores em mobile */
+      .gcard {
+        border-radius: 16px !important;
+      }
+      /* Esconde a 3ª e 4ª coluna do desktop se existirem (mantém só 2) */
+      .hero-gallery .gallery-col[data-col="3"],
+      .hero-gallery .gallery-col[data-col="4"] {
+        display: none;
+      }
+      
+
+      /* Seção branca .scrolly-carousels mobile: margin-top menor pra não encavalar botões do hero */
+      .scrolly-carousels {
+        margin-top: -30px !important;
+        padding: 50px 0 60px !important;
+        border-radius: 36px 36px 0 0 !important;
+      }
+      
+      /* SECTIONS — padding vertical menor */
+      section { padding: 60px 0 !important; }
+      
+      /* CASES section mobile: padding simétrico + flex pra centralizar conteúdo */
+      .cases {
+        padding: 80px 24px !important;          /* simétrico: 80px topo e base */
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;                /* centro vertical */
+        align-items: stretch;
+      }
+      .cases .container {
+        padding: 0 !important;                  /* container interno sem padding extra */
+      }
+      .cases .section-header {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      .cases .section-header .eyebrow {
+        display: inline-block;
+      }
+      .cases .section-header h2 {
+        font-size: clamp(28px, 7vw, 38px) !important;
+        line-height: 1.15 !important;
+      }
+      .section-header { margin-bottom: 36px; }
+      
+      /* SERVICES */
+      .service-body { padding: 24px 22px; }
+      .service-body h3 { font-size: 22px; }
+      .service-body p { font-size: 14px; margin-bottom: 18px; }
+      
+      /* CASES */
+      .case-card { aspect-ratio: 4 / 3; }
+      .case-overlay { padding: 22px; }
+      .case-overlay h3 { font-size: 18px; }
+      .case-overlay p { font-size: 13px; }
+      
+      /* PAIN */
+      .pain-grid { gap: 32px !important; }
+      .quote-card { padding: 24px; }
+      
+      /* CTA BANNER */
+      .cta-banner { padding: 50px 0 !important; }
+      .cta-banner h3 { font-size: clamp(20px, 6vw, 28px) !important; }
+      .cta-banner-inner { gap: 18px; }
+      .cta-banner .btn { width: 100%; justify-content: center; }
+      
+      /* TESTIMONIALS / SCROLLY */
+      .scrolly-row { margin-bottom: 14px; }
+      .scrolly-track { gap: 14px; padding: 0 14px; }
+      
+      /* NEWSLETTER */
+      .newsletter-card { padding: 28px 22px !important; border-radius: 14px; }
+      .newsletter-card h3 { font-size: 22px; }
+      .newsletter-card p { font-size: 14px; }
+      .newsletter-card form,
+      .newsletter-card .form-row { 
+        flex-direction: column; 
+        gap: 10px; 
+        width: 100%;
+      }
+      .newsletter-card input,
+      .newsletter-card .btn { width: 100%; }
+      
+      /* SOCIAL CARDS — força 1 coluna se ainda estiver em grid */
+      .social-cards,
+      .social-grid,
+      .socials-grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px;
+      }
+      .social-card { padding: 22px; }
+      .newsletter-consent { font-size: 12px; line-height: 1.4; }
+      .social-cards { gap: 14px !important; }
+
+      
+      /* FINAL CTA */
+      .final-cta { padding: 60px 0 !important; }
+      .final-cta h2 { font-size: clamp(24px, 7vw, 36px) !important; }
+      
+      /* FOOTER */
+      .footer { padding: 50px 0 24px; }
+      .footer-highlight {
+        padding: 0 20px 22px;
+        margin-bottom: 32px;
+      }
+      .footer-socials { 
+        gap: 12px; 
+        margin-bottom: 32px; 
+        flex-wrap: wrap; 
+        justify-content: center; 
+      }
+      .footer-bottom { 
+        flex-direction: column; 
+        gap: 10px; 
+        text-align: center; 
+        font-size: 11px;
+      }
+      
+      /* Headlines globais — protege contra overflow SEM usar hyphens (que quebrava palavras feio) */
+      h1, h2, h3, h4, .display, .h-xl, .h-lg, .h-md, .h-sm {
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: none !important;
+        -webkit-hyphens: none !important;
+        -ms-hyphens: none !important;
+        text-wrap: balance; /* navegadores modernos: equilibra linhas, evita órfãos */
+      }
+      
+      /* Disables transforms pesadas que causam jank em mobile */
+      .service-card:hover,
+      .case-card:hover {
+        transform: translateY(-3px) scale(1) !important;
+      }
+    }
+    
+    /* MOBILE PEQUENO — ≤480px: ajustes finos */
+    @media (max-width: 480px) {
+      .container { padding: 0 20px; }   /* mantém respiro mesmo em iPhone SE */
+      .hero-headline { font-size: clamp(26px, 8.5vw, 34px) !important; }
+            .nav-logo { height: 36px !important; width: auto !important; }
+      .pd-hamburger { width: 32px; height: 26px; }
+      .pd-hamburger span { height: 2.5px; }
+      .pd-nav-toggle-input:checked ~ header .pd-hamburger span:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+      }
+      .pd-nav-toggle-input:checked ~ header .pd-hamburger span:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+      }
+    }
+    
+    /* Garantia anti-overflow horizontal no html/body */
+    html, body { overflow-x: hidden; max-width: 100vw; }
+    img, svg, video { max-width: 100%; height: auto; }
+
+    /* === HARDENING MOBILE: anti-overflow + sem hífens automáticos === */
+    @media (max-width: 768px) {
+      /* Desabilita hífens automáticos em TODOS os elementos textuais */
+      * {
+        -webkit-hyphens: none !important;
+        -ms-hyphens: none !important;
+        hyphens: none !important;
+      }
+
+      /* Todo container respeita a viewport */
+      body, section, div, header, footer, main, article {
+        max-width: 100vw;
+      }
+
+      /* Section padding lateral garantido pra todo elemento direto da .container */
+      .container { padding-left: 18px !important; padding-right: 18px !important; box-sizing: border-box; }
+
+      /* Quote cards: limita largura pra não vazar e reduz padding lateral */
+      .quote-card {
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 22px 20px !important;
+        font-size: 15px !important;
+        line-height: 1.55 !important;
+      }
+      .quote-card::before {
+        font-size: 36px !important;
+        margin-right: 6px;
+      }
+
+      /* TÍTULOS GRANDES — reduz pra caber sem quebrar palavras */
+      .h-lg {
+        font-size: clamp(26px, 7.8vw, 38px) !important;
+        line-height: 1.08 !important;
+      }
+      .h-xl {
+        font-size: clamp(28px, 8.2vw, 42px) !important;
+        line-height: 1.08 !important;
+      }
+      .h-md {
+        font-size: clamp(22px, 6.5vw, 30px) !important;
+        line-height: 1.15 !important;
+      }
+      .display {
+        line-height: 1.1 !important;
+      }
+
+      /* Pain h2 (SUA EMPRESA ENFRENTA…) — fonte menor pra caber */
+      .pain-left h2 {
+        font-size: clamp(26px, 7.5vw, 36px) !important;
+      }
+
+      /* Cases section header (PRINCIPAIS SERVIÇOS…) */
+      .cases .section-header h2,
+      .cases h2.h-lg {
+        font-size: clamp(24px, 7vw, 34px) !important;
+      }
+
+      /* Testimonials title (RESULTADO, DO BRIEFING À VENDA) */
+      .testimonials h2,
+      .testimonials .h-lg {
+        font-size: clamp(24px, 7.2vw, 34px) !important;
+      }
+
+      /* Newsletter title (INSIGHTS DE DESIGN…) */
+      .newsletter-card h3 {
+        font-size: clamp(22px, 6.5vw, 30px) !important;
+      }
+
+      /* CTA banner (ELEVE A PERCEPÇÃO…) */
+      .cta-banner h3 {
+        font-size: clamp(22px, 6.8vw, 32px) !important;
+        line-height: 1.12 !important;
+      }
+
+      /* Hero headline */
+      .hero-headline {
+        font-size: clamp(28px, 8vw, 38px) !important;
+        line-height: 1.08 !important;
+      }
+    }
+
+  
+    /* ============================================================
+       OVERRIDES MOBILE — segunda passada de polimento
+       1) Centraliza conteúdo de hero/pain/standout/final-cta no mobile
+       2) Conserta line-height de display headings (acentos sobrepostos)
+       3) Newsletter heading com line-height maior (estava colado)
+       4) Texto do .final-cta com padding pra não tocar os colchetes amarelos
+       5) Newsletter consent: 1 linha, alinhado com botão
+       ============================================================ */
+    @media (max-width: 700px) {
+      
+      /* 1) CENTRALIZAÇÃO no mobile — hero, pain, standout, final-cta */
+      .hero-content {
+        text-align: center;
+      }
+      .hero-content .hero-eyebrow,
+      .hero-content .eyebrow {
+        justify-content: center;       /* eyebrow tem o tracinho — centraliza o flex */
+        display: inline-flex;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .hero-actions {
+        justify-content: center;
+      }
+      
+      /* PAIN section (com cards de quote) */
+      .pain-left {
+        text-align: center;
+      }
+      .pain-left .badge {
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-block;
+      }
+      .pain-cta {
+        text-align: center;
+        /* iOS Safari: força card a respeitar viewport e centralizar */
+        box-sizing: border-box;
+        max-width: 100%;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 24px 20px !important;  /* era 32px — reduzido pra caber confortável no mobile */
+      }
+      .pain-cta .btn {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+        box-sizing: border-box;
+      }
+      /* Garante que a coluna pai (.pain-right) também não estoure o viewport no iOS */
+      .pain-right {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+      }
+      .standout, 
+      .standout-content {
+        text-align: center;
+      }
+      .standout .container {
+        text-align: center;
+      }
+      
+      /* FINAL CTA — já tinha center mas reforço */
+      .final-cta-content {
+        text-align: center;
+      }
+      
+      /* CASES section header já estava center, só reforça */
+      .cases .section-header,
+      .services .section-header,
+      .testimonials .section-header,
+      .community .section-header {
+        text-align: center;
+      }
+      
+      /* 2) LINE-HEIGHT mais generoso pra acentos não tocarem nas palavras de cima */
+      .display.h-lg,
+      .display.h-xl,
+      .display.h-md,
+      h1.display, h2.display, h3.display {
+        line-height: 1.1 !important;     /* era 0.95 — apertado demais p/ acentos PT-BR */
+      }
+      .testimonials h2,
+      .testimonials .section-header h2 {
+        line-height: 1.15 !important;
+      }
+
+      /* TESTIMONIAL CARDS — mobile fix
+         Cards originais têm flex: 0 0 420px, o que estoura a viewport (~380px)
+         e corta o texto na lateral. Aqui ajustamos:
+         - Largura do card relativa à viewport, com 24px de "espiada" pro próximo card
+         - Padding lateral no track pra primeiro/último card respirarem
+         - Remove o mask-image (fade nas bordas) que esmaecia o texto */
+      .testimonials-track {
+        padding: 8px 20px 32px !important;
+        gap: 16px !important;
+        mask-image: none !important;
+        -webkit-mask-image: none !important;
+      }
+      .testimonial-card {
+        flex: 0 0 calc(100vw - 64px) !important;
+        max-width: calc(100vw - 64px) !important;
+        padding: 28px 24px !important;
+      }
+      .testimonial-quote {
+        font-size: 15px !important;
+        line-height: 1.55 !important;
+      }
+      
+      /* 3) NEWSLETTER heading — espaçamento mais arejado */
+      .newsletter-card h3 {
+        line-height: 1.2 !important;
+        letter-spacing: 0.005em;
+        margin-bottom: 14px;
+      }
+      
+      /* 4) FINAL CTA: container interno com padding maior pra texto não colar nos colchetes [ ] amarelos */
+      .final-cta .container {
+        padding: 0 24px !important;       /* padding lateral consistente (brackets foram removidos) */
+      }
+      .final-cta-content p {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 100%;
+      }
+      
+      /* 5) NEWSLETTER CONSENT — checkbox + texto em UMA linha, alinhado com botão */
+      .newsletter-consent {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 11px !important;        /* menor pra caber em uma linha */
+        line-height: 1.3 !important;
+        margin-top: 16px;
+        padding: 0;
+        text-align: left;
+      }
+      .newsletter-consent input[type="checkbox"] {
+        flex-shrink: 0;
+        width: 14px;
+        height: 14px;
+        margin: 0;
+        accent-color: var(--pd-yellow);
+      }
+    }
+    
+    /* Em telas pequenas (≤480) — encolhe ainda mais o consent pra garantir 1 linha */
+    @media (max-width: 480px) {
+      .newsletter-consent {
+        font-size: 10.5px !important;
+      }
+      .final-cta .container {
+        padding: 0 20px !important;
+      }
+    }
+
+  
+    /* ============================================================
+       OVERRIDES MOBILE — terceira passada
+       1) Eyebrows menores no mobile (mais hierarquia)
+       2) Eyebrow + título mais próximos (menos espaço entre eles)
+       3) Yellow section (.standout): eyebrow ainda menor + linhas com mais respiro
+       4) Break de linha mobile pra "Resultado, do briefing à venda"
+       ============================================================ */
+    
+    /* break só aparece no mobile */
+    .break-mobile { display: none; }
+    
+    @media (max-width: 700px) {
+      /* Default mobile: eyebrow menor + título mais perto */
+      .eyebrow {
+        font-size: 11px !important;
+        letter-spacing: 0.24em !important;
+        margin-bottom: 10px !important;     /* era 16-18-24px — agora bem perto do título */
+      }
+      
+      /* Sobrescreve o style="margin-top: 16px" inline do <h2> dentro de .section-header */
+      .section-header h2 {
+        margin-top: 8px !important;          /* era 16px (inline) — agora 8px */
+      }
+      
+      /* Reduz também o margin-bottom do section-header (espaço entre headline e cards/conteúdo) */
+      .section-header {
+        margin-bottom: 28px !important;
+      }
+      
+      /* YELLOW SECTION (.standout) — eyebrow ainda menor, headline com mais respiro entre linhas */
+      .standout .eyebrow {
+        font-size: 10px !important;
+        letter-spacing: 0.22em !important;
+        margin-bottom: 8px !important;
+      }
+      .standout h2 {
+        margin: 6px 0 18px !important;
+        font-size: clamp(26px, 7.5vw, 38px) !important;
+        line-height: 2.1 !important;                        /* line-height ENORME — garantia absoluta de gap entre linhas */
+        letter-spacing: 0.005em;
+      }
+      
+      /* .hl como inline-block com MARGIN explícito (não conta com line-height) — 
+         garante gap visível acima e abaixo do retângulo preto */
+      .standout h2 .hl {
+        display: inline-block !important;
+        padding: 0.05em 0.34em !important;
+        margin: 0.18em 0 !important;                        /* MARGIN VERTICAL EXPLÍCITO — empurra fisicamente o texto adjacente */
+        line-height: 1.1 !important;
+      }
+      .standout .lead {
+        margin-top: 18px !important;
+        font-size: 15px;
+      }
+      
+      /* break-mobile ATIVO no mobile */
+      .break-mobile { display: inline; }
+    }
+    
+    @media (max-width: 480px) {
+      .eyebrow {
+        font-size: 10px !important;
+        letter-spacing: 0.22em !important;
+      }
+      .standout .eyebrow {
+        font-size: 9.5px !important;
+      }
+    }
+
+  
+    /* ============================================================
+       CENTRALIZAÇÃO RESPONSIVA — aplica de 0 até 960px
+       (todos os formatos responsivos: mobile + tablet com hambúrguer).
+       NÃO afeta desktop (≥961px) que continua alinhado à esquerda.
+       ============================================================ */
+    @media (max-width: 960px) {
+      /* HERO */
+      .hero-content {
+        text-align: center;
+        max-width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .hero-content .hero-eyebrow,
+      .hero-content .eyebrow {
+        justify-content: center;
+        display: inline-flex;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .hero-actions {
+        justify-content: center;
+      }
+      
+      /* PAIN — bloco "Sua empresa enfrenta esses desafios?" */
+      .pain-left {
+        text-align: center;
+      }
+      .pain-left .badge {
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-block;
+      }
+      .pain-cta {
+        text-align: center;
+      }
+      .pain-cta .btn {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      /* STANDOUT (yellow section) */
+      .standout-content {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      /* FINAL CTA */
+      .final-cta-content {
+        text-align: center;
+      }
+      
+      /* SECTION HEADERS */
+      .cases .section-header,
+      .services .section-header,
+      .testimonials .section-header,
+      .community .section-header {
+        text-align: center;
+      }
+    }
+
+  
+    /* ============================================================
+       BOTÃO FLUTUANTE WHATSAPP — fixo, acompanha o scroll
+       Tamanhos diferentes em desktop e mobile
+       ============================================================ */
+    .pd-whatsapp-fab {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: #25D366;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 70;                     /* abaixo do menu drawer (90) e overlay (80) */
+      box-shadow: 
+        0 6px 20px rgba(0, 0, 0, 0.35),
+        0 2px 6px rgba(0, 0, 0, 0.25);
+      transition: transform 220ms cubic-bezier(0.4, 0, 0.2, 1),
+                  box-shadow 220ms ease;
+      text-decoration: none;
+    }
+    .pd-whatsapp-fab svg {
+      width: 32px;
+      height: 32px;
+      display: block;
+    }
+    .pd-whatsapp-fab:hover {
+      transform: scale(1.08) translateY(-2px);
+      box-shadow: 
+        0 10px 28px rgba(0, 0, 0, 0.45),
+        0 4px 8px rgba(37, 211, 102, 0.4);
+    }
+    .pd-whatsapp-fab:active {
+      transform: scale(0.96);
+    }
+    
+    /* Pulse sutil pra atrair atenção (apenas algumas vezes) */
+    .pd-whatsapp-fab::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      background: #25D366;
+      z-index: -1;
+      animation: pdWaPulse 2.4s ease-out infinite;
+    }
+    @keyframes pdWaPulse {
+      0%   { transform: scale(1);    opacity: 0.5; }
+      100% { transform: scale(1.6);  opacity: 0; }
+    }
+    
+    /* Mobile: menor */
+    @media (max-width: 700px) {
+      .pd-whatsapp-fab {
+        width: 54px;
+        height: 54px;
+        bottom: 18px;
+        right: 18px;
+      }
+      .pd-whatsapp-fab svg {
+        width: 26px;
+        height: 26px;
+      }
+    }
+    
+    /* Acessibilidade: respeita prefers-reduced-motion */
+    @media (prefers-reduced-motion: reduce) {
+      .pd-whatsapp-fab::before { animation: none; }
+      .pd-whatsapp-fab { transition: none; }
+    }
+    
+    /* ============================================================
+       CARROSSEL DA HERO GALLERY
+       — Remove o pause-on-hover (animação contínua)
+       — Pausa só quando o usuário clica/segura (classe .paused via JS)
+       ============================================================ */
+    .gallery-track.paused {
+      animation-play-state: paused !important;
+    }
+
+    /* === Modal de sucesso (newsletter) === */
+    .pd-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      animation: pd-modal-in 220ms var(--ease);
+    }
+    .pd-modal[hidden] { display: none; }
+    .pd-modal-backdrop {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.72);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+    }
+    .pd-modal-card {
+      position: relative;
+      max-width: 440px;
+      width: 100%;
+      background: linear-gradient(180deg, var(--pd-graphite-2) 0%, var(--pd-graphite) 100%);
+      border: 1px solid var(--pd-line);
+      border-radius: var(--radius-lg);
+      padding: 40px 32px 32px;
+      text-align: center;
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.6),
+                  0 0 0 1px rgba(255, 218, 0, 0.08);
+      animation: pd-modal-card-in 320ms var(--ease) both;
+    }
+    .pd-modal-icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      background: var(--pd-yellow);
+      color: var(--pd-black);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 12px 32px rgba(255, 218, 0, 0.35);
+    }
+    .pd-modal-icon svg { width: 32px; height: 32px; }
+    .pd-modal-title {
+      font-family: var(--font-display);
+      font-size: clamp(20px, 2.4vw, 26px);
+      font-weight: 600;
+      color: var(--pd-text);
+      margin: 0 0 12px;
+      letter-spacing: 0.01em;
+    }
+    .pd-modal-message {
+      font-family: var(--font-body);
+      font-size: 15px;
+      line-height: 1.5;
+      color: var(--pd-text-dim);
+      margin: 0 0 28px;
+    }
+    .pd-modal-ok {
+      min-width: 140px;
+    }
+    .pd-modal-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: stretch;
+    }
+    /* Quando o WA button está visível, OK vira secundário (mais discreto) */
+    .pd-modal-actions .pd-modal-wa:not([hidden]) ~ .pd-modal-ok {
+      background: transparent;
+      color: var(--pd-text-dim);
+      border: 1px solid var(--pd-line);
+    }
+    .pd-modal-actions .pd-modal-wa:not([hidden]) ~ .pd-modal-ok:hover {
+      background: var(--pd-graphite);
+      color: var(--pd-text);
+      border-color: var(--pd-text-mute);
+    }
+    /* Quando WA button NÃO está (newsletter), OK fica primário (amarelo) */
+    .pd-modal-actions .pd-modal-wa[hidden] ~ .pd-modal-ok {
+      background: var(--pd-yellow);
+      color: var(--pd-black);
+      border: none;
+    }
+    .pd-modal-wa {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    @keyframes pd-modal-in {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    @keyframes pd-modal-card-in {
+      from { opacity: 0; transform: translateY(20px) scale(0.96); }
+      to   { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .pd-modal, .pd-modal-card { animation: none; }
+    }
+
+    /* ============================================================
+       FIX MOBILE — D / E / F
+       D — Cards de quote cortando no iOS (grid item overflow)
+       E — Headline "SUA EMPRESA ENFRENTA…" cortando no mobile
+       F — CRÍTICO: imagens do carrossel distorcendo
+           (regra global `img { max-width: 100%; }` brigava com
+           `height: 180px` e quebrava o aspect-ratio natural).
+       ============================================================ */
+
+    /* F — CARROSSEL: fix mínimo do aspect-ratio.
+       
+       Causa raiz: a regra global `img { max-width: 100% }` (linha 106)
+       brigava com `height: 180px` fixo do mobile. A largura era cortada
+       pra caber no container enquanto a altura ficava travada — resultado:
+       imagens horizontalmente comprimidas/distorcidas.
+       
+       Fix: sobrescreve SÓ o max-width nas imagens do carrossel.
+       Mantém height: 180px (mobile) / 280px (desktop) e width: auto,
+       que juntos preservam o aspect-ratio natural.
+       
+       NÃO mexer em object-fit ou width:auto !important — testado e
+       quebra a renderização no iOS Safari (imagens somem). */
+    .scrolly-track img {
+      max-width: none !important;
+    }
+
+    /* D — QUOTE CARDS: garante que não estourem o viewport.
+       Em iOS Safari, grid items sem `min-width: 0` podem expandir além
+       do container. Aplicamos minmax(0, 1fr) na grade + min-width: 0
+       em cada card + quebra de palavras longas como salvaguarda. */
+    @media (max-width: 960px) {
+      .pain-quotes {
+        grid-template-columns: minmax(0, 1fr);
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+      }
+      .quote-card {
+        min-width: 0;
+        max-width: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: normal;
+        hyphens: auto;
+        -webkit-hyphens: auto;
+      }
+      /* Reforça centralização da coluna pain-right */
+      .pain-right {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+      }
+    }
+
+    /* E — HEADLINE PAIN: previne overflow horizontal do <h2> com <br>.
+       Reduz a fonte mais agressivamente em viewports estreitos e
+       adiciona overflow-wrap como salvaguarda final. */
+    @media (max-width: 960px) {
+      .pain-left {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .pain-left h2,
+      .pain-left .h-lg,
+      .pain-left .display {
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        text-align: center;
+      }
+      .pain-left .lead,
+      .pain-left p {
+        max-width: 100%;
+        box-sizing: border-box;
+        overflow-wrap: break-word;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    /* Mobile estreito: encolhe ainda mais o headline pra garantir
+       que "ENFRENTA" e "DESAFIOS?" caibam sem cortar. */
+    @media (max-width: 480px) {
+      .pain-left h2 {
+        font-size: clamp(22px, 6.6vw, 30px) !important;
+        line-height: 1.1 !important;
+        letter-spacing: 0 !important;
+      }
+    }
+    @media (max-width: 380px) {
+      .pain-left h2 {
+        font-size: clamp(20px, 6.2vw, 26px) !important;
+      }
+    }
+
+    /* ============================================================
+       LIGHTBOX — abre imagens dos carrosséis "Cases de Sucesso"
+       em tamanho natural com botão X, navegação ←→, ESC e backdrop click.
+       Hover suave de zoom nas miniaturas.
+       ============================================================ */
+
+    /* Hover zoom + cursor zoom-in nas imagens dos carrosséis */
+    .scrolly-track img {
+      transition: transform 320ms cubic-bezier(0.22, 1, 0.36, 1),
+                  box-shadow 320ms ease;
+      cursor: zoom-in;
+    }
+    .scrolly-track img:hover {
+      transform: scale(1.04);
+      box-shadow: 0 14px 38px rgba(0, 0, 0, 0.28);
+    }
+    /* No reduced-motion, sem transform animado */
+    @media (prefers-reduced-motion: reduce) {
+      .scrolly-track img { transition: none; }
+      .scrolly-track img:hover { transform: none; }
+    }
+
+    /* Pausa TUDO que estiver animando enquanto o lightbox estiver aberto */
+    body.pd-lightbox-open .scrolly-track,
+    body.pd-lightbox-open .gallery-track {
+      animation-play-state: paused !important;
+    }
+
+    /* Reset do <dialog> nativo + ocupa viewport inteiro */
+    .pd-lightbox {
+      border: none;
+      background: transparent;
+      padding: 0;
+      margin: auto;
+      max-width: 100vw;
+      max-height: 100vh;
+      width: 100vw;
+      height: 100vh;
+      color: var(--pd-text);
+      overflow: visible;
+    }
+    .pd-lightbox::backdrop {
+      background: rgba(0, 0, 0, 0.94);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      animation: pd-lightbox-fade-in 220ms ease;
+    }
+    @keyframes pd-lightbox-fade-in {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+
+    .pd-lightbox-figure {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6vh 6vw;
+      box-sizing: border-box;
+    }
+
+    .pd-lightbox-img {
+      max-width: 88vw;
+      max-height: 86vh;
+      width: auto;
+      height: auto;
+      display: block;
+      object-fit: contain;
+      border-radius: 14px;
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7);
+      animation: pd-lightbox-zoom-in 320ms cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    /* Tiras horizontais (linhas 5 e 6, aspect > 3:1) ocupam 95% da largura */
+    .pd-lightbox-img.is-wide {
+      width: 95vw;
+      max-width: 95vw;
+      max-height: 70vh;
+    }
+    @keyframes pd-lightbox-zoom-in {
+      from { opacity: 0; transform: scale(0.94); }
+      to   { opacity: 1; transform: scale(1); }
+    }
+
+    /* Botões: X, ←, → — flutuantes, pílulas com blur */
+    .pd-lightbox-btn {
+      position: fixed;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      color: var(--pd-text);
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      font-family: inherit;
+      font-size: 26px;
+      font-weight: 300;
+      line-height: 1;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      transition: all 220ms cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .pd-lightbox-btn:hover {
+      background: var(--pd-yellow);
+      color: var(--pd-black);
+      border-color: var(--pd-yellow);
+      transform: scale(1.08);
+    }
+    .pd-lightbox-btn:focus-visible {
+      outline: 2px solid var(--pd-yellow);
+      outline-offset: 3px;
+    }
+
+    .pd-lightbox-close {
+      top: 24px;
+      right: 24px;
+      font-size: 30px;
+    }
+    .pd-lightbox-prev,
+    .pd-lightbox-next {
+      top: 50%;
+      transform: translateY(-50%);
+      width: 56px;
+      height: 56px;
+      font-size: 36px;
+    }
+    .pd-lightbox-prev:hover,
+    .pd-lightbox-next:hover {
+      transform: translateY(-50%) scale(1.08);
+    }
+    .pd-lightbox-prev { left: 24px; }
+    .pd-lightbox-next { right: 24px; }
+
+    /* Mobile: botões menores, padding menor */
+    @media (max-width: 700px) {
+      .pd-lightbox-figure { padding: 4vh 3vw; }
+      .pd-lightbox-btn {
+        width: 44px;
+        height: 44px;
+        font-size: 22px;
+      }
+      .pd-lightbox-close { top: 16px; right: 16px; }
+      .pd-lightbox-prev,
+      .pd-lightbox-next { font-size: 28px; }
+      .pd-lightbox-prev { left: 12px; }
+      .pd-lightbox-next { right: 12px; }
+      .pd-lightbox-img.is-wide { max-height: 55vh; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .pd-lightbox::backdrop,
+      .pd-lightbox-img,
+      .pd-lightbox-btn {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+
+    /* ============================================================
+       PROTEÇÃO DE CONTEÚDO — dificulta cópia das imagens do portfólio
+       Cobre os 3 vetores mais comuns: arrastar, selecionar e long-press.
+       O clique direito é bloqueado via JS (ver script no fim do body).
+       ============================================================ */
+    img {
+      -webkit-user-drag: none;
+      -khtml-user-drag: none;
+      -moz-user-drag: none;
+      -o-user-drag: none;
+      user-drag: none;                 /* sem arrastar pra Desktop / pasta */
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-touch-callout: none;     /* iOS: bloqueia menu "Salvar imagem" no long-press */
+    }
+    /* Lightbox aberto também segue as mesmas regras */
+    .pd-lightbox-img {
+      pointer-events: none;            /* impede long-press/drag no overlay */
+    }
+
+    /* ============================================================
+       INDICADOR de scroll dos depoimentos (mobile)
+       Bolinhas dinâmicas + hint "deslize para ver mais".
+       Inserido via JS automaticamente abaixo do .testimonials-track.
+       Aparece SÓ em mobile (≤768px) — no desktop a track horizontal
+       já tem scrollbar visível e o fade nas bordas indica overflow.
+       ============================================================ */
+    .testimonials-indicator {
+      display: none;
+      margin-top: 24px;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+    .testimonials-hint {
+      font-family: var(--font-display);
+      font-size: 11px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--pd-text-mute);
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      animation: pd-hint-pulse 2.4s ease-in-out infinite;
+    }
+    .testimonials-hint::before,
+    .testimonials-hint::after {
+      font-family: inherit;
+      opacity: 0.65;
+      font-size: 14px;
+      line-height: 1;
+    }
+    .testimonials-hint::before { content: "←"; }
+    .testimonials-hint::after  { content: "→"; }
+    @keyframes pd-hint-pulse {
+      0%, 100% { opacity: 0.55; }
+      50%      { opacity: 1; }
+    }
+    .testimonials-dots {
+      display: flex;
+      gap: 8px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .testimonials-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.18);
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      transition: width 280ms var(--ease),
+                  background 280ms var(--ease),
+                  border-radius 280ms var(--ease);
+    }
+    .testimonials-dot:hover {
+      background: rgba(255, 218, 0, 0.55);
+    }
+    .testimonials-dot.is-active {
+      background: var(--pd-yellow);
+      width: 26px;
+      border-radius: 5px;
+    }
+    .testimonials-dot:focus-visible {
+      outline: 2px solid var(--pd-yellow);
+      outline-offset: 3px;
+    }
+
+    /* Mostra só no mobile */
+    @media (max-width: 768px) {
+      .testimonials-indicator { display: flex; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .testimonials-hint { animation: none; opacity: 0.9; }
+      .testimonials-dot { transition: none; }
+    }
+
+    /* View Transitions — suaviza a navegação entre a home e as páginas de case/portfólio */
+    @view-transition { navigation: auto; }
+    @media (prefers-reduced-motion: reduce) {
+      ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }
+    }
+
+  </style>
+</head>
+<body id="top">
+  <!-- Toggle do menu mobile (precisa estar no nível raiz para que :checked alcance todos os irmãos) -->
+  <input type="checkbox" id="pd-nav-toggle" class="pd-nav-toggle-input" aria-hidden="true" />
+  <label for="pd-nav-toggle" class="pd-nav-overlay" aria-hidden="true"></label>
+
+
+  <!-- ============================================
+       HEADER / NAV
+       ============================================ -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav">
+        
+        <a href="#top" class="nav-logo" aria-label="Prattes Design">
+          <img class="nav-logo-svg" src="assets/img/logo-prattes-2.webp" alt="Prattes Design" />
+        </a>
+
+        <label for="pd-nav-toggle" class="pd-hamburger" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </label>
+        <ul class="nav-menu">
+          <li><a href="#top">Home</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="trabalhos.html">Trabalhos</a></li>
+          <li><a href="https://app.prattesdesign.com.br" target="_blank" rel="noopener noreferrer">Usar App</a></li>
+          <li><a href="sobre.html">Sobre nós</a></li>
+        </ul>
+
+        <a href="https://wa.me/5511940823616?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento" class="btn btn-primary nav-cta" target="_blank" rel="noopener noreferrer">Fale com a gente</a>
+
+        
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================================
+       HERO
+       ============================================ -->
+  <section class="hero pattern-bg">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <span class="eyebrow">Estúdio Criativo &amp; Performance</span>
+          <h1 class="display hero-headline">
+            <span class="line">Design estratégico</span>
+            <span class="line">para <strong>marcas que</strong></span>
+            <span class="line"><strong class="hl">querem vender.</strong></span>
+          </h1>
+          <p class="hero-sub">
+            Transformamos a comunicação visual de empresas em <strong>presença profissional</strong>,
+            <strong>autoridade</strong> e <strong>percepção de&nbsp;valor</strong>. Conheça a <strong>Upscale</strong>,
+            uma ferramenta gratuita e prática para transformar imagens borradas em arquivos mais nítidos e&nbsp;profissionais.
+          </p>
+          <div class="hero-actions">
+            <a href="https://app.prattesdesign.com.br" class="btn btn-primary btn-arrow" target="_blank" rel="noopener noreferrer">Melhore sua imagem de graça</a>
+          </div>
+        </div>
+
+        <!--
+          Galeria com auto-scroll contínuo (CSS-only).
+          Cada coluna tem um .gallery-track interno com os cards duplicados:
+          a 1ª metade é o conteúdo "original", a 2ª metade é cópia exata.
+          Com animation translate3d(0 → -50%), quando o trilho chega ao fim
+          da 1ª metade, a 2ª metade está exatamente no mesmo lugar onde a 1ª
+          começou → loop infinito sem corte visível.
+        -->
+        <div class="hero-gallery" id="heroGallery">
+
+          <!-- Coluna 1 -->
+          <div class="gallery-col" data-col="1">
+            <div class="gallery-track">
+
+              <!-- Conjunto original -->
+              <div class="gcard h-tall">
+                <img src="assets/img/gallery-01.webp" width="600" height="750" loading="eager" fetchpriority="high" decoding="async" alt="Carrossel — Como criar carrosséis que chamam atenção" />
+              </div>
+              <div class="gcard h-portrait">
+                <img src="assets/img/gallery-02.webp" width="600" height="750" loading="eager" fetchpriority="high" decoding="async" alt="Carrossel tipográfico — As melhores fontes para maio" />
+              </div>
+              <div class="gcard h-portrait">
+                <img src="assets/img/gallery-03.webp" width="600" height="750" loading="eager" fetchpriority="high" decoding="async" alt="Flyer esportivo — Cristiano Ronaldo (Manchester United)" />
+              </div>
+              <div class="gcard h-square">
+                <img src="assets/img/gallery-04.webp" width="600" height="600" loading="eager" fetchpriority="high" decoding="async" alt="totalCAD — Transforme sua carreira" />
+              </div>
+              <div class="gcard h-tall">
+                <img src="assets/img/gallery-05.webp" width="600" height="750" loading="eager" fetchpriority="high" decoding="async" alt="Carrossel — Sites gratuitos para imagens (Iron Man)" />
+              </div>
+              <div class="gcard h-portrait">
+                <img src="assets/img/gallery-06.webp" width="600" height="750" loading="eager" fetchpriority="high" decoding="async" alt="totalCAD SketchUp — Adquira já o seu" />
+              </div>
+
+              <!-- Cópia idêntica para o loop infinito (aria-hidden) -->
+              <div class="gcard h-tall" aria-hidden="true">
+                <img src="assets/img/gallery-07.webp" width="600" height="750" loading="eager" decoding="async" alt="" />
+              </div>
+              <div class="gcard h-portrait" aria-hidden="true">
+                <img src="assets/img/gallery-08.webp" width="600" height="750" loading="eager" decoding="async" alt="" />
+              </div>
+              <div class="gcard h-portrait" aria-hidden="true">
+                <img src="assets/img/gallery-09.webp" width="600" height="750" loading="eager" decoding="async" alt="" />
+              </div>
+              <div class="gcard h-square" aria-hidden="true">
+                <img src="assets/img/gallery-10.webp" width="600" height="600" loading="eager" decoding="async" alt="" />
+              </div>
+              <div class="gcard h-tall" aria-hidden="true">
+                <img src="assets/img/gallery-11.webp" width="600" height="750" loading="eager" decoding="async" alt="" />
+              </div>
+              <div class="gcard h-portrait" aria-hidden="true">
+                <img src="assets/img/gallery-12.webp" width="600" height="750" loading="eager" decoding="async" alt="" />
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Coluna 2 -->
+          <div class="gallery-col" data-col="2">
+            <div class="gallery-track">
+
+              <!-- Conjunto original -->
+              <div class="gcard h-tall">
+                <img src="assets/img/gallery-13.webp" width="600" height="2314" loading="eager" decoding="async" alt="Apresentação de social media — Terrenos Baratos" />
+              </div>
+              <div class="gcard h-portrait">
+                <img src="assets/img/gallery-14.webp" width="600" height="750" loading="eager" decoding="async" alt="Flyer esportivo — Karim Benzema (Real Madrid)" />
+              </div>
+              <div class="gcard h-square">
+                <img src="assets/img/gallery-15.webp" width="600" height="600" loading="eager" decoding="async" alt="totalCAD — Avalie, compare e comprove" />
+              </div>
+              <div class="gcard h-tall">
+                <img src="assets/img/gallery-16.webp" width="600" height="750" loading="eager" decoding="async" alt="Flyer esportivo — Lionel Messi (FC Barcelona)" />
+              </div>
+              <div class="gcard h-portrait">
+                <img src="assets/img/gallery-17.webp" width="600" height="750" loading="eager" decoding="async" alt="totalCAD B2B — Você está pagando mensalidades caras?" />
+              </div>
+
+              <!-- Cópia idêntica para o loop infinito (aria-hidden) -->
+              <div class="gcard h-tall" aria-hidden="true">
+                <img src="assets/img/gallery-18.webp" width="600" height="2314" loading="eager" decoding="async" alt="" />
+              </div>
+              <div class="gcard h-portrait" aria-hidden="true">
+                <img src="assets/img/gallery-19.webp" width="600" height="750" loading="eager" decoding="async" alt="" />
+              </div>
+              <div class="gcard h-square" aria-hidden="true">
+                <img src="assets/img/gallery-20.webp" width="600" height="600" loading="eager" decoding="async" alt="" />
+              </div>
+              <div class="gcard h-tall" aria-hidden="true">
+                <img src="assets/img/gallery-21.webp" width="600" height="750" loading="eager" decoding="async" alt="" />
+              </div>
+              <div class="gcard h-portrait" aria-hidden="true">
+                <img src="assets/img/gallery-22.webp" width="600" height="750" loading="eager" decoding="async" alt="" />
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       LOGO STRIP — Marcas que confiam
+       ============================================ -->
+  <section class="scrolly-carousels" id="scrollyCarousels">
+    <div class="container">
+      <p class="scrolly-title">CASES DE SUCESSO — CARROSSÉIS<br class="br-mobile"/> QUE GERAM RESULTADO</p>
+    </div>
+
+    <!-- Linha 1 — Case Confeitaria Laço Rosa (5 peças do branding). Marquee infinito pra esquerda. -->
+    <div class="scrolly-row">
+      <div class="scrolly-track" data-direction="-1">
+        <img src="assets/img/laco-rosa-fachada.webp"  width="1179" height="720" loading="lazy" decoding="async" alt="Confeitaria Laço Rosa — fachada da loja ao entardecer" />
+        <img src="assets/img/laco-rosa-site.webp"     width="1080" height="720" loading="lazy" decoding="async" alt="Confeitaria Laço Rosa — site institucional em notebook" />
+        <img src="assets/img/laco-rosa-uniforme.webp" width="1080" height="720" loading="lazy" decoding="async" alt="Confeitaria Laço Rosa — uniforme de chef com bordado da marca" />
+        <img src="assets/img/laco-rosa-facebook.webp" width="1029" height="720" loading="lazy" decoding="async" alt="Confeitaria Laço Rosa — perfil Facebook + post + story" />
+        <img src="assets/img/laco-rosa-pano.webp"     width="1096" height="720" loading="lazy" decoding="async" alt="Confeitaria Laço Rosa — pano de copa com pattern de utensílios" />
+        <!-- Duplicatas (aria-hidden pra não duplicar pro screen reader) -->
+        <img src="assets/img/laco-rosa-fachada.webp"  width="1179" height="720" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        <img src="assets/img/laco-rosa-site.webp"     width="1080" height="720" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        <img src="assets/img/laco-rosa-uniforme.webp" width="1080" height="720" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        <img src="assets/img/laco-rosa-facebook.webp" width="1029" height="720" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        <img src="assets/img/laco-rosa-pano.webp"     width="1096" height="720" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+      </div>
+    </div>
+
+    <!-- Linha 2 — Case Ótica Marília (4 peças do branding). Marquee infinito pra direita. -->
+    <div class="scrolly-row">
+      <div class="scrolly-track" data-direction="1">
+        <img src="assets/img/otica-marilia-fachada.webp"  width="1080" height="720" loading="lazy" decoding="async" alt="Ótica Marília — fachada da loja com identidade aplicada" />
+        <img src="assets/img/otica-marilia-uniforme.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Ótica Marília — uniforme polo com logo bordado e pattern" />
+        <img src="assets/img/otica-marilia-sacolas.webp" width="960"  height="720" loading="lazy" decoding="async" alt="Ótica Marília — sacolas oficiais da marca em azul e branco" />
+        <img src="assets/img/otica-marilia-estojo.webp"  width="1080" height="720" loading="lazy" decoding="async" alt="Ótica Marília — estojo de óculos com identidade da marca" />
+        <!-- Duplicatas (aria-hidden pra não duplicar pro screen reader) -->
+        <img src="assets/img/otica-marilia-fachada.webp"  width="1080" height="720" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        <img src="assets/img/otica-marilia-uniforme.webp" width="1280" height="720" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        <img src="assets/img/otica-marilia-sacolas.webp" width="960"  height="720" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        <img src="assets/img/otica-marilia-estojo.webp"  width="1080" height="720" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+      </div>
+    </div>
+
+    <!-- Linha 3 — Case Kraken Growth Marketing (5 peças do branding). Marquee infinito pra esquerda. -->
+    <div class="scrolly-row">
+      <div class="scrolly-track" data-direction="-1">
+        <img src="assets/img/kraken-cartoes.webp"      width="1080" height="720" loading="lazy" decoding="async" alt="Kraken Growth Marketing — cartões de visita do CEO e equipe" />
+        <img src="assets/img/kraken-sala-reuniao.webp" width="1080" height="720" loading="lazy" decoding="async" alt="Kraken Growth Marketing — logo aplicado em sala de reunião corporativa" />
+        <img src="assets/img/kraken-polo.webp"         width="1280" height="720" loading="lazy" decoding="async" alt="Kraken Growth Marketing — uniforme polo com crachá e cordão" />
+        <img src="assets/img/kraken-letterhead.webp"   width="1080" height="720" loading="lazy" decoding="async" alt="Kraken Growth Marketing — papel timbrado e papelaria oficial" />
+        <img src="assets/img/kraken-adesivo.webp"      width="1080" height="720" loading="lazy" decoding="async" alt="Kraken Growth Marketing — adesivos com pattern da marca" />
+        <!-- Duplicatas (aria-hidden pra não duplicar pro screen reader) -->
+        <img src="assets/img/kraken-cartoes.webp"      width="1080" height="720" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        <img src="assets/img/kraken-sala-reuniao.webp" width="1080" height="720" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        <img src="assets/img/kraken-polo.webp"         width="1280" height="720" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        <img src="assets/img/kraken-letterhead.webp"   width="1080" height="720" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        <img src="assets/img/kraken-adesivo.webp"      width="1080" height="720" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+      </div>
+    </div>
+
+    <!-- Linha 4 — Case Outlet da Val (5 peças do branding). Marquee infinito pra direita. -->
+    <div class="scrolly-row">
+      <div class="scrolly-track" data-direction="1">
+        <img src="assets/img/val-tag.webp"     width="1280" height="720" loading="lazy" decoding="async" alt="Outlet da Val — tag/etiqueta de produto com pattern em fundo vermelho" />
+        <img src="assets/img/val-cartoes.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Outlet da Val — cartões de visita frente e verso" />
+        <img src="assets/img/val-fachada.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Outlet da Val — fachada da loja com letreiro" />
+        <img src="assets/img/val-outdoor.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Outlet da Val — outdoor publicitário em parede com pattern" />
+        <img src="assets/img/val-sacola.webp"  width="1280" height="720" loading="lazy" decoding="async" alt="Outlet da Val — sacola kraft com logo da marca" />
+        <!-- Duplicatas (aria-hidden pra não duplicar pro screen reader) -->
+        <img src="assets/img/val-tag.webp"     width="1280" height="720" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        <img src="assets/img/val-cartoes.webp" width="1280" height="720" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        <img src="assets/img/val-fachada.webp" width="1280" height="720" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        <img src="assets/img/val-outdoor.webp" width="1280" height="720" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        <img src="assets/img/val-sacola.webp"  width="1280" height="720" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+      </div>
+    </div>
+
+    <!-- Linha 5 — Case CYEX Academy (5 peças do branding). Marquee infinito pra esquerda. -->
+    <div class="scrolly-row">
+      <div class="scrolly-track" data-direction="-1">
+        <img src="assets/img/cyex-outdoor-metro.webp"  width="1280" height="720" loading="lazy" decoding="async" alt="CYEX Academy — outdoor em estação de metrô" />
+        <img src="assets/img/cyex-outdoor-predio.webp" width="1280" height="720" loading="lazy" decoding="async" alt="CYEX Academy — outdoor em prédio comercial à noite" />
+        <img src="assets/img/cyex-garrafas.webp"       width="1280" height="720" loading="lazy" decoding="async" alt="CYEX Academy — garrafas térmicas corporativas com a marca" />
+        <img src="assets/img/cyex-app.webp"            width="1280" height="720" loading="lazy" decoding="async" alt="CYEX Academy — aplicativo mobile com cursos e certificados" />
+        <img src="assets/img/cyex-caderno.webp"        width="1280" height="720" loading="lazy" decoding="async" alt="CYEX Academy — caderno premium com gravação em laranja sobre azul" />
+        <!-- Duplicatas (aria-hidden pra não duplicar pro screen reader) -->
+        <img src="assets/img/cyex-outdoor-metro.webp"  width="1280" height="720" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        <img src="assets/img/cyex-outdoor-predio.webp" width="1280" height="720" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        <img src="assets/img/cyex-garrafas.webp"       width="1280" height="720" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        <img src="assets/img/cyex-app.webp"            width="1280" height="720" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        <img src="assets/img/cyex-caderno.webp"        width="1280" height="720" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+      </div>
+    </div>
+
+    <!-- Linha 6 — carrosséis Prattes (direita, alterna com linha 5). -->
+    <div class="scrolly-row">
+      <div class="scrolly-track" data-direction="1">
+        <img src="assets/img/scrolly-01.webp" width="2560" height="320" loading="lazy" decoding="async" alt="Carrossel — Texturas no Chat GPT" />
+        <img src="assets/img/scrolly-02.webp" width="1536" height="320" loading="lazy" decoding="async" alt="Carrossel — Sites gratuitos para imagens" />
+        <img src="assets/img/scrolly-03.webp" width="1024" height="320" loading="lazy" decoding="async" alt="Carrossel — ZWCAD Pro 2025" />
+        <img src="assets/img/scrolly-01.webp" width="2560" height="320" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        <img src="assets/img/scrolly-02.webp" width="1536" height="320" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        <img src="assets/img/scrolly-03.webp" width="1024" height="320" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+      </div>
+    </div>
+
+    <!-- Linha 7 — mais carrosséis Prattes (esquerda, alterna com linha 6). -->
+    <div class="scrolly-row">
+      <div class="scrolly-track" data-direction="-1">
+        <img src="assets/img/scrolly-04.webp" width="1792" height="320" loading="lazy" decoding="async" alt="Carrossel — Como criar carrosséis que chamam atenção" />
+        <img src="assets/img/scrolly-05.webp" width="1024" height="320" loading="lazy" decoding="async" alt="Carrossel — ZW3D Professional" />
+        <img src="assets/img/scrolly-04.webp" width="1792" height="320" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        <img src="assets/img/scrolly-05.webp" width="1024" height="320" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       PAIN POINTS
+       ============================================ -->
+  <section class="pain">
+    <div class="container">
+      <div class="pain-grid">
+        <div class="pain-left">
+          <span class="badge">O que a gente resolve?</span>
+          <h2 class="display h-lg">Sua empresa<br/>enfrenta alguns<br/>desses <span class="hl">desafios?</span></h2>
+          <p class="lead">A maioria dos negócios é boa no que faz — mas comunica como se fosse amador. A gente vira essa chave e potencializa seus resultados.</p>
+
+          <img class="pain-curiosity" src="assets/img/pain-curiosity.webp" width="480" height="442" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        </div>
+
+        <div class="pain-right">
+          <div class="pain-quotes">
+            <div class="quote-card">Nossa marca parece amadora frente aos concorrentes — perdemos clientes antes mesmo do primeiro contato.</div>
+            <div class="quote-card">Postamos sempre, mas sem estratégia. Não gera autoridade, não gera venda, não gera nada.</div>
+            <div class="quote-card">Nossa empresa é ótima, mas a comunicação visual não transmite o valor real do que entregamos.</div>
+            <div class="quote-card">Tentamos resolver com freelancers ou internamente, mas o resultado nunca traduz quem a marca realmente é.</div>
+            <div class="quote-card">Nossa identidade está desalinhada entre site, redes e materiais — passamos a sensação de algo improvisado.</div>
+          </div>
+
+          <div class="pain-cta">
+            <p>Na Prattes Design, a gente estrutura sua presença digital com diagnóstico, identidade, conteúdo e método. O resultado: uma marca que comunica o valor real do seu negócio e gera mais oportunidades.</p>
+            <a href="https://wa.me/5511940823616?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento" class="btn btn-primary btn-arrow" target="_blank" rel="noopener noreferrer">Resolver meus desafios</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       STAND OUT
+       ============================================ -->
+  <section class="standout">
+    <div class="container">
+      <div class="standout-content">
+        <span class="eyebrow">Posicionamento</span>
+        <h2 class="display h-lg">Pare de parecer<br/>improvisado.<br/><span class="hl">Comece a ser</span><br/>desejado.</h2>
+        <p class="lead" style="margin: 30px auto 0;">Quando você se associa à Prattes, nosso time transforma sua intenção criativa em comunicação estratégica — e posiciona sua marca como referência no seu mercado.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SERVICES
+       ============================================ -->
+  <section class="services" id="servicos">
+    <canvas class="section-particles" aria-hidden="true"></canvas>
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Como te ajudamos</span>
+        <h2 class="display h-lg" style="margin-top: 16px;">O que a gente faz</h2>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <div class="service-image">
+            <img src="assets/img/service-branding.svg" width="600" height="380" loading="lazy" decoding="async" alt="Branding e Identidade Visual — Brand book editorial" />
+          </div>
+          <div class="service-body">
+            <h3 class="display h-sm">Branding &amp; Identidade Visual</h3>
+            <p>Construímos marcas com posicionamento claro, identidade flexível e linguagem visual coerente — do logo ao sistema completo de marca.</p>
+            <ul class="service-list">
+              <li>Posicionamento &amp; Direção de Marca</li>
+              <li>Logo &amp; Sistema Visual</li>
+              <li>Manual e Aplicações</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-image">
+            <img src="assets/img/service-social.svg" width="600" height="380" loading="lazy" decoding="async" alt="Social Media e Conteúdo — Mockup de feed e stories" />
+          </div>
+          <div class="service-body">
+            <h3 class="display h-sm">Social Media &amp; Conteúdo</h3>
+            <p>Conteúdo estratégico para Instagram que vira vitrine comercial: linha editorial, planejamento, design de posts, reels e campanhas.</p>
+            <ul class="service-list">
+              <li>Planejamento &amp; Linha Editorial</li>
+              <li>Design de Posts &amp; Carrosséis</li>
+              <li>Roteiros e Edição de Reels</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="service-card">
+          <div class="service-image">
+            <img src="assets/img/service-audiovisual.svg" width="600" height="380" loading="lazy" decoding="async" alt="Audiovisual e Campanhas — Editor de vídeo e dashboard" />
+          </div>
+          <div class="service-body">
+            <h3 class="display h-sm">Audiovisual &amp; Campanhas</h3>
+            <p>Vídeos, motion, criativos para tráfego e landing pages que conectam mensagem, design e estratégia comercial.</p>
+            <ul class="service-list">
+              <li>Vídeo Institucional &amp; Reels</li>
+              <li>Criativos para Tráfego Pago</li>
+              <li>Landing Pages que Convertem</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <div class="services-footer">
+        <a href="https://www.behance.net/Prattes-design" class="btn btn-ghost btn-arrow" target="_blank" rel="noopener noreferrer">Ver todos os serviços</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CTA BANNER
+       ============================================ -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-banner-inner">
+        <div>
+          <h3 class="display">Eleve a percepção de valor da sua marca</h3>
+          <p>Diagnóstico gratuito da sua presença digital.</p>
+        </div>
+        <form id="diagnosticoForm" class="cta-banner-form" novalidate>
+          <input type="text"  name="nome"     class="cta-input" placeholder="Primeiro nome" autocomplete="given-name" required />
+          <input type="tel"   name="telefone" class="cta-input" placeholder="Seu telefone" autocomplete="tel" required />
+          <input type="email" name="email"    class="cta-input" placeholder="Melhor e-mail" autocomplete="email" required />
+          <!-- Campos ocultos do FormSubmit -->
+          <input type="hidden" name="_subject" value="Novo pedido de diagnóstico — Prattes Design" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <button type="submit" class="btn btn-primary btn-arrow cta-banner-submit">Quero meu diagnóstico gratuito</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CASES
+       ============================================ -->
+  <section class="cases">
+    <canvas class="section-particles" aria-hidden="true"></canvas>
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">Portfólio</span>
+        <h2 class="display h-lg" style="margin-top: 16px;">Cases de marcas reais</h2>
+      </div>
+
+      <div class="cases-grid">
+        <a href="case-otica-marilia.html" class="case-card">
+          <div class="case-cover">
+            <img src="assets/img/otica-marilia-fachada.webp" width="1080" height="720" loading="lazy" decoding="async" alt="Ótica Marília — fachada da loja com a nova identidade" />
+          </div>
+          <div class="case-overlay">
+            <div class="case-tags">
+              <span class="case-tag">Branding</span>
+              <span class="case-tag">Identidade Visual</span>
+            </div>
+            <h3 class="display">Ótica Marília</h3>
+            <p>Identidade visual e sistema de marca para uma ótica regional se posicionar como premium.</p>
+          </div>
+          </a>
+
+        <a href="case-kraken.html" class="case-card">
+          <div class="case-cover">
+            <img src="assets/img/kraken-sala-reuniao.webp" width="1080" height="720" loading="lazy" decoding="async" alt="Kraken Growth Marketing — logo em sala de reunião" />
+          </div>
+          <div class="case-overlay">
+            <div class="case-tags">
+              <span class="case-tag">Branding</span>
+              <span class="case-tag">Corporativo</span>
+            </div>
+            <h3 class="display">Kraken Growth Marketing</h3>
+            <p>Marca corporativa sólida para uma agência de growth transmitir autoridade e método.</p>
+          </div>
+          </a>
+
+        <a href="case-outlet-da-val.html" class="case-card">
+          <div class="case-cover">
+            <img src="assets/img/val-fachada.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Outlet da Val — fachada da loja" />
+          </div>
+          <div class="case-overlay">
+            <div class="case-tags">
+              <span class="case-tag">Branding</span>
+              <span class="case-tag">Varejo</span>
+            </div>
+            <h3 class="display">Outlet da Val</h3>
+            <p>Identidade vibrante e de alto impacto para um outlet de moda que vende rápido.</p>
+          </div>
+          </a>
+
+        <a href="case-cyex-academy.html" class="case-card">
+          <div class="case-cover">
+            <img src="assets/img/cyex-outdoor-predio.webp" width="1280" height="720" loading="lazy" decoding="async" alt="CYEX Academy — outdoor em prédio comercial" />
+          </div>
+          <div class="case-overlay">
+            <div class="case-tags">
+              <span class="case-tag">Branding</span>
+              <span class="case-tag">Audiovisual</span>
+            </div>
+            <h3 class="display">CYEX Academy</h3>
+            <p>Marca, outdoor e app para uma academia de cursos com posicionamento tecnológico.</p>
+          </div>
+          </a>
+      </div>
+
+      <div class="cases-footer">
+        <a href="trabalhos.html" class="btn btn-ghost btn-arrow">Ver todos os trabalhos</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       TESTIMONIALS
+       ============================================ -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">O que dizem nossos clientes</span>
+        <h2 class="display h-lg" style="margin-top: 16px;">Resultado, do<br class="break-mobile"/> briefing à venda</h2>
+      </div>
+
+      <div class="testimonials-track">
+        <div class="testimonial-card">
+          <p class="testimonial-quote">A Prattes entendeu o nosso negócio antes de criar qualquer arte. O resultado foi uma comunicação que finalmente parece à altura do que entregamos no dia a dia.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">M</div>
+            <div>
+              <div class="author-name">Mariana Costa</div>
+              <div class="author-role">Sócia, Ótica Regional</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-quote">Saímos do feed bagunçado para uma presença digital com identidade clara. Em 90 dias, o WhatsApp começou a chegar com pessoas que já tinham decidido fechar.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">R</div>
+            <div>
+              <div class="author-name">Rafael Tanaka</div>
+              <div class="author-role">Diretor, Academia Premium</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-quote">Trabalhar com o Vinícius e o Marcel é diferente porque eles pensam em comunicação, não só em arte. A campanha que fizemos juntos abriu portas reais.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">F</div>
+            <div>
+              <div class="author-name">Fernanda Lima</div>
+              <div class="author-role">Head de Marketing, Empresa B2B</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-quote">Eu sabia o que queria comunicar, mas não conseguia transformar isso em conteúdo. A Prattes destravou minha autoridade e hoje recebo clientes melhores.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">D</div>
+            <div>
+              <div class="author-name">Dr. Diogo Mendes</div>
+              <div class="author-role">Especialista &amp; Mentor</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-quote">Eles entregam no prazo, com qualidade alta e sem precisar de retrabalho. Viraram nosso braço criativo de confiança para campanhas grandes.</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">L</div>
+            <div>
+              <div class="author-name">Letícia Andrade</div>
+              <div class="author-role">CEO, Agência Parceira</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       NEWSLETTER + COMUNIDADE
+       ============================================ -->
+  <section class="community">
+    <canvas class="section-particles" aria-hidden="true"></canvas>
+    <div class="container">
+      <div class="community-grid">
+        <div class="newsletter-card">
+          <span class="eyebrow">Newsletter</span>
+          <h3 class="display h-md">Insights de design, marca e conteúdo direto na sua caixa</h3>
+          <p>Receba semanalmente análises, estudos de caso e ferramentas para profissionalizar a comunicação do seu negócio.</p>
+          <form id="newsletterForm" class="newsletter-form" novalidate>
+            <input type="email" name="email" placeholder="seu@email.com" autocomplete="email" required />
+            <button type="submit" class="btn btn-primary">Inscrever</button>
+            <!-- Campos ocultos do FormSubmit pra controlar comportamento -->
+            <input type="hidden" name="_subject" value="Nova inscrição na newsletter — Prattes Design" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <!-- Consentimento dentro do form pra ser submetido junto (LGPD audit trail) -->
+            <label class="newsletter-consent">
+              <input type="checkbox" name="consentimento" value="aceito" required /> Aceito receber comunicações da Prattes Design.
+            </label>
+          </form>
+        </div>
+
+        <div class="social-cards">
+          <a href="https://instagram.com/prattesdesign" class="social-card" target="_blank" rel="noopener noreferrer">
+            <div class="social-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+            </div>
+            <div>
+              <h4>Instagram</h4>
+              <p>Bastidores e nossas criações em tempo real</p>
+            </div>
+            <span class="arrow">→</span>
+          </a>
+
+          <a href="https://linkedin.com/company/prattes-design" class="social-card" target="_blank" rel="noopener noreferrer">
+            <div class="social-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.22 8h4.56v15H.22V8zM7.5 8h4.36v2.05h.06c.61-1.15 2.1-2.36 4.32-2.36 4.62 0 5.47 3.04 5.47 6.99V23h-4.56v-6.7c0-1.6-.03-3.65-2.22-3.65-2.22 0-2.56 1.74-2.56 3.53V23H7.5V8z"/></svg>
+            </div>
+            <div>
+              <h4>LinkedIn</h4>
+              <p>Conexões e conteúdos para o mercado profissional</p>
+            </div>
+            <span class="arrow">→</span>
+          </a>
+
+          <a href="https://www.behance.net/Prattes-design" class="social-card" target="_blank" rel="noopener noreferrer">
+            <div class="social-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 4.8h7.5c1.5 0 3.4.8 3.4 3.1 0 1.4-.7 2.3-1.4 2.6 1.3.4 2.4 1.5 2.4 3.4 0 2.7-2.4 4-4.7 4H0V4.8zm3.5 5.4h3c1 0 1.5-.5 1.5-1.4 0-.9-.5-1.4-1.5-1.4h-3v2.8zm0 5.5h3.3c1.1 0 1.8-.6 1.8-1.7s-.7-1.7-1.8-1.7H3.5v3.4zM18.4 9c2.6 0 4.6 1.9 4.6 4.7v.6h-6.7c.1 1.3 1 2.2 2.4 2.2 1 0 1.8-.5 2.1-1.3h2.2c-.5 1.9-2.2 3.2-4.4 3.2-2.7 0-4.7-1.9-4.7-4.6S15.7 9 18.4 9zm-2.1 3.6h4.2c-.2-1-1-1.6-2.1-1.6s-1.9.6-2.1 1.6zM15 5.7h6V7h-6V5.7z"/></svg>
+            </div>
+            <div>
+              <h4>Behance</h4>
+              <p>Portfólio completo com cases e processos</p>
+            </div>
+            <span class="arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FINAL CTA
+       ============================================ -->
+  <section class="final-cta">
+    <div class="container">
+      <div class="final-cta-content">
+        <span class="eyebrow">Vamos trabalhar juntos</span>
+        <h2 class="display h-xl">Pronto para sair<br/>do <span class="hl">amador?</span></h2>
+        <p>Quando você se associa à Prattes, nosso time vira o braço criativo da sua marca — e posiciona seu negócio para vender com mais confiança e&nbsp;mais&nbsp;valor.</p>
+        <a href="https://wa.me/5511940823616?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento" class="btn btn-primary btn-arrow" target="_blank" rel="noopener noreferrer">Começar agora</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-highlight">
+        <span class="footer-highlight-title">CONHEÇA NOSSAS REDES</span>
+        </div>
+
+      <!-- Redes sociais em ícones -->
+      <div class="footer-socials">
+        <a href="https://wa.me/5511940823616?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.04 21.785h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.002-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884zm8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.452 3.488z"/></svg>
+        </a>
+        <a href="mailto:prattesdesign@gmail.com" aria-label="E-mail" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+        <a href="https://instagram.com/prattesdesign" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+        </a>
+        <a href="https://linkedin.com/company/prattes-design" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.22 8h4.56v15H.22V8zM7.5 8h4.36v2.05h.06c.61-1.15 2.1-2.36 4.32-2.36 4.62 0 5.47 3.04 5.47 6.99V23h-4.56v-6.7c0-1.6-.03-3.65-2.22-3.65-2.22 0-2.56 1.74-2.56 3.53V23H7.5V8z"/></svg>
+        </a>
+        <a href="https://www.behance.net/Prattes-design" aria-label="Behance" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 4.8h7.5c1.5 0 3.4.8 3.4 3.1 0 1.4-.7 2.3-1.4 2.6 1.3.4 2.4 1.5 2.4 3.4 0 2.7-2.4 4-4.7 4H0V4.8zm3.5 5.4h3c1 0 1.5-.5 1.5-1.4 0-.9-.5-1.4-1.5-1.4h-3v2.8zm0 5.5h3.3c1.1 0 1.8-.6 1.8-1.7s-.7-1.7-1.8-1.7H3.5v3.4zM18.4 9c2.6 0 4.6 1.9 4.6 4.7v.6h-6.7c.1 1.3 1 2.2 2.4 2.2 1 0 1.8-.5 2.1-1.3h2.2c-.5 1.9-2.2 3.2-4.4 3.2-2.7 0-4.7-1.9-4.7-4.6S15.7 9 18.4 9zm-2.1 3.6h4.2c-.2-1-1-1.6-2.1-1.6s-1.9.6-2.1 1.6zM15 5.7h6V7h-6V5.7z"/></svg>
+        </a>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Prattes Design. Todos os direitos reservados.</span>
+        <span class="sep"></span>
+        <a href="termos_3_9_1.html" target="_blank" rel="noopener noreferrer">Termos &amp; Condições</a>
+        <span class="sep"></span>
+        <a href="privacidade_11_1_2.html" target="_blank" rel="noopener noreferrer">Política de Privacidade</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ============================================
+    // Header — encolhe ao rolar
+    // ============================================
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 30);
+    }, { passive: true });
+
+    // A galeria do hero usa animação CSS pura (auto-scroll contínuo).
+    // Não precisa mais de JS para mover — funciona 100% do tempo,
+    // independente de scroll, mouse ou inatividade do usuário.
+
+    // ============================================
+    // Reveal on scroll (cards aparecem suavemente)
+    // ============================================
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.service-card, .case-card, .testimonial-card, .quote-card, .pain-cta, .newsletter-card, .social-card')
+      .forEach(el => { el.classList.add('reveal'); io.observe(el); });
+  </script>
+
+  <!-- ============================================
+       SCROLLY CAROUSELS — marquee infinito CSS
+       Antes: JS sincronizado com scroll vertical (não dava pra ver as
+       imagens finais da linha 1 porque o range era curto demais).
+       Agora: animação CSS contínua. As imagens são duplicadas no markup
+       e o track anima de 0 → -50% (linha 1) ou -50% → 0 (linha 2).
+       JS só adiciona .pd-loaded quando window.load dispara, evitando
+       layout shift inicial enquanto as imagens ainda carregam.
+       ============================================ -->
+  <script>
+    window.addEventListener('load', function () {
+      document.body.classList.add('pd-loaded');
+    });
+  </script>
+
+  <script>
+    // Fecha o menu mobile quando o usuário clica em qualquer link dentro dele
+    (function(){
+      var toggle = document.getElementById('pd-nav-toggle');
+      if (!toggle) return;
+      var navMenu = document.querySelector('.nav-menu');
+      if (!navMenu) return;
+      navMenu.querySelectorAll('a').forEach(function(a){
+        a.addEventListener('click', function(){
+          toggle.checked = false;
+        });
+      });
+      // Fecha com tecla ESC
+      document.addEventListener('keydown', function(e){
+        if (e.key === 'Escape') toggle.checked = false;
+      });
+    })();
+  </script>
+
+
+  <!-- Botão flutuante WhatsApp — fixo no scroll, tamanhos diferentes mobile/desktop -->
+  <a class="pd-whatsapp-fab" 
+     href="https://wa.me/5511940823616?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413"/>
+    </svg>
+  </a>
+
+  <!-- Lightbox para imagens dos carrosséis "Cases de Sucesso".
+       <dialog> nativo: ESC fecha por default, foco automático preso dentro,
+       backdrop renderizado via ::backdrop pseudo. -->
+  <dialog id="pdLightbox" class="pd-lightbox" aria-label="Visualização ampliada da imagem">
+    <button type="button" class="pd-lightbox-btn pd-lightbox-prev"  aria-label="Imagem anterior">&#8249;</button>
+    <figure class="pd-lightbox-figure">
+      <img class="pd-lightbox-img" src="" alt="" />
+    </figure>
+    <button type="button" class="pd-lightbox-btn pd-lightbox-next"  aria-label="Próxima imagem">&#8250;</button>
+    <button type="button" class="pd-lightbox-btn pd-lightbox-close" aria-label="Fechar visualização">&times;</button>
+  </dialog>
+
+  <script>
+    // ============================================================
+    // CARROSSEL DA HERO GALLERY — pausar ao segurar clique/touch
+    // Solta o clique → volta a animar
+    // (Antes pausava no hover; agora só pausa quando há interação direta)
+    // ============================================================
+    (function(){
+      var tracks = document.querySelectorAll('.gallery-track');
+      if (!tracks.length) return;
+      var heroGallery = document.querySelector('.hero-gallery');
+      if (!heroGallery) return;
+      
+      function pauseAll() {
+        tracks.forEach(function(t){ t.classList.add('paused'); });
+      }
+      function resumeAll() {
+        tracks.forEach(function(t){ t.classList.remove('paused'); });
+      }
+      
+      // Pointer events cobrem mouse + touch + pen
+      heroGallery.addEventListener('pointerdown', pauseAll);
+      heroGallery.addEventListener('pointerup', resumeAll);
+      heroGallery.addEventListener('pointercancel', resumeAll);
+      heroGallery.addEventListener('pointerleave', resumeAll);
+    })();
+
+    // ============================================================
+    // PAGE READY — libera a animação do carrossel SÓ depois que
+    // tudo (imagens, fontes, CSS) terminou de carregar. Isso evita
+    // o "salto inicial" causado por layout shift no meio da animação.
+    // ============================================================
+    (function(){
+      function markLoaded() {
+        // 2 RAFs garantem que o layout final (com fontes custom já
+        // aplicadas) foi pintado pelo menos uma vez antes da animação começar
+        requestAnimationFrame(function(){
+          requestAnimationFrame(function(){
+            document.body.classList.add('pd-loaded');
+          });
+        });
+      }
+      if (document.readyState === 'complete') {
+        markLoaded();
+      } else {
+        window.addEventListener('load', markLoaded);
+      }
+    })();
+  </script>
+
+  <!-- Modal de sucesso da newsletter (substitui o alert() feio do navegador) -->
+  <div id="newsletterModal" class="pd-modal" role="dialog" aria-modal="true" aria-labelledby="newsletterModalTitle" hidden>
+    <div class="pd-modal-backdrop" data-modal-close></div>
+    <div class="pd-modal-card" role="document">
+      <div class="pd-modal-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 6L9 17l-5-5"/>
+        </svg>
+      </div>
+      <h3 id="newsletterModalTitle" class="pd-modal-title">Assinatura realizada com sucesso</h3>
+      <p class="pd-modal-message">Inscrição realizada com sucesso.</p>
+      <div class="pd-modal-actions">
+        <a href="#" class="btn btn-primary pd-modal-wa" target="_blank" rel="noopener noreferrer" hidden>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="width:18px;height:18px;margin-right:8px;vertical-align:-3px;">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/>
+          </svg>
+          Abrir WhatsApp
+        </a>
+        <button type="button" class="btn pd-modal-ok" data-modal-close>OK</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // === Handler genérico de forms (newsletter + diagnóstico) ===
+    // Envia pro FormSubmit + abre modal personalizado.
+    // Se o form tem config de WhatsApp, abre o WhatsApp do lead com mensagem pré-pronta.
+    (function() {
+      const modal = document.getElementById('newsletterModal');
+      if (!modal) return;
+
+      // ⚠️ E-mail e WhatsApp de destino — pra mudar no futuro, basta alterar aqui
+      const DEST_EMAIL = 'prattesdesign@gmail.com';
+      const DEST_WHATSAPP = '5511940823616'; // formato: 55 + DDD + número, sem espaços/caracteres
+      const ENDPOINT = 'https://formsubmit.co/ajax/' + DEST_EMAIL;
+
+      const modalTitle = modal.querySelector('.pd-modal-title');
+      const modalMessage = modal.querySelector('.pd-modal-message');
+
+      function openModal(title, message, whatsappUrl) {
+        if (title) modalTitle.textContent = title;
+        if (message) modalMessage.textContent = message;
+
+        // Mostra/esconde o botão "Abrir WhatsApp" como fallback caso o popup
+        // tenha sido bloqueado pelo navegador
+        const waBtn = modal.querySelector('.pd-modal-wa');
+        if (waBtn) {
+          if (whatsappUrl) {
+            waBtn.href = whatsappUrl;
+            waBtn.hidden = false;
+          } else {
+            waBtn.hidden = true;
+            waBtn.removeAttribute('href');
+          }
+        }
+
+        modal.hidden = false;
+        document.body.style.overflow = 'hidden';
+        const okBtn = modal.querySelector('.pd-modal-ok');
+        if (okBtn) okBtn.focus();
+      }
+      function closeModal() {
+        modal.hidden = true;
+        document.body.style.overflow = '';
+      }
+
+      // Fechar modal: OK, fundo, ou Escape
+      modal.querySelectorAll('[data-modal-close]').forEach(el => {
+        el.addEventListener('click', closeModal);
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !modal.hidden) closeModal();
+      });
+
+      // Monta a URL do WhatsApp com mensagem pré-preenchida
+      function buildWhatsAppUrl(formData) {
+        const nome     = (formData.get('nome')     || '').trim();
+        const telefone = (formData.get('telefone') || '').trim();
+        const email    = (formData.get('email')    || '').trim();
+        const text =
+          'Olá, vim através do site e quero fazer diagnóstico gratuito da minha marca.\n\n' +
+          'Nome: ' + nome + '\n' +
+          'Telefone: ' + telefone + '\n' +
+          'E-mail: ' + email;
+        return 'https://wa.me/' + DEST_WHATSAPP + '?text=' + encodeURIComponent(text);
+      }
+
+      function setupForm(formId, options) {
+        const form = document.getElementById(formId);
+        if (!form) return;
+
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+
+          if (!form.checkValidity()) {
+            form.reportValidity();
+            return;
+          }
+
+          const formData = new FormData(form);
+
+          // Se o form tem config de WhatsApp, abre o WhatsApp imediatamente
+          // (PRECISA estar dentro do clique pra não ser bloqueado por popup blocker)
+          let waUrl = null;
+          if (options.whatsapp) {
+            waUrl = buildWhatsAppUrl(formData);
+            window.open(waUrl, '_blank', 'noopener,noreferrer');
+          }
+
+          const submitBtn = form.querySelector('button[type="submit"]');
+          const originalText = submitBtn.textContent;
+          submitBtn.disabled = true;
+          submitBtn.textContent = 'Enviando…';
+
+          // Envia o e-mail via FormSubmit em background
+          fetch(ENDPOINT, {
+            method: 'POST',
+            headers: { 'Accept': 'application/json' },
+            body: formData
+          })
+          .catch(() => { /* ignora falhas de rede — modal abre mesmo assim */ })
+          .finally(() => {
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalText;
+            form.reset();
+            // Passa a waUrl pro modal — se tiver, mostra botão WhatsApp como fallback
+            openModal(options.successTitle, options.successMessage, waUrl);
+          });
+        });
+      }
+
+      // Configura os 2 forms
+      setupForm('newsletterForm', {
+        successTitle: 'Assinatura realizada com sucesso',
+        successMessage: 'Inscrição realizada com sucesso.'
+      });
+      setupForm('diagnosticoForm', {
+        whatsapp: true,
+        successTitle: 'Recebemos sua solicitação',
+        successMessage: 'Para finalizar e agilizar o contato, envie a mensagem que abrimos no seu WhatsApp.'
+      });
+    })();
+  </script>
+
+  <script>
+    // === Scrollspy desabilitado ===
+    // O usuário pediu que a linha amarela só apareça em hover/click,
+    // não permanentemente conforme rola a página.
+  </script>
+
+  <!-- ============================================
+       SECTION PARTICLES — linhas e partículas amarelas "nevando"
+       no fundo preto de seções marcadas (.services, .cases, .community).
+       Cada <canvas class="section-particles"> dentro de uma seção
+       posicionada vira uma instância independente. Canvas leve,
+       respeita prefers-reduced-motion, pausa fora do viewport.
+       ============================================ -->
+  <script>
+  (function() {
+    var canvases = document.querySelectorAll('.section-particles');
+    if (!canvases.length) return;
+
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+    // Uma instância controla um canvas em sua seção pai.
+    function createInstance(canvas) {
+      var ctx = canvas.getContext('2d');
+      if (!ctx) return null;
+      var section = canvas.parentElement;
+      var width = 0, height = 0;
+      var rafId = null;
+      var lastTime = 0;     // timestamp do frame anterior (para delta-time)
+      var streaks = [];
+      var dots = [];
+
+      function resize() {
+        var rect = section.getBoundingClientRect();
+        width = Math.max(1, Math.floor(rect.width));
+        height = Math.max(1, Math.floor(rect.height));
+        canvas.width = width * dpr;
+        canvas.height = height * dpr;
+        canvas.style.width = width + 'px';
+        canvas.style.height = height + 'px';
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        // bordas redondas em todas as linhas → endpoints suaves
+        ctx.lineCap = 'round';
+      }
+
+      function Streak(initial) { this.reset(initial); }
+      Streak.prototype.reset = function(initial) {
+        this.horizontal = Math.random() > 0.35;
+        this.length = this.horizontal
+          ? 90 + Math.random() * 240
+          : 70 + Math.random() * 160;
+        this.thickness = 0.5 + Math.random() * 0.9;
+        // opacidade base mais baixa — additive blending vai compensar
+        this.opacity = 0.22 + Math.random() * 0.40;
+        // velocidade: px por "frame normalizado" (16.67ms)
+        this.speed = 0.12 + Math.random() * 0.35;
+
+        // onda senoidal perpendicular ao movimento — drift orgânico sutil
+        this.waveAmp  = 0.6 + Math.random() * 1.6;   // ~0.6–2.2 px
+        this.waveFreq = 0.020 + Math.random() * 0.035; // período ~3–10s
+        // pulse de opacidade enquanto cruza — "respiração"
+        this.pulseAmp  = 0.10 + Math.random() * 0.18;
+        this.pulseFreq = 0.015 + Math.random() * 0.030;
+        // fase aleatória para que streaks não pulsem em sincronia
+        this.t = Math.random() * 1000;
+
+        if (this.horizontal) {
+          this.y0 = Math.random() * height;
+          this.x  = initial ? Math.random() * width
+                            : -this.length - Math.random() * 200;
+          this.y  = this.y0;
+        } else {
+          this.x0 = Math.random() * width;
+          this.y  = initial ? Math.random() * height
+                            : -this.length - Math.random() * 200;
+          this.x  = this.x0;
+        }
+      };
+      Streak.prototype.update = function(dt) {
+        this.t += dt;
+        if (this.horizontal) {
+          this.x += this.speed * dt;
+          this.y  = this.y0 + Math.sin(this.t * this.waveFreq) * this.waveAmp;
+          if (this.x > width + 20) this.reset(false);
+        } else {
+          this.y += this.speed * dt;
+          this.x  = this.x0 + Math.sin(this.t * this.waveFreq) * this.waveAmp;
+          if (this.y > height + 20) this.reset(false);
+        }
+      };
+      Streak.prototype.draw = function() {
+        var grad = this.horizontal
+          ? ctx.createLinearGradient(this.x, this.y, this.x + this.length, this.y)
+          : ctx.createLinearGradient(this.x, this.y, this.x, this.y + this.length);
+        // opacidade efetiva com pulse leve (mantém >= 0)
+        var op = Math.max(0,
+          this.opacity * (1 + Math.sin(this.t * this.pulseFreq) * this.pulseAmp));
+        grad.addColorStop(0,   'rgba(255, 218, 0, 0)');
+        grad.addColorStop(0.5, 'rgba(255, 218, 0, ' + op + ')');
+        grad.addColorStop(1,   'rgba(255, 218, 0, 0)');
+        ctx.strokeStyle = grad;
+        ctx.lineWidth = this.thickness;
+        ctx.beginPath();
+        ctx.moveTo(this.x, this.y);
+        if (this.horizontal) ctx.lineTo(this.x + this.length, this.y);
+        else                 ctx.lineTo(this.x, this.y + this.length);
+        ctx.stroke();
+      };
+
+      function Dot(initial) { this.reset(initial); }
+      Dot.prototype.reset = function(initial) {
+        this.x0 = Math.random() * width;
+        this.y  = initial ? Math.random() * height : -8 - Math.random() * 40;
+        this.x  = this.x0;
+        this.radius = 0.7 + Math.random() * 1.4;
+        // opacidade base mais baixa — additive blending vai compensar
+        this.baseOpacity = 0.28 + Math.random() * 0.42;
+        // velocidade de queda em px por "frame normalizado"
+        this.vy = 0.04 + Math.random() * 0.18;
+
+        // sway horizontal senoidal — substitui o drift linear minúsculo
+        this.swayAmp   = 3 + Math.random() * 12;        // ~3–15 px
+        this.swayFreq  = 0.008 + Math.random() * 0.018; // período ~6–14s
+        this.swayPhase = Math.random() * Math.PI * 2;
+
+        // cintilação mais lenta e suave
+        this.twinkle      = Math.random() * Math.PI * 2;
+        this.twinkleSpeed = 0.010 + Math.random() * 0.022;
+
+        this.t = Math.random() * 1000;
+      };
+      Dot.prototype.update = function(dt) {
+        this.t += dt;
+        this.y += this.vy * dt;
+        // sway suave em torno de x0
+        this.x  = this.x0 + Math.sin(this.swayPhase + this.t * this.swayFreq) * this.swayAmp;
+        this.twinkle += this.twinkleSpeed * dt;
+        if (this.y > height + 12) this.reset(false);
+      };
+      Dot.prototype.draw = function() {
+        // cintilação com curva mais doce (não desce abaixo de 50%)
+        var op = this.baseOpacity * (0.55 + 0.45 * Math.sin(this.twinkle));
+        // halo amplo e bem suave
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius * 4, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(255, 218, 0, ' + (op * 0.08) + ')';
+        ctx.fill();
+        // halo médio
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius * 2.2, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(255, 218, 0, ' + (op * 0.18) + ')';
+        ctx.fill();
+        // núcleo
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        ctx.fillStyle = 'rgba(255, 218, 0, ' + op + ')';
+        ctx.fill();
+      };
+
+      function populate() {
+        var area = width * height;
+        var base = 1400 * 800;
+        var ratio = Math.min(Math.max(area / base, 0.5), 1.3);
+        var streakCount = Math.round(12 * ratio);
+        var dotCount = Math.round(32 * ratio);
+        streaks = []; dots = [];
+        for (var i = 0; i < streakCount; i++) streaks.push(new Streak(true));
+        for (var j = 0; j < dotCount; j++)    dots.push(new Dot(true));
+      }
+
+      function frame(now) {
+        // delta-time normalizado para "frames de 60Hz" (16.67ms = 1.0 unidade)
+        // → animação fica idêntica em monitores 60/120/144Hz
+        if (!lastTime) lastTime = now;
+        var deltaMs = now - lastTime;
+        lastTime = now;
+        // cap em 50ms evita "saltos" quando a aba volta de background
+        var dt = Math.min(deltaMs, 50) / 16.667;
+
+        ctx.clearRect(0, 0, width, height);
+        // additive blending → sobreposições viram glow suave em vez de cinza
+        ctx.globalCompositeOperation = 'lighter';
+        for (var i = 0; i < streaks.length; i++) { streaks[i].update(dt); streaks[i].draw(); }
+        for (var j = 0; j < dots.length; j++)    { dots[j].update(dt);    dots[j].draw(); }
+        ctx.globalCompositeOperation = 'source-over';
+
+        rafId = requestAnimationFrame(frame);
+      }
+
+      function drawStatic() {
+        ctx.clearRect(0, 0, width, height);
+        ctx.globalCompositeOperation = 'lighter';
+        for (var i = 0; i < streaks.length; i++) streaks[i].draw();
+        for (var j = 0; j < dots.length; j++)    dots[j].draw();
+        ctx.globalCompositeOperation = 'source-over';
+      }
+
+      function start() {
+        if (rafId) cancelAnimationFrame(rafId);
+        lastTime = 0;  // reset para primeiro frame não ter delta gigante
+        resize();
+        populate();
+        if (prefersReduced.matches) drawStatic();
+        else                        rafId = requestAnimationFrame(frame);
+      }
+
+      function stop() {
+        if (rafId) { cancelAnimationFrame(rafId); rafId = null; }
+      }
+
+      return { section: section, start: start, stop: stop,
+               isRunning: function() { return rafId !== null; },
+               drawStatic: drawStatic };
+    }
+
+    var instances = [];
+    canvases.forEach(function(c) {
+      var inst = createInstance(c);
+      if (inst) instances.push(inst);
+    });
+    if (!instances.length) return;
+
+    // Inicializa cada instância
+    instances.forEach(function(inst) { inst.start(); });
+
+    // Pausa cada seção quando sai do viewport
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) {
+          var inst = instances.find(function(i) { return i.section === e.target; });
+          if (!inst) return;
+          if (e.isIntersecting) {
+            if (!inst.isRunning() && !prefersReduced.matches) inst.start();
+          } else {
+            inst.stop();
+          }
+        });
+      }, { threshold: 0 });
+      instances.forEach(function(inst) { io.observe(inst.section); });
+    }
+
+    // Resize com debounce — reinicia todas as instâncias
+    var resizeTimer;
+    window.addEventListener('resize', function() {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(function() {
+        instances.forEach(function(inst) { inst.start(); });
+      }, 150);
+    });
+
+    if (prefersReduced.addEventListener) {
+      prefersReduced.addEventListener('change', function() {
+        instances.forEach(function(inst) { inst.start(); });
+      });
+    }
+  })();
+  </script>
+
+  <!-- ============================================
+       CLICK RING — feedback visual em todo clique
+       Cria um <span class="pd-click-ring"> no ponto exato do pointer
+       e remove quando a animação termina. Funciona com mouse, touch e pen.
+       ============================================ -->
+  <script>
+  (function() {
+    // pointerdown captura mouse/touch/pen; mais responsivo que 'click'
+    // (anima já na pressão, não só na soltura).
+    function spawnRing(e) {
+      // só botão primário (esquerdo no mouse). pointerType !== 'mouse' não
+      // tem 'button' relevante, deixa passar.
+      if (e.pointerType === 'mouse' && e.button !== 0) return;
+
+      var ring = document.createElement('span');
+      ring.className = 'pd-click-ring';
+      ring.style.left = e.clientX + 'px';
+      ring.style.top  = e.clientY + 'px';
+      document.body.appendChild(ring);
+
+      // limpeza: remove o nó depois da animação para não acumular no DOM
+      ring.addEventListener('animationend', function() {
+        if (ring.parentNode) ring.parentNode.removeChild(ring);
+      }, { once: true });
+
+      // failsafe: se o animationend não disparar por algum motivo, remove em 600ms
+      setTimeout(function() {
+        if (ring.parentNode) ring.parentNode.removeChild(ring);
+      }, 600);
+    }
+
+    // listener no document (captura clique em qualquer elemento, incluindo botões)
+    document.addEventListener('pointerdown', spawnRing, { passive: true });
+  })();
+  </script>
+
+  <!-- ============================================================
+       LIGHTBOX — abre imagens dos carrosséis em tamanho natural
+       Recursos:
+       - Clique em qualquer imagem dos scrolly tracks abre o lightbox
+       - Botão X, ←, → navegam; ESC fecha (nativo do <dialog>)
+       - Clique no backdrop (área escurecida) fecha
+       - Tiras horizontais (aspect > 3:1) usam layout wide (95vw)
+       - Pausa TODOS os carrosséis enquanto aberto
+       - Foco gerenciado: vai pro X ao abrir, volta pra imagem ao fechar
+       ============================================================ -->
+  <script>
+    (function() {
+      var lightbox = document.getElementById('pdLightbox');
+      if (!lightbox) return;
+
+      var lbImg    = lightbox.querySelector('.pd-lightbox-img');
+      var closeBtn = lightbox.querySelector('.pd-lightbox-close');
+      var prevBtn  = lightbox.querySelector('.pd-lightbox-prev');
+      var nextBtn  = lightbox.querySelector('.pd-lightbox-next');
+      var figure   = lightbox.querySelector('.pd-lightbox-figure');
+
+      // Apenas imagens "originais" (não duplicatas com aria-hidden) compõem
+      // o array de navegação por setas. Duplicatas ainda são clicáveis,
+      // mas redirecionam pra original equivalente pelo src.
+      var originals = Array.prototype.slice.call(
+        document.querySelectorAll('.scrolly-track img:not([aria-hidden="true"])')
+      );
+      if (!originals.length) return;
+
+      var currentIndex = -1;
+      var lastFocused  = null;
+
+      // Torna todas as imagens dos carrosséis (incluindo duplicatas) clicáveis.
+      // Originais ganham tabindex pra serem foco-able por teclado.
+      var allImgs = document.querySelectorAll('.scrolly-track img');
+      allImgs.forEach(function(img) {
+        var isDuplicate = img.getAttribute('aria-hidden') === 'true';
+        if (!isDuplicate) {
+          img.tabIndex = 0;
+          img.setAttribute('role', 'button');
+          var label = img.alt || 'imagem do carrossel';
+          img.setAttribute('aria-label', 'Ampliar imagem: ' + label);
+        }
+        img.addEventListener('click', function() { openFromImg(img); });
+        img.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            openFromImg(img);
+          }
+        });
+      });
+
+      function openFromImg(srcImg) {
+        // Mapeia pra "original" equivalente pelo src — assim as setas
+        // navegam consistentemente pelo conjunto único de imagens.
+        var src = srcImg.getAttribute('src');
+        var idx = -1;
+        for (var i = 0; i < originals.length; i++) {
+          if (originals[i].getAttribute('src') === src) { idx = i; break; }
+        }
+        if (idx >= 0) open(idx, srcImg);
+      }
+
+      function open(index, sourceForFocus) {
+        if (index < 0 || index >= originals.length) return;
+        var source = originals[index];
+        currentIndex = index;
+        lastFocused  = sourceForFocus || source;
+
+        lbImg.src = source.src;
+        lbImg.alt = source.alt || '';
+
+        // Tiras horizontais (aspect > 3:1) → layout "wide" (95vw)
+        var w = parseInt(source.getAttribute('width'),  10) || source.naturalWidth  || 1;
+        var h = parseInt(source.getAttribute('height'), 10) || source.naturalHeight || 1;
+        lbImg.classList.toggle('is-wide', (w / h) > 3);
+
+        // Dialog aria-label dinâmico (leitor de tela anuncia o conteúdo correto)
+        lightbox.setAttribute('aria-label', source.alt || 'Imagem ampliada');
+
+        if (!lightbox.open) {
+          lightbox.showModal();
+          document.body.classList.add('pd-lightbox-open');
+          // Foco no X um instante depois — evita conflito com showModal
+          setTimeout(function() { closeBtn.focus(); }, 50);
+        }
+      }
+
+      function close() {
+        lightbox.close();
+        document.body.classList.remove('pd-lightbox-open');
+        // Devolve o foco pra imagem que originou a abertura
+        if (lastFocused && typeof lastFocused.focus === 'function') {
+          lastFocused.focus();
+        }
+      }
+
+      function nav(dir) {
+        var next = currentIndex + dir;
+        if (next < 0) next = originals.length - 1;
+        if (next >= originals.length) next = 0;
+        open(next);
+      }
+
+      closeBtn.addEventListener('click', close);
+      prevBtn.addEventListener('click', function() { nav(-1); });
+      nextBtn.addEventListener('click', function() { nav(1); });
+
+      // Click no backdrop OU na figure (área fora da imagem) fecha
+      lightbox.addEventListener('click', function(e) {
+        if (e.target === lightbox || e.target === figure) close();
+      });
+
+      // Cleanup quando fechado por ESC (nativo do <dialog>)
+      lightbox.addEventListener('close', function() {
+        document.body.classList.remove('pd-lightbox-open');
+      });
+
+      // Setas do teclado navegam (ESC é nativo do <dialog>)
+      document.addEventListener('keydown', function(e) {
+        if (!lightbox.open) return;
+        if (e.key === 'ArrowLeft')  { e.preventDefault(); nav(-1); }
+        if (e.key === 'ArrowRight') { e.preventDefault(); nav(1);  }
+      });
+    })();
+  </script>
+
+  <!-- ============================================================
+       INDICADOR de scroll dos depoimentos (mobile)
+       Cria automaticamente bolinhas + hint "deslize" abaixo do .testimonials-track.
+       JS detecta qual card está mais centralizado e ativa o dot correspondente.
+       Clique no dot → scroll suave até o card.
+       ============================================================ -->
+  <script>
+    (function() {
+      var track = document.querySelector('.testimonials-track');
+      if (!track) return;
+      var cards = track.querySelectorAll('.testimonial-card');
+      if (cards.length < 2) return;
+
+      // Container principal do indicador (será inserido após o track)
+      var indicator = document.createElement('div');
+      indicator.className = 'testimonials-indicator';
+
+      // Hint textual: "← deslize para ver mais →" (decorativo, aria-hidden)
+      var hint = document.createElement('span');
+      hint.className = 'testimonials-hint';
+      hint.textContent = 'deslize para ver mais';
+      hint.setAttribute('aria-hidden', 'true');
+
+      // Dots: um botão por card, com aria-label descritivo
+      var dotsWrap = document.createElement('div');
+      dotsWrap.className = 'testimonials-dots';
+      dotsWrap.setAttribute('role', 'tablist');
+      dotsWrap.setAttribute('aria-label', 'Navegação dos depoimentos');
+
+      var dotEls = [];
+      cards.forEach(function(card, i) {
+        var dot = document.createElement('button');
+        dot.type = 'button';
+        dot.className = 'testimonials-dot';
+        dot.setAttribute('role', 'tab');
+        dot.setAttribute('aria-label', 'Depoimento ' + (i + 1) + ' de ' + cards.length);
+        dot.addEventListener('click', function() {
+          card.scrollIntoView({ behavior: 'smooth', inline: 'start', block: 'nearest' });
+        });
+        dotsWrap.appendChild(dot);
+        dotEls.push(dot);
+      });
+
+      indicator.appendChild(hint);
+      indicator.appendChild(dotsWrap);
+      track.parentNode.insertBefore(indicator, track.nextSibling);
+
+      // Atualiza qual dot está ativo com base no card mais centralizado
+      var ticking = false;
+      function updateActive() {
+        var trackRect = track.getBoundingClientRect();
+        var centerX = trackRect.left + trackRect.width / 2;
+        var activeIdx = 0;
+        var minDist = Infinity;
+        cards.forEach(function(card, i) {
+          var r = card.getBoundingClientRect();
+          var cardCenter = r.left + r.width / 2;
+          var dist = Math.abs(cardCenter - centerX);
+          if (dist < minDist) { minDist = dist; activeIdx = i; }
+        });
+        dotEls.forEach(function(d, i) {
+          var on = (i === activeIdx);
+          d.classList.toggle('is-active', on);
+          d.setAttribute('aria-selected', on ? 'true' : 'false');
+        });
+        ticking = false;
+      }
+      track.addEventListener('scroll', function() {
+        if (!ticking) {
+          window.requestAnimationFrame(updateActive);
+          ticking = true;
+        }
+      }, { passive: true });
+      window.addEventListener('resize', updateActive);
+      updateActive();
+    })();
+  </script>
+
+  <!-- ============================================================
+       PROTEÇÃO DE CONTEÚDO (portfólio) — bloqueia os caminhos mais
+       comuns que usuários casuais usam pra baixar imagens:
+         1) Clique direito (menu "Salvar imagem como…", "Copiar imagem")
+         2) Arrastar pra Desktop / outra aba (Chrome/Firefox baixam o arquivo)
+         3) Ctrl+S (salvar página completa)
+       NÃO impede: screenshot, DevTools, View Source, ou cache do browser.
+       Para esses casos, a única proteção real é watermark + assinatura digital.
+       ============================================================ -->
+  <script>
+    (function() {
+      // 1) Bloqueia menu de contexto (clique direito) no site inteiro.
+      //    EXCETO em inputs/textareas — usuários precisam de copiar/colar nos forms.
+      document.addEventListener('contextmenu', function(e) {
+        var tag = e.target.tagName;
+        if (tag === 'INPUT' || tag === 'TEXTAREA') return;
+        e.preventDefault();
+      }, false);
+
+      // 2) Bloqueia arrastar imagens (Chrome/Firefox: arrasto = download direto)
+      document.addEventListener('dragstart', function(e) {
+        if (e.target.tagName === 'IMG') e.preventDefault();
+      }, false);
+
+      // 3) Bloqueia Ctrl/Cmd+S (salvar página)
+      document.addEventListener('keydown', function(e) {
+        var key = (e.key || '').toLowerCase();
+        if ((e.ctrlKey || e.metaKey) && key === 's') {
+          e.preventDefault();
+        }
+      }, false);
+    })();
+  </script>
+
+</body>
+</html>

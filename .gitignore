@@ -1,0 +1,23 @@
+# ============================================================
+#  .gitignore — Site Prattes Design
+#  O git versiona O SITE. Material bruto pesado fica de fora
+#  (backup separado em nuvem/HD — git nao e bom pra video/arte).
+# ============================================================
+
+# --- Material bruto / fontes pesadas (NAO versionar) ---
+/PIXOLE/
+/Videos myne/
+/ARTES ESTÁTICO - WINNER (PORTO)/
+/ARTES CYEX/
+/_lp_frames/
+/portfolio/
+
+# --- Imagens-fonte soltas na raiz (nao fazem parte do site) ---
+/*.png
+/*.jpg
+
+# --- Sistema operacional ---
+Thumbs.db
+ehthumbs.db
+.DS_Store
+desktop.ini
