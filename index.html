@@ -88,7 +88,7 @@
       --pd-line: #2a2a2a;
       --pd-text: #ffffff;
       --pd-text-dim: #b8b8b8;
-      --pd-text-mute: #7a7a7a;
+      --pd-text-mute: #8c8c8c;
 
       --font-display: 'Sora', 'Inter', system-ui, sans-serif;
       --font-body: 'Comfortaa', 'Quicksand', system-ui, sans-serif;
@@ -1051,7 +1051,7 @@
     }
     .service-body { padding: 32px; flex: 1; display: flex; flex-direction: column; }
     .service-body h3 { margin-bottom: 14px; }
-    .service-body p { color: var(--pd-text-dim); margin-bottom: 22px; font-size: 15px; }
+    .service-body p { color: var(--pd-text-dim); margin-bottom: 22px; font-size: 16px; }
     .service-list {
       margin-top: auto;
       display: grid;
@@ -2048,7 +2048,7 @@
       /* SERVICES */
       .service-body { padding: 24px 22px; }
       .service-body h3 { font-size: 22px; }
-      .service-body p { font-size: 14px; margin-bottom: 18px; }
+      .service-body p { font-size: 15px; margin-bottom: 18px; }
       
       /* CASES */
       .case-card { aspect-ratio: 4 / 3; }
@@ -3094,8 +3094,16 @@
     }
 
   </style>
+  <style>
+    /* A11y: skip link, foco de teclado visivel e alvo do skip */
+    .skip-link { position: absolute; left: 8px; top: -56px; z-index: 2000; background: var(--pd-yellow); color: #111; padding: 10px 16px; border-radius: 8px; font-weight: 700; text-decoration: none; transition: top .15s ease; }
+    .skip-link:focus { top: 8px; }
+    :focus-visible { outline: 3px solid var(--pd-yellow); outline-offset: 3px; }
+    #conteudo:focus { outline: none; }
+  </style>
 </head>
 <body id="top">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
   <!-- Toggle do menu mobile (precisa estar no nível raiz para que :checked alcance todos os irmãos) -->
   <input type="checkbox" id="pd-nav-toggle" class="pd-nav-toggle-input" aria-hidden="true" />
   <label for="pd-nav-toggle" class="pd-nav-overlay" aria-hidden="true"></label>
@@ -3133,7 +3141,7 @@
   <!-- ============================================
        HERO
        ============================================ -->
-  <section class="hero pattern-bg">
+  <section class="hero pattern-bg" id="conteudo" tabindex="-1">
     <div class="container">
       <div class="hero-grid">
         <div class="hero-content">
