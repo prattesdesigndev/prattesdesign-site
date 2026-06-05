@@ -3120,7 +3120,7 @@
 
     /* APP / Upscale — promo do app (FUNDO BRANCO) */
     .app-cta { background: #ffffff; padding: 100px 0; position: relative; overflow: hidden; }
-    .app-cta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; max-width: 1100px; margin: 0 auto; }
+    .app-cta-grid { display: grid; grid-template-columns: 1fr 1.4fr; gap: 48px; align-items: center; max-width: 1240px; margin: 0 auto; }
     .app-cta .eyebrow { margin-bottom: 18px; color: #7a5f00; }
     .app-cta .eyebrow::before { background: #7a5f00; }
     .app-cta h2 { margin: 0 0 20px; line-height: 1.08; color: #111111; }
@@ -3134,6 +3134,8 @@
     .app-cta-checks li { color: #555555; font-size: 14px; display: flex; align-items: center; gap: 7px; }
     .app-cta-checks li::before { content: "\2713"; color: #b8930a; font-weight: 700; }
     .app-cta-visual { position: relative; }
+    .app-video-wrap { border-radius: 20px; overflow: hidden; border: 1px solid rgba(0,0,0,.1); box-shadow: 0 30px 70px rgba(0,0,0,.25); background: #000; line-height: 0; }
+    .app-video { width: 100%; aspect-ratio: 16 / 9; display: block; object-fit: cover; }
     .ba-slider { --pos: 50%; position: relative; aspect-ratio: 1 / 1; border-radius: 20px; overflow: hidden; border: 1px solid rgba(0,0,0,.1); box-shadow: 0 30px 70px rgba(0,0,0,.25); }
     .ba-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
     .ba-before { position: absolute; inset: 0; clip-path: inset(0 calc(100% - var(--pos)) 0 0); }
@@ -3681,7 +3683,7 @@
         <div class="app-cta-content">
           <span class="eyebrow">11 ferramentas · 6 créditos grátis por mês</span>
           <h2 class="display h-lg">Seu estúdio de design <span class="hl-underline">no bolso.</span></h2>
-          <p class="app-cta-sub">Remova fundo, restaure fotos, redimensione e mais — <strong>8 ferramentas grátis, sem cartão</strong>. Desbloqueie Editar com IA, Mockups e Criar voz no Pro.</p>
+          <p class="app-cta-sub">Remova fundo, restaure fotos, redimensione e mais <strong>—&nbsp;8&nbsp;ferramentas grátis, sem cartão</strong>. Desbloqueie Editar com IA, Mockups e Criar voz no Pro.</p>
           <div class="app-cta-actions">
             <a href="https://app.prattesdesign.com.br" class="btn btn-primary btn-arrow" target="_blank" rel="noopener noreferrer">Começar grátis</a>
             <a href="https://app.prattesdesign.com.br" class="btn btn-ghost" target="_blank" rel="noopener noreferrer">Ver as 11 ferramentas</a>
@@ -3693,17 +3695,12 @@
           </ul>
         </div>
         <div class="app-cta-visual">
-          <div class="ba-slider" id="baSlider">
-            <img class="ba-img ba-after" src="assets/img/myne-capa.webp" width="600" height="600" loading="lazy" decoding="async" alt="Depois — imagem nítida e profissional" />
-            <div class="ba-before">
-              <img class="ba-img" src="assets/img/myne-capa.webp" width="600" height="600" loading="lazy" decoding="async" alt="Antes — imagem de baixa qualidade" />
-            </div>
-            <span class="ba-tag ba-tag-antes">Antes</span>
-            <span class="ba-tag ba-tag-depois">Depois</span>
-            <div class="ba-divider"><span class="ba-knob" aria-hidden="true">&#8646;</span></div>
-            <input type="range" class="ba-range" min="0" max="100" value="50" aria-label="Arraste para comparar antes e depois" />
+          <div class="app-video-wrap">
+            <video class="app-video" autoplay muted loop playsinline controls preload="metadata" aria-label="Vídeo de apresentação da Prattes Design">
+              <source src="assets/video/app-showcase.mp4" type="video/mp4" />
+              Seu navegador não suporta vídeo.
+            </video>
           </div>
-          <p class="ba-hint">&#8646; Arraste pra comparar antes e depois</p>
         </div>
       </div>
     </div>

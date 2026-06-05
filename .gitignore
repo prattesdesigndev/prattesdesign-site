@@ -12,9 +12,11 @@
 /_lp_frames/
 /portfolio/
 
-# --- Imagens-fonte soltas na raiz (nao fazem parte do site) ---
+# --- Imagens/videos-fonte soltos na raiz (nao fazem parte do site) ---
 /*.png
 /*.jpg
+/*.mp4
+/*.mov
 
 # --- Arquivos de trabalho (nao vao pro site publicado) ---
 /index_111.original.html
