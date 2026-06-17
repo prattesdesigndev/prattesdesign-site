@@ -3164,6 +3164,7 @@
   </style>
 </head>
 <body id="top">
+  <div class="page-shell">
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
   <!-- Toggle do menu mobile (precisa estar no nível raiz para que :checked alcance todos os irmãos) -->
   <input type="checkbox" id="pd-nav-toggle" class="pd-nav-toggle-input" aria-hidden="true" />
@@ -3909,54 +3910,170 @@
   <!-- ============================================
        FINAL CTA
        ============================================ -->
-  <section class="final-cta">
-    <div class="container">
-      <div class="final-cta-content">
-        <span class="eyebrow">Vamos trabalhar juntos</span>
-        <h2 class="display h-xl">Pronto para sair<br/>do <span class="hl">amador?</span></h2>
-        <p>Quando você se associa à Prattes, nosso time vira o braço criativo da sua marca — e posiciona seu negócio para vender com mais confiança e&nbsp;mais&nbsp;valor.</p>
-        <a href="https://wa.me/5511940823616?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento" class="btn btn-primary btn-arrow" target="_blank" rel="noopener noreferrer">Começar agora</a>
-      </div>
-    </div>
-  </section>
+  <style>
+    /* ============================================
+       RODAPÉ CINEMATOGRÁFICO (efeito "curtain"/glass)
+       ============================================ */
+    /* rodapé FIXO atrás (efeito cortina: a seção de cima desliza por cima ao rolar) */
+    .cine-footer { position: fixed; bottom: 0; left: 0; width: 100%; height: 100vh; z-index: 0; overflow: hidden; isolation: isolate; background: var(--pd-black-deep); color: var(--pd-text); padding: 96px 0 34px; display: flex; flex-direction: column; }
+    /* espaçador transparente que reserva a rolagem pra revelar o rodapé fixo */
+    .cine-spacer { height: 100vh; pointer-events: none; }
+    /* wrapper do conteúdo: fica ACIMA do rodapé e desliza por cima dele ao rolar */
+    .page-shell { position: relative; z-index: 1; background: var(--pd-black-deep); }
+    .cine-grid { position: absolute; inset: 0; z-index: 0; pointer-events: none; background-size: 60px 60px; background-image: linear-gradient(to right, rgba(255,255,255,.045) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,.045) 1px, transparent 1px); -webkit-mask-image: linear-gradient(to bottom, transparent, #000 25%, #000 72%, transparent); mask-image: linear-gradient(to bottom, transparent, #000 25%, #000 72%, transparent); }
+    .cine-aurora { position: absolute; left: 50%; top: 44%; z-index: 0; pointer-events: none; width: 82vw; height: 60vh; transform: translate(-50%,-50%); background: radial-gradient(circle at 50% 50%, rgba(255,218,0,.12) 0%, rgba(255,218,0,.05) 38%, transparent 70%); filter: blur(85px); border-radius: 50%; animation: cine-breathe 8s ease-in-out infinite alternate; }
+    @keyframes cine-breathe { 0% { transform: translate(-50%,-50%) scale(1); opacity: .55; } 100% { transform: translate(-50%,-50%) scale(1.12); opacity: 1; } }
+    .cine-giant { position: absolute; left: 50%; bottom: -4%; transform: translateX(-50%); transform-origin: 50% 100%; will-change: transform; z-index: 0; pointer-events: none; user-select: none; white-space: nowrap; font-family: var(--font-display); font-weight: 800; font-size: 18vw; line-height: .75; letter-spacing: -.05em; color: transparent; -webkit-text-stroke: 1px rgba(255,255,255,.05); background: linear-gradient(180deg, rgba(255,255,255,.08) 0%, transparent 58%); -webkit-background-clip: text; background-clip: text; }
+    .cine-marquee { position: absolute; top: 70px; left: -6%; width: 112%; z-index: 1; overflow: hidden; border-top: 1px solid var(--pd-line); border-bottom: 1px solid var(--pd-line); background: rgba(10,10,10,.55); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); padding: 13px 0; transform: rotate(-2deg); box-shadow: 0 22px 55px rgba(0,0,0,.5); }
+    .cine-marquee-track { display: flex; align-items: center; width: max-content; animation: cine-marquee 38s linear infinite; }
+    .cine-marquee-track span { font-family: var(--font-display); font-size: 13px; font-weight: 700; letter-spacing: .26em; text-transform: uppercase; color: var(--pd-text-mute); padding: 0 24px; white-space: nowrap; }
+    .cine-marquee-track .sep { color: var(--pd-yellow); padding: 0 4px; }
+    @keyframes cine-marquee { to { transform: translateX(-50%); } }
+    .cine-content { position: relative; z-index: 2; flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; max-width: 920px; margin: 0 auto; padding: 40px 24px 0; width: 100%; }
+    .cine-eyebrow { justify-content: center; margin-bottom: 20px; }
+    .cine-heading { font-family: var(--font-display); font-weight: 800; line-height: 1.03; letter-spacing: -.02em; font-size: clamp(40px, 8vw, 92px); margin: 0 0 24px; background: linear-gradient(180deg, #fff 0%, rgba(255,255,255,.42) 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 0 22px rgba(255,255,255,.14)); }
+    .cine-heading .hl { background: none; -webkit-text-fill-color: var(--pd-yellow); color: var(--pd-yellow); filter: drop-shadow(0 0 18px rgba(255,218,0,.45)); }
+    .cine-sub { color: var(--pd-text-dim); max-width: 620px; margin: 0 auto 38px; font-size: 17px; line-height: 1.6; }
+    .cine-pill { display: inline-flex; align-items: center; justify-content: center; gap: 10px; border-radius: 999px; text-decoration: none; will-change: transform; background: linear-gradient(145deg, rgba(255,255,255,.05), rgba(255,255,255,.02)); border: 1px solid rgba(255,255,255,.1); box-shadow: 0 10px 30px -10px rgba(0,0,0,.6), inset 0 1px 1px rgba(255,255,255,.08); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); transition: transform .35s cubic-bezier(.16,1,.3,1), background .3s, border-color .3s, box-shadow .3s, color .3s; }
+    .cine-pill:hover { background: linear-gradient(145deg, rgba(255,255,255,.1), rgba(255,255,255,.03)); border-color: rgba(255,218,0,.35); box-shadow: 0 20px 42px -10px rgba(0,0,0,.7), inset 0 1px 1px rgba(255,255,255,.15); }
+    .cine-pill--primary { background: var(--pd-yellow); color: #111; border-color: var(--pd-yellow); font-family: var(--font-display); font-weight: 700; letter-spacing: .04em; text-transform: uppercase; padding: 18px 38px; font-size: 14px; box-shadow: 0 14px 40px -8px rgba(255,218,0,.42); }
+    .cine-pill--primary:hover { background: var(--pd-yellow-soft); border-color: var(--pd-yellow-soft); color: #111; }
+    .cine-actions { display: flex; justify-content: center; margin-bottom: 50px; }
+    .cine-redes-label { font-family: var(--font-display); font-size: 12px; letter-spacing: .28em; text-transform: uppercase; color: var(--pd-yellow); margin-bottom: 16px; }
+    .cine-socials { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-bottom: 26px; }
+    .cine-social { width: 50px; height: 50px; padding: 0; }
+    .cine-social svg { width: 20px; height: 20px; color: var(--pd-text-dim); transition: color .3s; }
+    .cine-social:hover svg { color: var(--pd-yellow); }
+    .cine-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+    .cine-link { padding: 11px 22px; font-size: 13px; color: var(--pd-text-dim); }
+    .cine-link:hover { color: var(--pd-text); }
+    .cine-bottom { position: relative; z-index: 2; width: 100%; max-width: 1120px; margin: 64px auto 0; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap; }
+    .cine-copy { color: var(--pd-text-mute); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; }
+    .cine-top { width: 46px; height: 46px; padding: 0; cursor: pointer; }
+    .cine-top svg { width: 18px; height: 18px; color: var(--pd-text-dim); transition: color .3s, transform .3s; }
+    .cine-top:hover svg { color: var(--pd-yellow); transform: translateY(-3px); }
+    .cine-reveal { opacity: 0; transform: translateY(42px); transition: opacity .8s ease, transform .8s cubic-bezier(.16,1,.3,1); }
+    .cine-reveal.is-in { opacity: 1; transform: none; }
+    @media (prefers-reduced-motion: reduce) { .cine-aurora, .cine-marquee-track { animation: none; } .cine-reveal { opacity: 1; transform: none; transition: none; } }
+    @media (max-width: 700px) { .cine-footer { position: static; height: auto; padding: 110px 0 28px; } .cine-spacer { display: none; } .cine-marquee { top: 56px; } .cine-bottom { flex-direction: column; text-align: center; gap: 22px; } }
+  </style>
 
   <!-- ============================================
-       FOOTER
+       FINAL CTA + RODAPÉ (cinematográfico)
        ============================================ -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-highlight">
-        <span class="footer-highlight-title">CONHEÇA NOSSAS REDES</span>
-        </div>
+  </div><!-- /.page-shell -->
 
-      <!-- Redes sociais em ícones -->
-      <div class="footer-socials">
-        <a href="https://wa.me/5511940823616?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.04 21.785h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.002-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884zm8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.452 3.488z"/></svg>
-        </a>
-        <a href="mailto:prattesdesign@gmail.com" aria-label="E-mail" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-        </a>
-        <a href="https://instagram.com/prattesdesign" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
-        </a>
-        <a href="https://linkedin.com/company/prattes-design" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.22 8h4.56v15H.22V8zM7.5 8h4.36v2.05h.06c.61-1.15 2.1-2.36 4.32-2.36 4.62 0 5.47 3.04 5.47 6.99V23h-4.56v-6.7c0-1.6-.03-3.65-2.22-3.65-2.22 0-2.56 1.74-2.56 3.53V23H7.5V8z"/></svg>
-        </a>
-        <a href="https://www.behance.net/Prattes-design" aria-label="Behance" target="_blank" rel="noopener noreferrer">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 4.8h7.5c1.5 0 3.4.8 3.4 3.1 0 1.4-.7 2.3-1.4 2.6 1.3.4 2.4 1.5 2.4 3.4 0 2.7-2.4 4-4.7 4H0V4.8zm3.5 5.4h3c1 0 1.5-.5 1.5-1.4 0-.9-.5-1.4-1.5-1.4h-3v2.8zm0 5.5h3.3c1.1 0 1.8-.6 1.8-1.7s-.7-1.7-1.8-1.7H3.5v3.4zM18.4 9c2.6 0 4.6 1.9 4.6 4.7v.6h-6.7c.1 1.3 1 2.2 2.4 2.2 1 0 1.8-.5 2.1-1.3h2.2c-.5 1.9-2.2 3.2-4.4 3.2-2.7 0-4.7-1.9-4.7-4.6S15.7 9 18.4 9zm-2.1 3.6h4.2c-.2-1-1-1.6-2.1-1.6s-1.9.6-2.1 1.6zM15 5.7h6V7h-6V5.7z"/></svg>
-        </a>
-      </div>
+  <div class="cine-spacer" aria-hidden="true"></div>
+  <footer class="cine-footer">
+    <div class="cine-grid" aria-hidden="true"></div>
+    <div class="cine-aurora" aria-hidden="true"></div>
+    <div class="cine-giant" aria-hidden="true">PRATTES</div>
 
-      <div class="footer-bottom">
-        <span>© 2026 Prattes Design. Todos os direitos reservados.</span>
-        <span class="sep"></span>
-        <a href="termos_3_9_1.html" target="_blank" rel="noopener noreferrer">Termos &amp; Condições</a>
-        <span class="sep"></span>
-        <a href="privacidade_11_1_2.html" target="_blank" rel="noopener noreferrer">Política de Privacidade</a>
+    <div class="cine-marquee" aria-hidden="true">
+      <div class="cine-marquee-track">
+        <span>Branding</span><span class="sep">✦</span><span>Social Media</span><span class="sep">✦</span><span>Audiovisual</span><span class="sep">✦</span><span>Identidade Visual</span><span class="sep">✦</span><span>Campanhas</span><span class="sep">✦</span><span>Design Estratégico</span><span class="sep">✦</span>
+        <span>Branding</span><span class="sep">✦</span><span>Social Media</span><span class="sep">✦</span><span>Audiovisual</span><span class="sep">✦</span><span>Identidade Visual</span><span class="sep">✦</span><span>Campanhas</span><span class="sep">✦</span><span>Design Estratégico</span><span class="sep">✦</span>
       </div>
     </div>
+
+    <div class="cine-content">
+      <div class="cine-reveal">
+        <span class="eyebrow cine-eyebrow">Vamos trabalhar juntos</span>
+        <h2 class="cine-heading">Pronto para sair do <span class="hl">amador?</span></h2>
+        <p class="cine-sub">Quando você se associa à Prattes, nosso time vira o braço criativo da sua marca — e posiciona seu negócio para vender com mais confiança e&nbsp;mais&nbsp;valor.</p>
+      </div>
+
+      <div class="cine-reveal">
+        <div class="cine-actions">
+          <a href="https://wa.me/5511940823616?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento" class="cine-pill cine-pill--primary btn-arrow magnetic" target="_blank" rel="noopener noreferrer">Começar agora</a>
+        </div>
+
+        <div class="cine-redes-label">Conheça nossas redes</div>
+        <div class="cine-socials">
+          <a class="cine-pill cine-social magnetic" href="https://wa.me/5511940823616?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20seu%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12.04 21.785h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.002-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884zm8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.452 3.488z"/></svg>
+          </a>
+          <a class="cine-pill cine-social magnetic" href="mailto:prattesdesign@gmail.com" aria-label="E-mail">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+          <a class="cine-pill cine-social magnetic" href="https://instagram.com/prattesdesign" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+          </a>
+          <a class="cine-pill cine-social magnetic" href="https://linkedin.com/company/prattes-design" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM.22 8h4.56v15H.22V8zM7.5 8h4.36v2.05h.06c.61-1.15 2.1-2.36 4.32-2.36 4.62 0 5.47 3.04 5.47 6.99V23h-4.56v-6.7c0-1.6-.03-3.65-2.22-3.65-2.22 0-2.56 1.74-2.56 3.53V23H7.5V8z"/></svg>
+          </a>
+          <a class="cine-pill cine-social magnetic" href="https://www.behance.net/Prattes-design" aria-label="Behance" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 4.8h7.5c1.5 0 3.4.8 3.4 3.1 0 1.4-.7 2.3-1.4 2.6 1.3.4 2.4 1.5 2.4 3.4 0 2.7-2.4 4-4.7 4H0V4.8zm3.5 5.4h3c1 0 1.5-.5 1.5-1.4 0-.9-.5-1.4-1.5-1.4h-3v2.8zm0 5.5h3.3c1.1 0 1.8-.6 1.8-1.7s-.7-1.7-1.8-1.7H3.5v3.4zM18.4 9c2.6 0 4.6 1.9 4.6 4.7v.6h-6.7c.1 1.3 1 2.2 2.4 2.2 1 0 1.8-.5 2.1-1.3h2.2c-.5 1.9-2.2 3.2-4.4 3.2-2.7 0-4.7-1.9-4.7-4.6S15.7 9 18.4 9zm-2.1 3.6h4.2c-.2-1-1-1.6-2.1-1.6s-1.9.6-2.1 1.6zM15 5.7h6V7h-6V5.7z"/></svg>
+          </a>
+        </div>
+
+        <div class="cine-links">
+          <a href="termos_3_9_1.html" class="cine-pill cine-link magnetic" target="_blank" rel="noopener noreferrer">Termos &amp; Condições</a>
+          <a href="privacidade_11_1_2.html" class="cine-pill cine-link magnetic" target="_blank" rel="noopener noreferrer">Política de Privacidade</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="cine-bottom">
+      <span class="cine-copy">© 2026 Prattes Design. Todos os direitos reservados.</span>
+      <button type="button" class="cine-pill cine-top magnetic" aria-label="Voltar ao topo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
+      </button>
+    </div>
   </footer>
+
+  <script>
+    /* Rodapé cinematográfico — pills magnéticas + reveal + voltar ao topo */
+    (function () {
+      var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var foot = document.querySelector('.cine-footer');
+      if (!foot) return;
+      if (!reduce) {
+        foot.querySelectorAll('.magnetic').forEach(function (el) {
+          el.addEventListener('mousemove', function (e) {
+            var r = el.getBoundingClientRect();
+            var x = e.clientX - r.left - r.width / 2;
+            var y = e.clientY - r.top - r.height / 2;
+            el.style.transform = 'translate(' + (x * 0.3).toFixed(1) + 'px,' + (y * 0.3).toFixed(1) + 'px) scale(1.05)';
+          });
+          el.addEventListener('mouseleave', function () { el.style.transform = ''; });
+        });
+      }
+      var revs = foot.querySelectorAll('.cine-reveal');
+      if ('IntersectionObserver' in window && !reduce) {
+        var io = new IntersectionObserver(function (es) {
+          es.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('is-in'); io.unobserve(en.target); } });
+        }, { threshold: 0.15 });
+        revs.forEach(function (el) { io.observe(el); });
+      } else { revs.forEach(function (el) { el.classList.add('is-in'); }); }
+      var topBtn = foot.querySelector('.cine-top');
+      if (topBtn) topBtn.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+      /* Paralax: o "PRATTES" de fundo cresce levemente ao descer e encolhe ao subir,
+         atrelado ao progresso real da cortina (posicao do spacer no viewport) */
+      var giant = foot.querySelector('.cine-giant');
+      var shell = document.querySelector('.page-shell');
+      if (giant && shell && !reduce) {
+        var ticking = false;
+        function updateGiant() {
+          var vh = window.innerHeight || 1;
+          // bottom da page-shell vai de vh (cortina comecando) ate 0 (totalmente revelada)
+          var b = shell.getBoundingClientRect().bottom;
+          var p = Math.min(1, Math.max(0, (vh - b) / vh));
+          var scale = 1 + p * 0.16;
+          giant.style.transform = 'translateX(-50%) scale(' + scale.toFixed(3) + ')';
+          ticking = false;
+        }
+        window.addEventListener('scroll', function () {
+          if (!ticking) { ticking = true; requestAnimationFrame(updateGiant); }
+        }, { passive: true });
+        window.addEventListener('resize', updateGiant);
+        updateGiant();
+      }
+    })();
+  </script>
+
+
 
   <script>
     // ============================================
