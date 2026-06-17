@@ -230,6 +230,9 @@ h1, h2, h3, h4, h5, h6 { text-wrap: balance; }
 .case-video { position: relative; aspect-ratio: 9 / 16; border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--pd-line); background: var(--pd-graphite); }
 .case-video iframe { width: 100%; height: 100%; border: 0; display: block; }
 .case-video video, .case-video-player { width: 100%; height: 100%; object-fit: cover; display: block; background: #000; }
+/* Em tela cheia: mostra o video INTEIRO (reels vertical 9:16) sem cortar nem esticar */
+.case-video video:fullscreen, .case-video-player:fullscreen { object-fit: contain; }
+.case-video video:-webkit-full-screen, .case-video-player:-webkit-full-screen { object-fit: contain; }
 .lite-yt { position: absolute; inset: 0; width: 100%; height: 100%; padding: 0; border: 0; background: #000; cursor: pointer; display: block; text-decoration: none; }
 .lite-yt img { width: 100%; height: 100%; object-fit: cover; display: block; opacity: 0.82; transition: opacity 300ms var(--ease); }
 .lite-yt:hover img { opacity: 1; }

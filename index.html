@@ -3136,6 +3136,8 @@
     .app-cta-visual { position: relative; }
     .app-video-wrap { border-radius: 20px; overflow: hidden; border: 1px solid rgba(0,0,0,.1); box-shadow: 0 30px 70px rgba(0,0,0,.25); background: #000; line-height: 0; }
     .app-video { width: 100%; aspect-ratio: 16 / 9; display: block; object-fit: cover; }
+    .app-video:fullscreen { object-fit: contain; }
+    .app-video:-webkit-full-screen { object-fit: contain; }
     .ba-slider { --pos: 50%; position: relative; aspect-ratio: 1 / 1; border-radius: 20px; overflow: hidden; border: 1px solid rgba(0,0,0,.1); box-shadow: 0 30px 70px rgba(0,0,0,.25); }
     .ba-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
     .ba-before { position: absolute; inset: 0; clip-path: inset(0 calc(100% - var(--pos)) 0 0); }
