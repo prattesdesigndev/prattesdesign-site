@@ -14,7 +14,7 @@
   --pd-line: #2a2a2a;
   --pd-text: #ffffff;
   --pd-text-dim: #b8b8b8;
-  --pd-text-mute: #7a7a7a;
+  --pd-text-mute: #939393; /* clareado de #7a7a7a p/ passar WCAG AA (~5.6:1 em fundo escuro) */
 
   --font-display: 'Sora', 'Inter', system-ui, sans-serif;
   --font-body: 'Comfortaa', 'Quicksand', system-ui, sans-serif;

@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; media-src 'self'; connect-src 'self' https://formsubmit.co; object-src 'none'; base-uri 'self'; form-action 'self' https://formsubmit.co" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Prattes Design — Design estratégico para marcas que querem vender. Transformamos a comunicação visual de empresas em presença profissional, autoridade e percepção de valor." />
+  <meta name="description" content="Prattes Design — design estratégico para marcas que querem vender. Identidade visual, social media e audiovisual que viram presença profissional e mais vendas." />
   <title>Prattes Design — Design estratégico para marcas que querem vender</title>
 
   <!-- ============================================================
@@ -3196,10 +3196,10 @@
           <img class="nav-logo-svg" src="assets/img/logo-prattes-2.webp" alt="Prattes Design" />
         </a>
 
-        <label for="pd-nav-toggle" class="pd-hamburger" aria-label="Abrir menu">
+        <label for="pd-nav-toggle" class="pd-hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="primary-nav">
           <span></span><span></span><span></span>
         </label>
-        <ul class="nav-menu">
+        <ul class="nav-menu" id="primary-nav">
           <li><a href="#top">Home</a></li>
           <li><a href="#servicos">Serviços</a></li>
           <li><a href="trabalhos.html">Trabalhos</a></li>
@@ -3214,10 +3214,11 @@
     </div>
   </header>
 
+  <main id="conteudo" tabindex="-1">
   <!-- ============================================
        HERO
        ============================================ -->
-  <section class="hero pattern-bg" id="conteudo" tabindex="-1">
+  <section class="hero pattern-bg">
     <div class="container">
       <div class="hero-grid">
         <div class="hero-content">
@@ -3609,6 +3610,8 @@
           <input type="hidden" name="_subject" value="Novo pedido de diagnóstico — Prattes Design" />
           <input type="hidden" name="_template" value="table" />
           <input type="hidden" name="_captcha" value="false" />
+          <!-- Honeypot anti-spam: invisível p/ humanos; bots preenchem e o FormSubmit descarta -->
+          <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" />
           <button type="submit" class="btn btn-primary btn-arrow cta-banner-submit">Quero meu diagnóstico gratuito</button>
           <p class="cta-fineprint" style="font-size:13px;color:var(--pd-text-mute);text-align:center;margin-top:14px;">Grátis e sem compromisso · seus dados estão seguros.</p>
         </form>
@@ -3875,6 +3878,8 @@
             <input type="hidden" name="_subject" value="Nova inscrição na newsletter — Prattes Design" />
             <input type="hidden" name="_template" value="table" />
             <input type="hidden" name="_captcha" value="false" />
+            <!-- Honeypot anti-spam (vide form de diagnóstico) -->
+            <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;" />
             <!-- Consentimento dentro do form pra ser submetido junto (LGPD audit trail) -->
             <label class="newsletter-consent">
               <input type="checkbox" name="consentimento" value="aceito" required /> Aceito receber comunicações da Prattes Design.
@@ -3971,6 +3976,8 @@
     @media (prefers-reduced-motion: reduce) { .cine-aurora, .cine-marquee-track { animation: none; } .cine-reveal { opacity: 1; transform: none; transition: none; } }
     @media (max-width: 700px) { .cine-footer { position: relative; height: auto; padding: 110px 0 28px; } .cine-spacer { display: none; } .cine-marquee { top: 56px; } .cine-bottom { flex-direction: column; text-align: center; gap: 22px; } }
   </style>
+
+  </main>
 
   <!-- ============================================
        FINAL CTA + RODAPÉ (cinematográfico)
@@ -4156,15 +4163,23 @@
       if (!toggle) return;
       var navMenu = document.querySelector('.nav-menu');
       if (!navMenu) return;
+      var hamb = document.querySelector('.pd-hamburger');
+      // Mantém o aria-expanded/aria-label do hambúrguer em sincronia (a11y)
+      function syncExpanded(){
+        if (!hamb) return;
+        hamb.setAttribute('aria-expanded', toggle.checked ? 'true' : 'false');
+        hamb.setAttribute('aria-label', toggle.checked ? 'Fechar menu' : 'Abrir menu');
+      }
+      function closeMenu(){ toggle.checked = false; syncExpanded(); }
+      toggle.addEventListener('change', syncExpanded);
       navMenu.querySelectorAll('a').forEach(function(a){
-        a.addEventListener('click', function(){
-          toggle.checked = false;
-        });
+        a.addEventListener('click', closeMenu);
       });
       // Fecha com tecla ESC
       document.addEventListener('keydown', function(e){
-        if (e.key === 'Escape') toggle.checked = false;
+        if (e.key === 'Escape') closeMenu();
       });
+      syncExpanded();
     })();
   </script>
 
