@@ -3567,10 +3567,19 @@
         .svc-panel.is-active::after{content:"";position:absolute;inset:0;background:radial-gradient(130% 90% at 100% 100%,rgba(255,218,0,.09),transparent 58%);pointer-events:none;z-index:0}
         @media (max-width:820px){
           .svc-accordion{flex-direction:column;height:auto;gap:12px}
-          .svc-panel{flex:auto!important;min-height:220px;border-color:rgba(255,218,0,.18)}
+          .svc-panel{flex:auto!important;border-color:rgba(255,218,0,.18);-webkit-tap-highlight-color:transparent}
+          .svc-panel.is-active{border-color:rgba(255,218,0,.4)}
           .svc-label{display:none}
-          .svc-content{position:relative;opacity:1;transform:none;pointer-events:auto;justify-content:flex-start}
-          .svc-num{opacity:.9;font-size:120px;bottom:-16px}
+          .svc-content{position:relative;opacity:1;transform:none;pointer-events:auto;justify-content:flex-start;padding:24px 52px 22px 24px}
+          .svc-content .svc-idx{margin-bottom:0}
+          .svc-content h3{margin:11px 0 0}
+          .svc-content p{max-height:0;opacity:0;overflow:hidden;margin:0;transition:max-height .45s ease,opacity .3s,margin .35s}
+          .svc-content ul{max-height:0;opacity:0;overflow:hidden;margin:0;transition:max-height .5s ease,opacity .3s,margin .35s}
+          .svc-panel.is-active .svc-content p{max-height:240px;opacity:1;margin:13px 0 16px}
+          .svc-panel.is-active .svc-content ul{max-height:300px;opacity:1;margin:0 0 4px}
+          .svc-num{opacity:.4;font-size:118px;bottom:-16px}
+          .svc-panel::before{content:"+";position:absolute;top:20px;right:22px;font-family:var(--font-display);font-weight:700;font-size:26px;line-height:1;color:var(--pd-yellow);z-index:2;transition:transform .35s ease}
+          .svc-panel.is-active::before{transform:rotate(45deg)}
         }
       </style>
 
