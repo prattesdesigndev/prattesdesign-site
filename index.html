@@ -174,7 +174,7 @@
       color: var(--pd-text);
       line-height: 1.55;
       -webkit-font-smoothing: antialiased;
-      overflow-x: hidden;
+      overflow-x: clip;
     }
     img { max-width: 100%; display: block; }
     a { color: inherit; text-decoration: none; }
@@ -2175,9 +2175,16 @@
       }
     }
     
-    /* Garantia anti-overflow horizontal no html/body */
-    html, body { overflow-x: hidden; max-width: 100vw; }
+    /* Garantia anti-overflow horizontal no html/body — CLIP (não hidden) pra
+       NÃO quebrar position:fixed/sticky no mobile (ex.: reveal do rodapé). */
+    html, body { overflow-x: clip; max-width: 100vw; }
     img, svg, video { max-width: 100%; height: auto; }
+
+    /* Botões: no mobile o texto QUEBRA em vez de vazar/cortar ("Quero meu
+       diagnóstico gratuito", "Resolver meus desafios"). */
+    @media (max-width: 768px) {
+      .btn { white-space: normal; text-align: center; line-height: 1.25; letter-spacing: .1em; }
+    }
 
     /* === HARDENING MOBILE: anti-overflow + sem hífens automáticos === */
     @media (max-width: 768px) {
@@ -3174,7 +3181,7 @@
     .hero-stat { display: flex; flex-direction: column; gap: 2px; }
     .hero-stat-num { font-family: var(--font-display); font-weight: 800; font-size: 36px; color: var(--pd-yellow); line-height: 1; }
     .hero-stat-label { font-size: 13px; color: var(--pd-text-dim); letter-spacing: .01em; }
-    @media (max-width: 600px) { .hero-stats { gap: 20px; margin-top: 28px; } .hero-stat-num { font-size: 28px; } .hero-stat-label { font-size: 11px; } }
+    @media (max-width: 600px) { .hero-stats { gap: 18px 28px; margin-top: 28px; justify-content: center; } .hero-stat { align-items: center; text-align: center; } .hero-stat-num { font-size: 28px; } .hero-stat-label { font-size: 11px; } }
   </style>
 </head>
 <body id="top">
@@ -3974,7 +3981,25 @@
     .cine-reveal { opacity: 0; transform: translateY(42px); transition: opacity .8s ease, transform .8s cubic-bezier(.16,1,.3,1); }
     .cine-reveal.is-in { opacity: 1; transform: none; }
     @media (prefers-reduced-motion: reduce) { .cine-aurora, .cine-marquee-track { animation: none; } .cine-reveal { opacity: 1; transform: none; transition: none; } }
-    @media (max-width: 700px) { .cine-footer { position: relative; height: auto; padding: 110px 0 28px; } .cine-spacer { display: none; } .cine-marquee { top: 56px; } .cine-bottom { flex-direction: column; text-align: center; gap: 22px; } }
+    /* Mobile: MANTÉM o reveal do rodapé fixo (igual desktop). Usa 100dvh e
+       aperta os espaços pra tudo caber na tela sem cortar. */
+    @media (max-width: 700px) {
+      .cine-footer { height: 100dvh; padding: 74px 0 16px; }
+      .cine-spacer { height: 100dvh; }
+      .cine-giant { font-size: 30vw; }
+      .cine-marquee { top: 42px; }
+      .cine-content { padding: 18px 18px 0; }
+      .cine-eyebrow { margin-bottom: 10px; }
+      .cine-heading { font-size: clamp(30px, 9vw, 46px); margin-bottom: 12px; }
+      .cine-sub { font-size: 14px; line-height: 1.5; margin-bottom: 16px; }
+      .cine-pill--primary { padding: 15px 30px; }
+      .cine-actions { margin-bottom: 16px; }
+      .cine-redes-label { margin-bottom: 8px; }
+      .cine-socials { gap: 9px; margin-bottom: 12px; }
+      .cine-social { width: 42px; height: 42px; }
+      .cine-links { gap: 9px; }
+      .cine-bottom { margin-top: 16px; flex-direction: column; text-align: center; gap: 12px; }
+    }
   </style>
 
   </main>
