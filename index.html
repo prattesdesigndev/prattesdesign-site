@@ -3546,15 +3546,43 @@
         <h2 class="display h-lg" style="margin-top: 16px;">O que a gente faz</h2>
       </div>
 
-      <div class="services-grid">
-        <article class="service-card">
-          <div class="service-image">
-            <img src="assets/img/service-branding.svg" width="600" height="380" loading="lazy" decoding="async" alt="Branding e Identidade Visual — Brand book editorial" />
-          </div>
-          <div class="service-body">
-            <h3 class="display h-sm">Branding &amp; Identidade Visual</h3>
+      <style>
+        .svc-accordion{display:flex;gap:14px;height:460px;margin-top:8px}
+        .svc-panel{position:relative;flex:0 0 84px;flex-grow:0;border-radius:20px;overflow:hidden;cursor:pointer;background:linear-gradient(160deg,#171717,#0c0c0c);border:1px solid var(--pd-line);transition:flex-basis .6s cubic-bezier(.6,.05,.2,.95),flex-grow .6s cubic-bezier(.6,.05,.2,.95),border-color .4s;outline:none}
+        .svc-panel.is-active{flex-basis:0;flex-grow:1;border-color:rgba(255,218,0,.4)}
+        .svc-panel:focus-visible{border-color:var(--pd-yellow)}
+        .svc-num{position:absolute;right:14px;bottom:-26px;font-family:var(--font-display);font-weight:800;font-size:170px;line-height:1;color:transparent;-webkit-text-stroke:1px rgba(255,218,0,.12);pointer-events:none;opacity:0;transition:opacity .5s;z-index:1}
+        .svc-panel.is-active .svc-num{opacity:1}
+        .svc-label{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;transition:opacity .3s;z-index:1}
+        .svc-label span{writing-mode:vertical-rl;transform:rotate(180deg);font-family:var(--font-display);font-weight:700;letter-spacing:.06em;color:var(--pd-text);white-space:nowrap;font-size:15px;text-transform:uppercase}
+        .svc-panel.is-active .svc-label{opacity:0;pointer-events:none}
+        .svc-content{position:absolute;inset:0;padding:34px;display:flex;flex-direction:column;justify-content:flex-end;opacity:0;transform:translateY(14px);transition:opacity .45s .12s,transform .45s .12s;pointer-events:none;z-index:1}
+        .svc-panel.is-active .svc-content{opacity:1;transform:none;pointer-events:auto}
+        .svc-content .svc-idx{font-family:var(--font-display);color:var(--pd-yellow);font-weight:700;font-size:12px;letter-spacing:.22em;text-transform:uppercase;margin-bottom:auto}
+        .svc-content h3{font-family:var(--font-display);font-weight:800;font-size:clamp(21px,1.9vw,29px);line-height:1.12;color:#fff;margin:14px 0 12px;white-space:normal}
+        .svc-content p{color:var(--pd-text-dim);font-size:15px;line-height:1.55;max-width:44ch;margin:0 0 18px}
+        .svc-content ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:9px}
+        .svc-content li{color:#e8e8e8;font-size:14px;display:flex;align-items:center;gap:10px;white-space:normal}
+        .svc-content li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--pd-yellow);flex:0 0 auto}
+        .svc-panel.is-active::after{content:"";position:absolute;inset:0;background:radial-gradient(130% 90% at 100% 100%,rgba(255,218,0,.09),transparent 58%);pointer-events:none;z-index:0}
+        @media (max-width:820px){
+          .svc-accordion{flex-direction:column;height:auto;gap:12px}
+          .svc-panel{flex:auto!important;min-height:220px;border-color:rgba(255,218,0,.18)}
+          .svc-label{display:none}
+          .svc-content{position:relative;opacity:1;transform:none;pointer-events:auto;justify-content:flex-start}
+          .svc-num{opacity:.9;font-size:120px;bottom:-16px}
+        }
+      </style>
+
+      <div class="svc-accordion">
+        <article class="svc-panel is-active" tabindex="0" aria-label="Branding e Identidade Visual">
+          <span class="svc-num" aria-hidden="true">01</span>
+          <div class="svc-label" aria-hidden="true"><span>Branding</span></div>
+          <div class="svc-content">
+            <span class="svc-idx">01 &middot; Marca</span>
+            <h3>Branding &amp; Identidade Visual</h3>
             <p>Construímos marcas com posicionamento claro, identidade flexível e linguagem visual coerente — do logo ao sistema completo de marca.</p>
-            <ul class="service-list">
+            <ul>
               <li>Posicionamento &amp; Direção de Marca</li>
               <li>Logo &amp; Sistema Visual</li>
               <li>Manual e Aplicações</li>
@@ -3562,14 +3590,14 @@
           </div>
         </article>
 
-        <article class="service-card">
-          <div class="service-image">
-            <img src="assets/img/service-social.svg" width="600" height="380" loading="lazy" decoding="async" alt="Social Media e Conteúdo — Mockup de feed e stories" />
-          </div>
-          <div class="service-body">
-            <h3 class="display h-sm">Social Media &amp; Conteúdo</h3>
+        <article class="svc-panel" tabindex="0" aria-label="Social Media e Conteúdo">
+          <span class="svc-num" aria-hidden="true">02</span>
+          <div class="svc-label" aria-hidden="true"><span>Social Media</span></div>
+          <div class="svc-content">
+            <span class="svc-idx">02 &middot; Social</span>
+            <h3>Social Media &amp; Conteúdo</h3>
             <p>Conteúdo estratégico para Instagram que vira vitrine comercial: linha editorial, planejamento, design de posts, reels e campanhas.</p>
-            <ul class="service-list">
+            <ul>
               <li>Planejamento &amp; Linha Editorial</li>
               <li>Design de Posts &amp; Carrosséis</li>
               <li>Roteiros e Edição de Reels</li>
@@ -3577,21 +3605,66 @@
           </div>
         </article>
 
-        <article class="service-card">
-          <div class="service-image">
-            <img src="assets/img/service-audiovisual.svg" width="600" height="380" loading="lazy" decoding="async" alt="Audiovisual e Campanhas — Editor de vídeo e dashboard" />
-          </div>
-          <div class="service-body">
-            <h3 class="display h-sm">Audiovisual &amp; Campanhas</h3>
+        <article class="svc-panel" tabindex="0" aria-label="Audiovisual e Campanhas">
+          <span class="svc-num" aria-hidden="true">03</span>
+          <div class="svc-label" aria-hidden="true"><span>Audiovisual</span></div>
+          <div class="svc-content">
+            <span class="svc-idx">03 &middot; Audiovisual</span>
+            <h3>Audiovisual &amp; Campanhas</h3>
             <p>Vídeos, motion, criativos para tráfego e landing pages que conectam mensagem, design e estratégia comercial.</p>
-            <ul class="service-list">
+            <ul>
               <li>Vídeo Institucional &amp; Reels</li>
               <li>Criativos para Tráfego Pago</li>
               <li>Landing Pages que Convertem</li>
             </ul>
           </div>
         </article>
+
+        <article class="svc-panel" tabindex="0" aria-label="Web Design">
+          <span class="svc-num" aria-hidden="true">04</span>
+          <div class="svc-label" aria-hidden="true"><span>Web Design</span></div>
+          <div class="svc-content">
+            <span class="svc-idx">04 &middot; Web</span>
+            <h3>Web Design</h3>
+            <p>Sites e landing pages que vendem: design sob medida, UX focada em conversão e performance de verdade — no computador e no celular.</p>
+            <ul>
+              <li>Sites Institucionais &amp; Landing Pages</li>
+              <li>UX/UI focado em Conversão</li>
+              <li>Performance &amp; Responsivo</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="svc-panel" tabindex="0" aria-label="Sistemas para Resolução de Problemas">
+          <span class="svc-num" aria-hidden="true">05</span>
+          <div class="svc-label" aria-hidden="true"><span>Sistemas</span></div>
+          <div class="svc-content">
+            <span class="svc-idx">05 &middot; Sistemas</span>
+            <h3>Sistemas para Resolução de Problemas</h3>
+            <p>Ferramentas e sistemas sob medida pra destravar o seu negócio — do app à automação de processos que economiza o seu tempo.</p>
+            <ul>
+              <li>Sistemas &amp; Ferramentas sob Medida</li>
+              <li>Automação de Processos</li>
+              <li>Apps &amp; Integrações</li>
+            </ul>
+          </div>
+        </article>
       </div>
+
+      <script>
+        (function(){
+          var acc = document.querySelector('.svc-accordion');
+          if(!acc) return;
+          var panels = [].slice.call(acc.querySelectorAll('.svc-panel'));
+          var wide = window.matchMedia('(min-width: 821px)');
+          function activate(p){ panels.forEach(function(x){ x.classList.remove('is-active'); }); p.classList.add('is-active'); }
+          panels.forEach(function(p){
+            p.addEventListener('mouseenter', function(){ if(wide.matches) activate(p); });
+            p.addEventListener('focus', function(){ if(wide.matches) activate(p); });
+            p.addEventListener('click', function(){ activate(p); });
+          });
+        })();
+      </script>
 
       <div class="services-footer">
         <a href="https://wa.me/5511940823616?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20falar%20sobre%20um%20projeto" class="btn btn-primary btn-arrow" target="_blank" rel="noopener noreferrer">Fale com a gente</a>
