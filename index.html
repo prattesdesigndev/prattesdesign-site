@@ -3564,6 +3564,20 @@
         .svc-content ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:9px}
         .svc-content li{color:#e8e8e8;font-size:14px;display:flex;align-items:center;gap:10px;white-space:normal}
         .svc-content li::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--pd-yellow);flex:0 0 auto}
+
+        /* projetos reais dentro de cada servico */
+        .svc-work{position:absolute;top:74px;right:34px;bottom:34px;width:44%;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1.35fr 1fr;gap:10px}
+        .svc-work-item{position:relative;display:block;border-radius:14px;overflow:hidden;border:1px solid var(--pd-line);background:#0c0c0c}
+        .svc-work-item:first-child{grid-column:1 / -1}
+        .svc-work.is-single{grid-template-rows:1fr}
+        .svc-work.is-single img{object-position:left center}
+        .svc-work-item img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+        .svc-work-item:hover img{transform:scale(1.05)}
+        .svc-work-item::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.72),transparent 55%);pointer-events:none}
+        .svc-work-item span{position:absolute;left:12px;bottom:10px;z-index:1;font-family:var(--font-display);font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#fff}
+        .svc-work-item:hover{border-color:rgba(255,218,0,.5)}
+        .svc-panel.has-work .svc-num{display:none}
+        .svc-panel.has-work .svc-content h3,.svc-panel.has-work .svc-content p,.svc-panel.has-work .svc-content ul{max-width:48%}
         .svc-panel.is-active::after{content:"";position:absolute;inset:0;background:radial-gradient(130% 90% at 100% 100%,rgba(255,218,0,.09),transparent 58%);pointer-events:none;z-index:0}
         @media (max-width:820px){
           .svc-accordion{flex-direction:column;height:auto;gap:12px}
@@ -3580,11 +3594,15 @@
           .svc-num{opacity:.4;font-size:118px;bottom:-16px}
           .svc-panel::before{content:"+";position:absolute;top:20px;right:22px;font-family:var(--font-display);font-weight:700;font-size:26px;line-height:1;color:var(--pd-yellow);z-index:2;transition:transform .35s ease}
           .svc-panel.is-active::before{transform:rotate(45deg)}
+          .svc-work{position:static;width:auto;margin-top:0;max-height:0;opacity:0;overflow:hidden;grid-template-rows:150px 110px;transition:max-height .5s ease,opacity .3s,margin .35s}
+          .svc-work.is-single{grid-template-rows:180px}
+          .svc-panel.is-active .svc-work{max-height:300px;opacity:1;margin-top:16px}
+          .svc-panel.has-work .svc-content h3,.svc-panel.has-work .svc-content p,.svc-panel.has-work .svc-content ul{max-width:none}
         }
       </style>
 
       <div class="svc-accordion">
-        <article class="svc-panel is-active" tabindex="0" aria-label="Branding e Identidade Visual">
+        <article class="svc-panel has-work is-active" tabindex="0" aria-label="Branding e Identidade Visual">
           <span class="svc-num" aria-hidden="true">01</span>
           <div class="svc-label" aria-hidden="true"><span>Branding</span></div>
           <div class="svc-content">
@@ -3596,10 +3614,15 @@
               <li>Logo &amp; Sistema Visual</li>
               <li>Manual e Aplicações</li>
             </ul>
+            <div class="svc-work">
+              <a class="svc-work-item" href="case-outlet-da-val.html"><img src="assets/img/val-outdoor.webp" alt="Outlet da Val" loading="lazy" decoding="async" /><span>Outlet da Val</span></a>
+              <a class="svc-work-item" href="case-kraken.html"><img src="assets/img/kraken-sala-reuniao.webp" alt="Kraken" loading="lazy" decoding="async" /><span>Kraken</span></a>
+              <a class="svc-work-item" href="case-ahau-solar.html"><img src="assets/img/ahau-fachada.webp" alt="Ahau Solar" loading="lazy" decoding="async" /><span>Ahau Solar</span></a>
+            </div>
           </div>
         </article>
 
-        <article class="svc-panel" tabindex="0" aria-label="Social Media e Conteúdo">
+        <article class="svc-panel has-work" tabindex="0" aria-label="Social Media e Conteúdo">
           <span class="svc-num" aria-hidden="true">02</span>
           <div class="svc-label" aria-hidden="true"><span>Social Media</span></div>
           <div class="svc-content">
@@ -3611,10 +3634,15 @@
               <li>Design de Posts &amp; Carrosséis</li>
               <li>Roteiros e Edição de Reels</li>
             </ul>
+            <div class="svc-work">
+              <a class="svc-work-item" href="case-miriam-ribas.html"><img src="assets/img/miriam-rua-capa.webp" alt="Míriam Ribas" loading="lazy" decoding="async" /><span>Míriam Ribas</span></a>
+              <a class="svc-work-item" href="case-laco-rosa.html"><img src="assets/img/laco-rosa-facebook.webp" alt="Laço Rosa" loading="lazy" decoding="async" /><span>Laço Rosa</span></a>
+              <a class="svc-work-item" href="case-ahau-solar.html"><img src="assets/img/ahau-post.webp" alt="Ahau Solar" loading="lazy" decoding="async" /><span>Ahau Solar</span></a>
+            </div>
           </div>
         </article>
 
-        <article class="svc-panel" tabindex="0" aria-label="Audiovisual e Campanhas">
+        <article class="svc-panel has-work" tabindex="0" aria-label="Audiovisual e Campanhas">
           <span class="svc-num" aria-hidden="true">03</span>
           <div class="svc-label" aria-hidden="true"><span>Audiovisual</span></div>
           <div class="svc-content">
@@ -3626,10 +3654,15 @@
               <li>Criativos para Tráfego Pago</li>
               <li>Landing Pages que Convertem</li>
             </ul>
+            <div class="svc-work">
+              <a class="svc-work-item" href="case-pixole.html"><img src="assets/img/pixole-filme.webp" alt="Pixolé" loading="lazy" decoding="async" /><span>Pixolé</span></a>
+              <a class="svc-work-item" href="case-myne-joalheria.html"><img src="assets/img/myne-video-evento.webp" alt="MYNE Joalheria" loading="lazy" decoding="async" /><span>MYNE Joalheria</span></a>
+              <a class="svc-work-item" href="case-miriam-ribas.html"><img src="assets/img/miriam-filme-capa.webp" alt="Míriam Ribas" loading="lazy" decoding="async" /><span>Míriam Ribas</span></a>
+            </div>
           </div>
         </article>
 
-        <article class="svc-panel" tabindex="0" aria-label="Web Design">
+        <article class="svc-panel has-work" tabindex="0" aria-label="Web Design">
           <span class="svc-num" aria-hidden="true">04</span>
           <div class="svc-label" aria-hidden="true"><span>Web Design</span></div>
           <div class="svc-content">
@@ -3641,10 +3674,15 @@
               <li>UX/UI focado em Conversão</li>
               <li>Performance &amp; Responsivo</li>
             </ul>
+            <div class="svc-work">
+              <a class="svc-work-item" href="case-miriam-ribas.html"><img src="assets/img/miriam-site.webp" alt="Site Míriam Ribas" loading="lazy" decoding="async" /><span>Site Míriam Ribas</span></a>
+              <a class="svc-work-item" href="case-laco-rosa.html"><img src="assets/img/laco-rosa-site.webp" alt="Laço Rosa" loading="lazy" decoding="async" /><span>Laço Rosa</span></a>
+              <a class="svc-work-item" href="case-cyex-academy.html"><img src="assets/img/cyex-app.webp" alt="CYEX Academy" loading="lazy" decoding="async" /><span>CYEX Academy</span></a>
+            </div>
           </div>
         </article>
 
-        <article class="svc-panel" tabindex="0" aria-label="Sistemas para Resolução de Problemas">
+        <article class="svc-panel has-work" tabindex="0" aria-label="Sistemas para Resolução de Problemas">
           <span class="svc-num" aria-hidden="true">05</span>
           <div class="svc-label" aria-hidden="true"><span>Sistemas</span></div>
           <div class="svc-content">
@@ -3656,6 +3694,9 @@
               <li>Automação de Processos</li>
               <li>Apps &amp; Integrações</li>
             </ul>
+            <div class="svc-work is-single">
+              <a class="svc-work-item" href="https://app.prattesdesign.com.br" target="_blank" rel="noopener noreferrer"><img src="assets/img/app-showcase-poster.jpg" alt="App Prattes Design — ferramentas de IA" loading="lazy" decoding="async" /><span>App Prattes · Ferramentas de IA</span></a>
+            </div>
           </div>
         </article>
       </div>
