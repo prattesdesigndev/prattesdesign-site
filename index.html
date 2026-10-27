@@ -1707,13 +1707,14 @@
        com mesma direção. Reduzidas ~17% em relação à versão anterior.
        NOTA: usamos nth-child começando em 2 porque o 1º filho do .scrolly-carousels
        é o <div class="container"> com o título — não é uma .scrolly-row. */
-    .scrolly-row:nth-child(2) .scrolly-track { animation-duration: 42s; } /* Laço Rosa — ← */
-    .scrolly-row:nth-child(3) .scrolly-track { animation-duration: 50s; } /* Ótica Marília — → */
-    .scrolly-row:nth-child(4) .scrolly-track { animation-duration: 58s; } /* Kraken — ← */
-    .scrolly-row:nth-child(5) .scrolly-track { animation-duration: 46s; } /* Outlet da Val — → */
-    .scrolly-row:nth-child(6) .scrolly-track { animation-duration: 54s; } /* CYEX Academy — ← */
-    .scrolly-row:nth-child(7) .scrolly-track { animation-duration: 62s; } /* Prattes 1-3 — → */
-    .scrolly-row:nth-child(8) .scrolly-track { animation-duration: 35s; } /* Prattes 4-5 — ← */
+    .scrolly-row:nth-child(2) .scrolly-track { animation-duration: 56s; } /* Hila Connect — ← */
+    .scrolly-row:nth-child(3) .scrolly-track { animation-duration: 42s; } /* Laço Rosa — → */
+    .scrolly-row:nth-child(4) .scrolly-track { animation-duration: 50s; } /* Ótica Marília — ← */
+    .scrolly-row:nth-child(5) .scrolly-track { animation-duration: 58s; } /* Kraken — → */
+    .scrolly-row:nth-child(6) .scrolly-track { animation-duration: 46s; } /* Outlet da Val — ← */
+    .scrolly-row:nth-child(7) .scrolly-track { animation-duration: 54s; } /* CYEX Academy — → */
+    .scrolly-row:nth-child(8) .scrolly-track { animation-duration: 62s; } /* Prattes 1-3 — ← */
+    .scrolly-row:nth-child(9) .scrolly-track { animation-duration: 35s; } /* Prattes 4-5 — → */
     @keyframes pd-scrolly-left  { from { transform: translate3d(0, 0, 0); }    to { transform: translate3d(-50%, 0, 0); } }
     @keyframes pd-scrolly-right { from { transform: translate3d(-50%, 0, 0); } to { transform: translate3d(0, 0, 0); } }
     /* Pausa no hover — dá tempo de ler uma imagem específica */
@@ -3384,9 +3385,32 @@
       <p class="scrolly-title">CASES DE SUCESSO — CARROSSÉIS<br class="br-mobile"/> QUE GERAM RESULTADO</p>
     </div>
 
-    <!-- Linha 1 — Case Confeitaria Laço Rosa (5 peças do branding). Marquee infinito pra esquerda. -->
+    <!-- Linha 0 — Case Hila Connect (8 mockups da identidade). Marquee infinito pra esquerda. -->
     <div class="scrolly-row">
       <div class="scrolly-track" data-direction="-1">
+        <img src="assets/img/hila-fachada-noite.webp" width="1600" height="900" loading="lazy" decoding="async" alt="Hila Connect — logotipo na fachada de vidro à noite" />
+        <img src="assets/img/hila-cartoes.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Hila Connect — cartões de visita" />
+        <img src="assets/img/hila-notebook.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Hila Connect — tela de notebook com a marca" />
+        <img src="assets/img/hila-metro.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Hila Connect — painel luminoso no metrô" />
+        <img src="assets/img/hila-moletom.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Hila Connect — moletom com o símbolo" />
+        <img src="assets/img/hila-fachada-dia.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Hila Connect — fachada de prédio espelhado" />
+        <img src="assets/img/hila-instagram.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Hila Connect — feed do Instagram" />
+        <img src="assets/img/hila-circuito.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Hila Connect — símbolo em placa de circuito" />
+        <!-- Duplicatas (aria-hidden pra não duplicar pro screen reader) -->
+        <img src="assets/img/hila-fachada-noite.webp" width="1600" height="900" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        <img src="assets/img/hila-cartoes.webp" width="1280" height="720" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        <img src="assets/img/hila-notebook.webp" width="1280" height="720" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        <img src="assets/img/hila-metro.webp" width="1280" height="720" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        <img src="assets/img/hila-moletom.webp" width="1280" height="720" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        <img src="assets/img/hila-fachada-dia.webp" width="1280" height="720" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        <img src="assets/img/hila-instagram.webp" width="1280" height="720" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+        <img src="assets/img/hila-circuito.webp" width="1280" height="720" loading="lazy" decoding="async" alt="" aria-hidden="true" />
+      </div>
+    </div>
+
+    <!-- Linha 1 — Case Confeitaria Laço Rosa (5 peças do branding). Marquee infinito pra esquerda. -->
+    <div class="scrolly-row">
+      <div class="scrolly-track" data-direction="1">
         <img src="assets/img/laco-rosa-fachada.webp"  width="1179" height="720" loading="lazy" decoding="async" alt="Confeitaria Laço Rosa — fachada da loja ao entardecer" />
         <img src="assets/img/laco-rosa-site.webp"     width="1080" height="720" loading="lazy" decoding="async" alt="Confeitaria Laço Rosa — site institucional em notebook" />
         <img src="assets/img/laco-rosa-uniforme.webp" width="1080" height="720" loading="lazy" decoding="async" alt="Confeitaria Laço Rosa — uniforme de chef com bordado da marca" />
@@ -3403,7 +3427,7 @@
 
     <!-- Linha 2 — Case Ótica Marília (4 peças do branding). Marquee infinito pra direita. -->
     <div class="scrolly-row">
-      <div class="scrolly-track" data-direction="1">
+      <div class="scrolly-track" data-direction="-1">
         <img src="assets/img/otica-marilia-fachada.webp"  width="1080" height="720" loading="lazy" decoding="async" alt="Ótica Marília — fachada da loja com identidade aplicada" />
         <img src="assets/img/otica-marilia-uniforme.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Ótica Marília — uniforme polo com logo bordado e pattern" />
         <img src="assets/img/otica-marilia-sacolas.webp" width="960"  height="720" loading="lazy" decoding="async" alt="Ótica Marília — sacolas oficiais da marca em azul e branco" />
@@ -3418,7 +3442,7 @@
 
     <!-- Linha 3 — Case Kraken Growth Marketing (5 peças do branding). Marquee infinito pra esquerda. -->
     <div class="scrolly-row">
-      <div class="scrolly-track" data-direction="-1">
+      <div class="scrolly-track" data-direction="1">
         <img src="assets/img/kraken-cartoes.webp"      width="1080" height="720" loading="lazy" decoding="async" alt="Kraken Growth Marketing — cartões de visita do CEO e equipe" />
         <img src="assets/img/kraken-sala-reuniao.webp" width="1080" height="720" loading="lazy" decoding="async" alt="Kraken Growth Marketing — logo aplicado em sala de reunião corporativa" />
         <img src="assets/img/kraken-polo.webp"         width="1280" height="720" loading="lazy" decoding="async" alt="Kraken Growth Marketing — uniforme polo com crachá e cordão" />
@@ -3435,7 +3459,7 @@
 
     <!-- Linha 4 — Case Outlet da Val (5 peças do branding). Marquee infinito pra direita. -->
     <div class="scrolly-row">
-      <div class="scrolly-track" data-direction="1">
+      <div class="scrolly-track" data-direction="-1">
         <img src="assets/img/val-tag.webp"     width="1280" height="720" loading="lazy" decoding="async" alt="Outlet da Val — tag/etiqueta de produto com pattern em fundo vermelho" />
         <img src="assets/img/val-cartoes.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Outlet da Val — cartões de visita frente e verso" />
         <img src="assets/img/val-fachada.webp" width="1280" height="720" loading="lazy" decoding="async" alt="Outlet da Val — fachada da loja com letreiro" />
@@ -3452,7 +3476,7 @@
 
     <!-- Linha 5 — Case CYEX Academy (5 peças do branding). Marquee infinito pra esquerda. -->
     <div class="scrolly-row">
-      <div class="scrolly-track" data-direction="-1">
+      <div class="scrolly-track" data-direction="1">
         <img src="assets/img/cyex-outdoor-metro.webp"  width="1280" height="720" loading="lazy" decoding="async" alt="CYEX Academy — outdoor em estação de metrô" />
         <img src="assets/img/cyex-outdoor-predio.webp" width="1280" height="720" loading="lazy" decoding="async" alt="CYEX Academy — outdoor em prédio comercial à noite" />
         <img src="assets/img/cyex-garrafas.webp"       width="1280" height="720" loading="lazy" decoding="async" alt="CYEX Academy — garrafas térmicas corporativas com a marca" />
@@ -3469,7 +3493,7 @@
 
     <!-- Linha 6 — carrosséis Prattes (direita, alterna com linha 5). -->
     <div class="scrolly-row">
-      <div class="scrolly-track" data-direction="1">
+      <div class="scrolly-track" data-direction="-1">
         <img src="assets/img/scrolly-01.webp" width="2560" height="320" loading="lazy" decoding="async" alt="Carrossel — Texturas no Chat GPT" />
         <img src="assets/img/scrolly-02.webp" width="1536" height="320" loading="lazy" decoding="async" alt="Carrossel — Sites gratuitos para imagens" />
         <img src="assets/img/scrolly-04.webp" width="1024" height="320" loading="lazy" decoding="async" alt="Carrossel — Como criar carrosséis que chamam atenção" />
@@ -3481,7 +3505,7 @@
 
     <!-- Linha 7 — mais carrosséis Prattes (esquerda, alterna com linha 6). -->
     <div class="scrolly-row">
-      <div class="scrolly-track" data-direction="-1">
+      <div class="scrolly-track" data-direction="1">
         <img src="assets/img/scrolly-04.webp" width="1792" height="320" loading="lazy" decoding="async" alt="Carrossel — Como criar carrosséis que chamam atenção" />
         <img src="assets/img/scrolly-02.webp" width="1024" height="320" loading="lazy" decoding="async" alt="Carrossel — Sites gratuitos para imagens" />
         <img src="assets/img/scrolly-04.webp" width="1792" height="320" loading="lazy" decoding="async" alt="" aria-hidden="true" />
