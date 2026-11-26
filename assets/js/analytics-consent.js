@@ -61,7 +61,7 @@
     box.setAttribute('aria-label', 'Aviso de cookies');
     box.innerHTML =
       '<div>Usamos cookies para entender como você usa o site e melhorar sua experiência. ' +
-      'Saiba mais na <a href="privacidade_11_1_2.html">Política de Privacidade</a>.</div>' +
+      'Saiba mais na <a href="/privacidade_11_1_2">Política de Privacidade</a>.</div>' +
       '<div class="pd-cookie-row">' +
       '<button class="pd-cookie-btn pd-cookie-accept" type="button">Aceitar</button>' +
       '<button class="pd-cookie-btn pd-cookie-deny" type="button">Recusar</button>' +
